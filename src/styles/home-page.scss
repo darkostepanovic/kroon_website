@@ -141,17 +141,25 @@
   }
 }
 
-// .fadeOut-enter {
-//
-// }
-//
-// .fadeOut-enter-active {
-//
-// }
-//
-// .fadeOut-leave {
-//
-// }
+.social-navigation-component {
+  position: absolute;
+  top: calc(50vh - 150px);
+  left: 35px;
+  ul {
+    li {
+      display: block;
+      margin: 12px 0;
+    }
+  }
+}
+
+#pagination {
+  position: absolute;
+  bottom: 65px;
+  left: 35px;
+  font-size: 22px;
+  font-weight: 700;
+}
 
 .fadeOut-leave-active {
   animation: fadeOutUp 0.2s ease-out forwards;

@@ -3,6 +3,10 @@
     <transition name="fadeOut" mode="out-in">
       <component :is="currentslide"></component>
     </transition>
+    <soc-nav v-show="showSocialAndPagination" />
+    <div id="pagination" v-show="showSocialAndPagination">
+      {{ slide }} / 5
+    </div>
   </div>
 </template>
 
@@ -12,6 +16,7 @@ import Slide_2 from './components/slide_2.component'
 import Slide_3 from './components/slide_3.component'
 import Slide_4 from './components/slide_4.component'
 import Slide_5 from './components/slide_5.component'
+import SocialNav from './components/social-navigation.component'
 import { EventBus } from '../../event-bus'
 export default {
   components: {
@@ -19,19 +24,21 @@ export default {
     'slide_2': Slide_2,
     'slide_3': Slide_3,
     'slide_4': Slide_4,
-    'slide_5': Slide_5
+    'slide_5': Slide_5,
+    'soc-nav': SocialNav
   },
   data () {
     return {
       slide: 0,
       currentslide: '',
       allowSlideChange: false,
+      showSocialAndPagination: false
     }
   },
   methods: {
     handleScroll (event) {
       if (this.allowSlideChange) {
-        if (event.wheelDelta > 0 || event.detail < 0) {
+        if (event.wheelDelta > 0 || event.detail < 0 || event.keyCode === 38) {
           // scroll up
           if (this.slide > 1) {
             this.allowSlideChange = false
@@ -39,9 +46,11 @@ export default {
             EventBus.$emit('slideChanged', {
               currentSlide: this.slide
             })
-            this.allowSlideChange = true
+            setTimeout(() => {
+              this.allowSlideChange = true
+            }, 2000)
           }
-        } else {
+        } else if (event.wheelDelta < 0 || event.detail > 0 || event.keyCode === 40) {
           // scroll down
           if (this.slide < 5) {
             this.allowSlideChange = false
@@ -49,7 +58,9 @@ export default {
             EventBus.$emit('slideChanged', {
               currentSlide: this.slide
             })
-            this.allowSlideChange = true
+            setTimeout(() => {
+              this.allowSlideChange = true
+            }, 2000)
           }
         }
       }
@@ -65,10 +76,12 @@ export default {
       this.currentSlide = 'slide_1'
       this.slide = 1
       this.allowSlideChange = true
-    }, 1500)
+      this.showSocialAndPagination = true
+    }, 2000)
     if (window.addEventListener) {
       window.addEventListener('mousewheel', this.handleScroll, false)
       window.addEventListener('DOMMouseScroll', this.handleScroll, false)
+      window.addEventListener('keydown', this.handleScroll, false);
     } else {
       window.attachEvent('onmousewheel', this.handleScroll)
     }

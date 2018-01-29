@@ -1,0 +1,16 @@
+.top-navigation-component {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 35px;
+  #top-nav-home-btn {
+    font-weight: 700;
+    font-size: 22px;
+    cursor: pointer;
+  }
+}

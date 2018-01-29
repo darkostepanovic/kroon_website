@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <top-nav v-show="showTopNav" />
     <router-view></router-view>
     <svg width="100%" height="100%" id="app-svg" :class="loaderHomeClass">
         <defs>
@@ -9,26 +10,28 @@
           </linearGradient>
         </defs>
         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-          <path id="home-svg-path" d="M151.5,1184.5 C349.542579,1996.3234 1354.70105,1779.95025 2170.5,1694 C2730.5,1635 3304.33196,1587.47001 2982.5,1040.5 C2536.5,282.5 2796.03057,-172.592304 1553.66252,63 C-365.648602,426.962136 -45,379 151.5,1184.5 Z" fill="url(#linearGradient-1)"></path>
+          <path id="home-svg-path" d="M0,2578 C1507.41389,2578 4057.96296,2578 4583.11111,2578 C4582.99456,2578 4582.99456,1718.66667 4583.11111,0 C2601.07469,2.89466338e-12 1073.37099,3.74138423e-12 2.47258387e-12,2.54016252e-12 C3.9175746e-12,960.782407 2.60519705e-11,1466.83426 0,2578 Z" fill="url(#linearGradient-1)"></path>
         </g>
     </svg>
-    <div id="pagination">
-      {{ homeSlide }} / 4
-    </div>
   </div>
 </template>
 
 
 <script>
+import TopNav from './components/top-navigation/top-navigation.component.vue'
 import { EventBus } from './event-bus'
 import Snap from 'snapsvg'
 export default {
   name: 'app',
+  components: {
+    'top-nav': TopNav
+  },
   data () {
     return {
       homeSlide: null,
       loaderClassName: '',
-      loaderHomeClass: 'home-svg-1'
+      loaderHomeClass: 'home-svg-1',
+      showTopNav: false
     }
   },
   created () {
@@ -50,6 +53,7 @@ export default {
     handleRouteChange (routeName) {
       this.loaderClassName = 'state-full'
       setTimeout(() => {
+        this.showTopNav = true
         let route = routeName
         switch (route) {
           case 'home':
@@ -61,7 +65,7 @@ export default {
             console.log('portfolio state')
             break
         }
-      }, 1000)
+      }, 2000)
     },
     onWindowResize () {
       this.resizeAndPositionSvg()
@@ -73,7 +77,7 @@ export default {
       switch (this.homeSlide) {
         case 1:
           scaleMatrix.scale(window.outerWidth / 1920, 1)
-          scaleMatrix.translate(-1000, -1000)
+          scaleMatrix.translate(-900, -1000)
           break;
         case 2:
           scaleMatrix.translate(window.outerWidth + 250 - (window.outerWidth / 2), window.innerHeight - 500 - (window.innerHeight / 1.8))
