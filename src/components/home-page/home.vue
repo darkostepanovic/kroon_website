@@ -7,6 +7,7 @@
     <div id="pagination" v-show="showSocialAndPagination">
       {{ slide }} / 5
     </div>
+    <contact-modal v-if="showContactForm" />
   </div>
 </template>
 
@@ -17,6 +18,7 @@ import Slide_3 from './components/slide_3.component'
 import Slide_4 from './components/slide_4.component'
 import Slide_5 from './components/slide_5.component'
 import SocialNav from './components/social-navigation.component'
+import ContactForm from './components/contact-modal.component'
 import { EventBus } from '../../event-bus'
 export default {
   components: {
@@ -25,14 +27,16 @@ export default {
     'slide_3': Slide_3,
     'slide_4': Slide_4,
     'slide_5': Slide_5,
-    'soc-nav': SocialNav
+    'soc-nav': SocialNav,
+    'contact-modal': ContactForm
   },
   data () {
     return {
       slide: 0,
       currentslide: '',
       allowSlideChange: false,
-      showSocialAndPagination: false
+      showSocialAndPagination: false,
+      showContactForm: false
     }
   },
   methods: {
@@ -85,6 +89,14 @@ export default {
     } else {
       window.attachEvent('onmousewheel', this.handleScroll)
     }
+    EventBus.$on('showContactForm', () => {
+      this.showContactForm = true
+      this.allowSlideChange = false
+    })
+    EventBus.$on('closeContactForm', () => {
+      this.showContactForm = false
+      this.allowSlideChange = true
+    })
   }
 }
 </script>

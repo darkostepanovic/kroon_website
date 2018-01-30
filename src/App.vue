@@ -71,7 +71,6 @@ export default {
       this.resizeAndPositionSvg()
     },
     resizeAndPositionSvg () {
-      console.log(window.outerHeight)
       const svg = Snap.select('#home-svg-path')
       const scaleMatrix = new Snap.Matrix()
       switch (this.homeSlide) {

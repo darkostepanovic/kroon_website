@@ -1,7 +1,7 @@
 <template>
   <div class="home-slide" id="home-slide-5">
     <h3 class="animated" :class="{'fadeInDown': allowFadeIn}">Ready to get started in a project?</h3>
-    <button class="animated animation-delay-1" :class="{'fadeInDown': allowFadeIn}" type="button">get in touch now</button>
+    <button @click="showContactForm" class="animated animation-delay-1" :class="{'fadeInDown': allowFadeIn}" type="button">get in touch now</button>
     <div id="footer" class="animated animation-delay-2" :class="{'fadeInDown': allowFadeIn}">
       <div id="offices">
         <h4>Offices</h4>
@@ -51,6 +51,7 @@
 </template>
 
 <script>
+import { EventBus } from '../../../event-bus'
 export default {
   data () {
     return {
@@ -59,6 +60,11 @@ export default {
   },
   created () {
     this.allowFadeIn = true
+  },
+  methods: {
+    showContactForm () {
+      EventBus.$emit('showContactForm')
+    }
   }
 }
 </script>

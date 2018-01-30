@@ -1,0 +1,159 @@
+.modal-mask {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.88);
+  display: table;
+  transition: opacity 0.3s ease;
+  .modal-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    .modal-container {
+      width: 490px;
+      margin: 0px auto;
+      background-color: #fff;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+      .modal-body {
+        min-height: 581px;
+        position: relative;
+        padding-top: 150px;
+        svg {
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+        .modal-content {
+          padding: 10px 55px 65px;
+          text-align: left;
+          position: relative;
+          h2 {
+            font-weight: 700;
+            font-size: 24px;
+          }
+          p {
+            font-weight: 400;
+            font-size: 16px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+          }
+          input {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #000;
+            font-size: 16px;
+            padding-bottom: 8px;
+            margin-top: 30px;
+            outline: none;
+            &::placeholder {
+              color: #000;
+              font-weight: 700;
+            }
+            &.error-border {
+              border-color: red;
+            }
+            &#adding-value {
+              width: 49px;
+              height: 42px;
+              border: 1px solid #000;
+              border-radius: 5px;
+              display: inline-block;
+              padding: 0;
+              text-align: center;
+              -moz-appearance:textfield;
+              &::-webkit-inner-spin-button,
+              &::-webkit-outer-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+              }
+              &.error-border {
+                border-color: red;
+              }
+            }
+          }
+          #adding-numbers {
+            line-height: 42px;
+            font-size: 16px;
+            font-weight: 700;
+            display: inline-block;
+          }
+          #submit-message-btn {
+            display: inline-block;
+            width: 182px;
+            height: 42px;
+            padding: 0;
+            float: right;
+            border-radius: 5px;
+            border: 1px solid #4973FF;
+            background-image: -webkit-linear-gradient(to right, #4973FF , #FF2E2E);
+            background-image: linear-gradient(to right, #4973FF , #FF2E2E);
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+            font-weight: 700;
+            font-size: 14px;
+            text-align: left;
+            padding-left: 15px;
+            cursor: pointer;
+          }
+          .error-text {
+            font-size: 14px;
+            font-weight: 400;
+            color: red;
+            margin-top: 20px;
+          }
+        }
+        .modal-thank-you {
+          position: relative;
+          z-index: 1;
+          padding: 0 50px;
+          h2 {
+            font-size: 40px;
+            font-weight: 700;
+            text-transform: uppercase;
+          }
+          p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 23px;
+            margin-top: 30px;
+            span {
+              font-weight: 700;
+            }
+          }
+          button {
+            font-size: 22px;
+            font-weight: 700;
+            text-transform: uppercase;
+            height: 42px;
+            width: 107px;
+            border-radius: 5px;
+            border: 1px solid #fff;
+            background: none;
+            cursor: pointer;
+            margin-top: 100px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.modal-enter {
+  opacity: 0;
+}
+
+.modal-leave-active {
+  opacity: 0;
+}
+
+.modal-enter .modal-container,
+.modal-leave-active .modal-container {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
