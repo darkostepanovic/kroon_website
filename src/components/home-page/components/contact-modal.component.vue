@@ -19,7 +19,7 @@
                     </g>
                 </g>
             </svg>
-            <div v-if="showForm" class="modal-content">
+            <div v-if="showForm" class="modal-form-content">
               <h2>Hey there,</h2>
               <p>Write us a message below, and we'll get back to you in the next 24h</p>
               <form action="/Concept7/mail.php" method="POST">
