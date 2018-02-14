@@ -153,6 +153,27 @@
   }
 }
 
+.slide-navigation-component {
+  height: 350px;
+  position: absolute;
+  top: calc(50vh - 175px);
+  right: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .slide-nav-btn {
+    flex: 1;
+    width: 1px;
+    background-color: #000;
+    margin: 3px 0;
+    cursor: pointer;
+    transition: flex 0.5s ease;
+    &.current {
+      flex: 0.1;
+    }
+  }
+}
+
 #pagination {
   position: absolute;
   bottom: 65px;

@@ -4,6 +4,7 @@
       <component :is="currentslide"></component>
     </transition>
     <soc-nav v-show="showSocialAndPagination" />
+    <slide-nav v-show="showSocialAndPagination" :slide="slide" @changeSlide="changeSlide"></slide-nav>
     <div id="pagination" v-show="showSocialAndPagination">
       {{ slide }} / 5
     </div>
@@ -18,6 +19,7 @@ import Slide_3 from './components/slide_3.component'
 import Slide_4 from './components/slide_4.component'
 import Slide_5 from './components/slide_5.component'
 import SocialNav from './components/social-navigation.component'
+import SlideNav from './components/slide-navigation.component'
 import ContactForm from './components/contact-modal.component'
 import { EventBus } from '../../event-bus'
 export default {
@@ -28,6 +30,7 @@ export default {
     'slide_4': Slide_4,
     'slide_5': Slide_5,
     'soc-nav': SocialNav,
+    'slide-nav': SlideNav,
     'contact-modal': ContactForm
   },
   data () {
@@ -68,6 +71,16 @@ export default {
           }
         }
       }
+    },
+    changeSlide (val) {
+      this.allowSlideChange = false
+      this.slide = val
+      EventBus.$emit('slideChanged', {
+        currentSlide: this.slide
+      })
+      setTimeout(() => {
+        this.allowSlideChange = true
+      }, 2000)
     }
   },
   watch: {

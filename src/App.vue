@@ -75,7 +75,7 @@ export default {
       const scaleMatrix = new Snap.Matrix()
       switch (this.homeSlide) {
         case 1:
-          scaleMatrix.scale(window.outerWidth / 1920, 1)
+          scaleMatrix.scale(window.outerWidth / 1920, window.innerHeight / 960)
           scaleMatrix.translate(-900, -1000)
           break;
         case 2:
