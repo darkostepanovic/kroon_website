@@ -101,7 +101,11 @@ export default {
           break;
         case 5:
           scaleMatrix.scale(window.outerWidth / 1920, window.innerHeight / 960)
-          scaleMatrix.translate(-100, -100)
+          if (window.outerWidth < 993) {
+            scaleMatrix.translate(-100, -250)
+          } else {
+            scaleMatrix.translate(-100, -100)
+          }
           break;
       }
       svg.animate({ transform: scaleMatrix }, 1000, mina.backout)

@@ -1,6 +1,7 @@
 .home-slide {
   height: 100vh;
   width: 100%;
+  padding: 0 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,6 +25,7 @@
     .left-cont {
       max-width: 625px;
       text-align: left;
+      flex-shrink: 0;
       h2 {
         font-size: 70px;
         line-height: 81px;
@@ -50,6 +52,7 @@
         -webkit-background-clip: text;
         font-weight: 700;
         font-size: 14px;
+        line-height: 42px;
         text-align: left;
         padding-left: 15px;
         cursor: pointer;
@@ -79,6 +82,7 @@
       border: 2px solid #fff;
       border-radius: 5px;
       color: #fff;
+      line-height: 70px;
       font-size: 20px;
       font-weight: 700;
       background-color: transparent;
@@ -178,7 +182,7 @@
 #pagination {
   position: absolute;
   bottom: 65px;
-  left: 35px;
+  right: 35px;
   font-size: 22px;
   font-weight: 700;
 }
@@ -267,6 +271,9 @@
             margin-top: 20px;
           }
         }
+      }
+      #latest {
+        flex: 1;
       }
     }
   }
@@ -370,6 +377,43 @@
       img {
         width: 383px;
         height: 314px;
+      }
+    }
+    &#home-slide-5 {
+      h3 {
+        font-size: 30px;
+        margin-top: 90px;
+      }
+      button {
+        width: 250px;
+        height: 55px;
+        font-size: 18px;
+        margin-top: 40px;
+        line-height: 55px;
+      }
+    }
+    #footer {
+      margin-top: 130px;
+      flex-flow: row wrap;
+      > div {
+        min-width: 214px;
+      }
+      #latest {
+        margin-top: 50px;
+        flex: 0.5;
+      }
+    }
+  }
+}
+
+@media (max-width: 781px) {
+  .home-slide {
+    #footer {
+      #join {
+        margin-top: 50px;
+      }
+      #latest {
+        flex: 1;
       }
     }
   }
