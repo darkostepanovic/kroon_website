@@ -44,7 +44,7 @@ export default {
   },
   methods: {
     handleScroll (event) {
-      if (this.allowSlideChange) {
+      if (this.allowSlideChange && this.$route.name === 'home') {
         if (event.wheelDelta > 0 || event.detail < 0 || event.keyCode === 38) {
           // scroll up
           if (this.slide > 1) {

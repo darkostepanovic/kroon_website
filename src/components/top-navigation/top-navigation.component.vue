@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="top-navigation-component">
-      <span id="top-nav-home-btn">concept7</span>
+      <router-link id="top-nav-home-btn" to="/">concept7</router-link>
       <svg @click="openMenu" width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <defs></defs>
           <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">

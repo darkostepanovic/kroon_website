@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './../components/home-page/home'
-import Portfolio1 from './../components/portfolios/portfolio_1'
+import Guh from './../components/portfolios/guh-portfolio'
 
 Vue.use(Router)
 
@@ -14,9 +14,9 @@ let router = new Router({
       component: Home
     },
     {
-      path: '/portfolio-1',
-      name: 'portfolio-1',
-      component: Portfolio1
+      path: '/guh',
+      name: 'guh-portfolio',
+      component: Guh
     }
   ]
 })
