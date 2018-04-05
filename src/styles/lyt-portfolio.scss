@@ -1,0 +1,733 @@
+#lyt-portfolio {
+  overflow: hidden;
+  text-align: left;
+  padding-bottom: 250px;
+
+  .g-light {
+    font-weight: 300;
+  }
+
+  .g-book {
+    font-weight: 400;
+  }
+
+  .g-bold {
+    font-weight: 7700;
+  }
+
+  .font-dark {
+    color:#333;
+  }
+
+  .font-white {
+    color:white;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .med-wrap{
+    max-width: 810px;
+    margin: 0 auto;
+  }
+
+  h2 {
+    font-size: 66px;
+
+  }
+
+  h4 {
+    font-size: 20px;
+    line-height: 28px;
+    margin-top:-24px;
+  }
+
+  h3 {
+    font-size: 40px;
+    line-height: 45px;
+    margin-top:-24px;
+  }
+
+  span {
+    font-size: 16px;
+    margin-top:20px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    color:#333;
+    line-height: 28px;
+  }
+
+  .image-center {
+    margin-top:100px;
+    width: 100%;
+    max-width: 1000px;
+  }
+
+
+
+  .section {
+    width:100%;
+    height:auto;
+    float: left;
+
+  }
+
+  .row {
+    display: block;
+      width:100%;
+      max-width: 1600px;
+      margin: 0 auto;
+  }
+
+  .col-left {
+    width:50%;
+    height: auto;
+    position: relative;
+  }
+
+  .col-right {
+    width:50%;
+    height: auto;
+    position: relative;
+  }
+
+  .pull-left {
+    float: left;
+  }
+
+  .head-wrap {
+    width: 100%;
+    height: 100vh;
+    float: left;
+    display: flex;
+    align-items: center;
+  }
+
+
+  .cont {
+    width: 100vw;
+    height: 10000px;
+    float: left;
+    overflow: hidden;
+    margin: 0;
+    margin-left: -8px;
+    margin-top: -8px;
+  }
+
+  .full-width {
+      width: 100%;
+      height: auto;
+      background-image: url(./assets/portfolios/lyt/stars.jpg);
+      background-repeat: no-repeat;
+      background-size: 240%;
+      background-position: 46% 380px;
+  }
+
+  .bg-dark-purple {
+    background-color:#1D0B2D;
+  }
+
+
+
+
+  .center-holder {
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      float: left;
+      position: relative;
+  }
+
+  .iphones {
+    width:100%;
+  }
+
+
+
+  @media (min-width: 320px) {
+
+    .curve {
+      width: 101%;
+          height: 180px;
+          background-image: url(./assets/portfolios/lyt/theCurve.svg);
+          background-size: 100%;
+          float: left;
+          background-repeat: no-repeat;
+    }
+
+
+    p {
+        font-weight: 400;
+        font-size: 16px;
+        color: #333;
+        line-height: 24px;
+    }
+
+
+    h1 {
+      font-size: 40px;
+      font-weight: 300;
+    }
+
+    h2 {
+      font-size: 32px;
+      font-weight: 300;
+    }
+
+
+    h3 {
+      font-size: 24px;
+      line-height: 28px;
+      margin-top: -24px;
+      font-weight: 7700;
+  }
+
+  h4 {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 10px;
+    font-weight: 400;
+  }
+
+  .row {
+    width: 80%;
+  }
+
+    .col-left {
+      width:100%;
+      height: auto;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .s-fix {
+      margin-top: 900px;
+    }
+
+
+    .header-below {
+        width: 350%;
+        position: absolute;
+        top: -910px;
+        left: 30px;
+    }
+
+   .header-above {
+     position: relative;
+     z-index: 1;
+     width: 160%;
+     top: -840px;
+     margin: 0 auto;
+     left: calc(51% - 29%);
+   }
+
+   #lyt-low {
+     margin-top:430px;
+   }
+
+   .lyt-low {
+      width: 190%;
+      position: relative;
+      left: -64%;
+      top: 30px;
+  }
+
+  .full-width {
+    height: 1000px;
+    padding-top: 50px;
+  }
+
+  .bow {
+      width: 744px;
+      left: calc(50% - 372px);
+      position: absolute;
+  }
+
+  .phone {
+      width: 344px;
+      left: calc(50% - 131px);
+      position: absolute;
+      z-index: 1;
+      top: 140px;
+  }
+
+  .iphones {
+      width: 560px;
+      margin-left: calc(50% - 280px);
+      margin-top: 40px;
+  }
+
+  .tents {
+      width: 500px;
+      margin-left: calc(50% - 250px);
+  }
+
+  }
+
+
+  @media (min-width: 323px) {
+    .guh-header-below {
+        width: 310%;
+        position: absolute;
+        top: -1330px;
+    }
+
+
+  }
+
+  @media (min-width: 411px) {
+
+  }
+
+
+  @media (min-width: 576px) {
+
+    .guh-header-below {
+        width: 220%;
+        position: absolute;
+        top: -1300px;
+    }
+
+    .guh-header-above {
+        position: relative;
+        z-index: 1;
+        width: 130%;
+        top: -780px;
+        margin: 0 auto;
+        left: calc(51% - 14%);
+    }
+
+    h2 {
+      font-size: 46px;
+
+    }
+
+    .col-left {
+      width:80%;
+      height: auto;
+      margin: 0 auto;
+      position: relative;
+    }
+
+
+  }
+
+
+
+  @media (min-width: 768px) {
+
+
+    h2 {
+        font-size: 40px;
+        font-weight: 300;
+    }
+
+    h3 {
+      font-size: 36px;
+      line-height: 43px;
+      margin-top: -24px;
+      font-weight: 300;
+  }
+
+
+    .col-left {
+      width:100%;
+      height: auto;
+      margin: 0 auto;
+      position: relative;
+    }
+
+
+    .full-width {
+        height: 1272px;
+        padding-top: 50px;
+    }
+
+    .curve {
+      width: 101%;
+      height: 250px;
+      background-image: url(./assets/portfolios/lyt/theCurve.svg);
+      background-size: 100%;
+      float: left;
+      background-repeat: no-repeat;
+  }
+
+  .iphones {
+      width: 930px;
+      margin-left: calc(50% - 465px);
+      margin-top: 40px;
+  }
+
+  .tents {
+      width: 1000px;
+      margin-left: calc(50% - 500px);
+  }
+
+  .bow {
+      width: 1454px;
+      left: calc(50% - 732px);
+      position: absolute;
+      top: -52px;
+      height: 830px;
+  }
+
+
+  .guh-header-below {
+    width: 300%;
+    position: absolute;
+    top: -1770px;
+  }
+
+
+  .guh-header-above {
+    position: relative;
+        z-index: 1;
+        width: 130%;
+        top: -840px;
+        margin: 0 auto;
+        left: calc(51% - 13%);
+  }
+
+
+
+  }
+
+  @media (min-width: 800px) {
+    .guh-header-below {
+      width: 250%;
+    position: absolute;
+    top: -1720px;
+    }
+  .guh-header-above {
+    position: relative;
+      z-index: 1;
+      width: 100%;
+      top: -770px;
+      margin: 0 auto;
+      left: calc(51% - -9%);
+  }
+
+
+  }
+
+
+  @media (min-width: 960px) {
+
+    .phone {
+        width: 654px;
+        left: calc(50% - 246px);
+        position: absolute;
+        z-index: 1;
+        top: 140px;
+    }
+
+
+  .full-width {
+      width:100%;
+        height: 1672px;
+      background-image: url(./assets/portfolios/lyt/stars.jpg);
+      background-repeat: no-repeat;
+      background-size: 160%;
+      background-position: 46% 860px;
+  }
+
+  .tents {
+      width: 1300px;
+      margin-left: calc(50% - 650px);
+      margin-top: 140px;
+  }
+
+  .iphones {
+      width: 1400px;
+      margin-left: calc(50% - 700px);
+      margin-top: 100px;
+  }
+
+  .curve {
+      width: 101%;
+      height: 343px;
+      background-image: url(./assets/portfolios/lyt/theCurve.svg);
+      background-size: 100%;
+      float: left;
+      background-repeat: no-repeat;
+  }
+
+    .s-fix {
+        margin-top: 0px;
+    }
+
+    .row {
+      max-width: 768px;
+    }
+
+    .inner-col-wrap {
+      width: 100%;
+      padding-left: 0%;
+    }
+
+    .col-left {
+      width:50%;
+      height: auto;
+      float: left;
+      position: relative;
+    }
+
+
+      .guh-header-below {
+        width: 199%;
+            position: absolute;
+            top: -378px;
+            z-index: 0;
+            left: 110px;
+      }
+
+      .guh-header-above {
+        width: 123%;
+      position: absolute;
+      top: -28px;
+      z-index: 1;
+      left: 30px;
+      }
+
+
+      .s-fix {
+      margin-top: 140px;
+  }
+
+  #lyt-low {
+      margin-top: -29px;
+  }
+
+  .lyt-low {
+      width: 150%;
+      position: relative;
+      left: -27%;
+      top: 80px;
+  }
+
+  .phone {
+      width: 524px;
+      left: calc(50% - 176px);
+      position: absolute;
+      z-index: 1;
+      top: 210px;
+  }
+
+  .curve {
+      width: 101%;
+      height: 343px;
+      background-image: url(./assets/portfolios/lyt/theCurve2.svg);
+      background-size: 100%;
+      float: left;
+      background-repeat: no-repeat;
+  }
+
+
+  #lyt-responsive {
+      margin-top: -160px;
+  }
+
+  #lyt-responsive {
+      margin-top: -80px;
+  }
+
+  .header-below {
+      width: 350%;
+      position: absolute;
+      top: -110px;
+      left: 70px;
+  }
+
+
+  }
+
+
+
+
+
+
+
+
+  @media (min-width: 1200px) {
+
+    .lyt-low {
+      width: 100%;
+      position: relative;
+      left: 0%;
+      top: 70px;
+  }
+
+    .row {
+      max-width: 1140px;
+    }
+
+    .guh-be {
+      width: 90%;
+    }
+
+    .col-left-1 {
+      width:50%;
+      height: auto;
+      position: relative;
+      float: left;
+      min-height: 1px;
+    }
+
+    .col-right-1 {
+      width:50%;
+      height: auto;
+      position: relative;
+      float: left;
+    }
+
+    .inner-col-wrap {
+      width: 70%;
+      padding-left: 10%;
+    }
+
+    .phone {
+      width: 560px;
+      left: calc(50% - 195px);
+      position: absolute;
+      z-index: 1;
+      top: 241px;
+  }
+
+    .bow {
+      width: 1800px;
+      left: calc(50% - 900px);
+      position: absolute;
+      top: 28px;
+      height: 1069px;
+  }
+
+  .full-width {
+    width: 100%;
+    height: 1922px;
+    background-image: url(./assets/portfolios/lyt/stars.jpg);
+    background-repeat: no-repeat;
+    background-size: 160%;
+    background-position: 46% 910px;
+  }
+
+  .row {
+    width: 100%;
+  }
+
+  .col-6 {
+    width:50%;
+    padding-left:5%;
+  }
+
+  .curve {
+      width: 101%;
+      height: 410px;
+      background-image: url(./assets/portfolios/lyt/theCurve2.svg);
+      background-size: 100%;
+      float: left;
+      background-repeat: no-repeat;
+  }
+
+  .s-fix {
+      margin-top: 250px;
+  }
+
+  .header-below {
+      width: 200%;
+      position: absolute;
+      top: 120px;
+      left: 30px;
+  }
+
+  #lyt-low {
+      margin-top: 80px;
+  }
+
+  #lyt-responsive {
+      margin-top: -160px;
+  }
+
+
+  }
+
+  @media (min-width: 1400px) {
+    .row {
+      max-width:1200px;
+    }
+
+
+  .guh-header-below {
+    width: 139%;
+    position: absolute;
+    top: -378px;
+    z-index: 0;
+    left: 160px;
+  }
+
+  .guh-header-above {
+    width: 93%;
+    position: absolute;
+    top: calc(50% - 60px);
+    z-index: 1;
+    left: -40px;
+  }
+
+
+
+  }
+
+
+  @media (min-width: 1600px) {
+    .row {
+      max-width:1400px;
+    }
+
+    .full-width {
+      width: 100%;
+      height: 2012px;
+      background-image: url(./assets/portfolios/lyt/stars.jpg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: 46% 1070px;
+  }
+
+  .phone {
+      width: 621px;
+      left: calc(50% - 295px);
+      position: absolute;
+      z-index: 1;
+      top: 311px;
+  }
+
+
+    .guh-header-below {
+      width: 159%;
+    position: absolute;
+    top: calc(50% - 550px);
+    z-index: 0;
+    left: 160px;
+    }
+
+    .guh-header-above {
+      width: 83%;
+    position: absolute;
+  top: calc(50% - 79px);
+    z-index: 1;
+    left: -40px;
+    }
+
+    .s-fix {
+      margin-top: 350px;
+  }
+
+  #lyt-responsive {
+      margin-top: -99px;
+  }
+
+  }
+
+}

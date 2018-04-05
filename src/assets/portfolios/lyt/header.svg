@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1077px" height="908px" viewBox="0 0 1077 908" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>Mask</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="133.66887%" y1="-48.1971154%" x2="-34.5552885%" y2="144.906851%" id="linearGradient-1">
+            <stop stop-color="#4973FF" offset="0%"></stop>
+            <stop stop-color="#AB4E8E" offset="54.0116393%"></stop>
+            <stop stop-color="#AB4E8E" offset="54.0116393%"></stop>
+            <stop stop-color="#FB3033" offset="97.648999%"></stop>
+            <stop stop-color="#FF2E2E" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M253.019268,175.213012 C766.023158,330.62057 410.766914,-141.609778 824.852597,26.4543371 C1238.93828,194.518452 1162.14595,794.19498 1016.75453,747.27394 C871.363103,700.3529 428.680754,302.599638 272.670462,661.708727 C116.66017,1020.81782 -259.984622,19.8054541 253.019268,175.213012 Z" id="Mask" fill="url(#linearGradient-1)" transform="translate(562.771740, 369.806855) rotate(23.000000) translate(-562.771740, -369.806855) "></path>
+    </g>
+</svg>

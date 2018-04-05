@@ -1,131 +1,227 @@
 <template>
   <div id="guh-portfolio">
-    <div class="container">
-      <div class="row">
-        <div class="col-7 overtop-fix">
-          <h1 class="g-light gray">Now it's time to connect everthing with nymea</h1>
-        </div>
-      </div>
-      <!-- <div class="row">
-        <img class="main-g" src="./../../assets/portfolios/guh/guhsvg.svg"/>
-      </div> -->
-    </div>
+    <div class="cont" v-show="showContent">
 
-    <div class="container">
-      <div class="row">
-        <h2 class="g-light col-5">What we did</h2>
-        <div class="offset-1 para g-light col-4">
-          In collaboration with guh team, we help conceptulize, design and think throught UX of their admin application, a web based app that enables guh customers to offer connected services to their end users. This application features very complex and rich functionality that allows for user tracking, setting up connectivity logic, services management as well as usability stats tracking.</p>
+      <div class="head-wrap">
+        <div class="section font-dark" id="guh-header">
+          <div class="row">
+            <div class="col-left">
+              <div class="inner-col-wrap foo">
+                <h1 class="s-fix">Nymea.io</h1>
+                <div class="foo">
+                  <p>
+                    Nymea is IoT operating system, that allows any device with interntect connection to
+                    become an IoT device. With the vision that it’s time to connect everything, Nymea is
+                    disrupting the IoT space but allowing other business to make their services and products
+                    IoT with incredible easiness and few simple steps.
+                  </p>
+                  <span class="font-dark g-bold">Impact of Concept7</span>
+                  <p>
+                    Concept7 was in charge of development of UX / UI of Nymea OS consumer interface - that
+                    allowed for management of plugins, users, upgrades, logic rules and many other functionalities.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-right pull-left">
+              <img class="guh-header-above foo" src="./../../assets/portfolios/guh/guh-header-above.svg"/>
+              <!-- <img class="guh-header-below" src="./../../assets/portfolios/guh/guh-header.svg"/> -->
+            </div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="offset-1 col-10 offset-lg-2 col-lg-8  gray g-light margin-top-fix text-center">
-          <div class="l-title-spec">Complex, yet intuitive UX to Connect everything</div>
+      <div class="section foo2" id="guh-usage">
+        <div class="row">
+          <div class="med-wrap font-dark text-center foo2">
+            <h2>Complex, yet intuitive UX to Connect everything</h2>
+            <h4 class="foo2">
+              By combining technology and user experince rules and learnings,
+              we were able to bring down comlexity of on operating system to level of averege web portal.
+            </h4>
+          </div>
         </div>
-        <div class="col-10 offset-1 col-sm-10 offset-sm-1 col-md-12 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3 text-center">
-          <div class="para g-book para-fix">Weather you are garage door manufacutrer, produce audio equpment or you are in security bussiness, now you can offer IoT feature to your customers throught your deivces and services.</div>
-          <div class="special-title g-bold">Usage examples of guh system</div>
+        <div class="row text-center foo2">
+          <img class="no-mobile image-center" src="./../../assets/portfolios/guh/guh-usage.svg"/>
+          <img class="yes-mobile image-center" src="./../../assets/portfolios/guh/guh-usage-mobile.svg"/>
         </div>
       </div>
-      <div class="row">
-        <div class="col-10 col-lg-8 offset-lg-2 offset-1 text-center">
-          <img class="image1" src="./../../assets/portfolios/guh/image1mobile.png"/>
-          <img class="image1-1" src="./../../assets/portfolios/guh/image1-1.jpg"/>
-        </div>
-      </div>
-    </div>
 
-    <div class="container container-margin-fix">
-      <div class="row">
-        <div class="col-10 offset-1 col-lg-4 offset-md-1 col-sm-12">
-          <div class="m-title g-light">Dasboard to monitor devices, users and information</div>
-          <div class="para g-book para-fix">With customizable widgets one can set up a view to easly monitor all relevant information and have an easy access to more details view of each device, service or users as well as revenue and usage stats.</div>
-        </div>
-        <div class="col-12 col-md-6">
-          <img class="image-abs" src="./../../assets/portfolios/guh/testsvg.svg"/>
-          <img class="image-abs-under" src="./../../assets/portfolios/guh/image2under1.png"/>
+      <div class="section font-dark" id="guh-dashboard">
+        <div class="row">
+          <div class="col-left foo4">
+            <div class="inner-col-wrap">
+              <h3>Dasbhoard as an overview of the system</h3>
+              <p>
+                By utilzing the dahboard view packed with data widgets we are able to show an overview of
+                users IoT bussines at glance. Dashboard shows user developemnt, devices overivew, income and data usage.
+              </p>
+            </div>
+          </div>
+          <div class="col-right pull-left">
+            <img class="dashboard-above foo3" src="./../../assets/portfolios/guh/guh-dashboard.svg"/>
+            <img class="dashboard-below foo3" src="./../../assets/portfolios/guh/guh-dashboard2.svg"/>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="container section2">
-      <div class="row">
-        <div class="col-12 col-md-8 offset-md-2 text-center">
-          <div class="special-title g-bold">Usage examples of guh system</div>
-          <img class="full-img trick-off" src="./../../assets/portfolios/guh/image3.jpg"/>
-          <img class="full-img trick-on" src="./../../assets/portfolios/guh/image3mobile.jpg"/>
+      <div class="section foo9" id="guh-parts">
+        <div class="row">
+          <div class="med-wrap font-dark text-center">
+          </div>
+        </div>
+        <div class="row text-center">
+          <img class="no-mobile image-center" src="./../../assets/portfolios/guh/guh-parts.svg"/>
+          <img class="yes-mobile image-center" src="./../../assets/portfolios/guh/guh-parts-mobile.svg"/>
         </div>
       </div>
-    </div>
 
-    <div class="container section3">
-      <div class="row">
-        <div class="col-10 offset-1 col-lg-4 offset-md-1 col-sm-12">
-          <div class="m-title g-light t3">Plugins marketplace offer endless possibilities for connecting prodcuts and services</div>
-          <div class="para g-book para-fix">One can browse pottentially large number of plugins, that offer varius connected services. With the idea of open API, nymea is looking to enrisch peoples IoT experince by providing 3rd party plugins and in that manner provide the ability to connect alsmot anything.</div>
-        </div>
-        <div class="col-12 col-md-6">
-          <img class="sm-under foo" src="./../../assets/portfolios/guh/servicesmarketplace-under.jpg"/>
-          <img class="sm foo" src="./../../assets/portfolios/guh/servicesmarketplace.png"/>
+      <div class="section font-dark" id="guh-marketplace">
+        <div class="row">
+          <div class="col-left foo5">
+            <div class="inner-col-wrap">
+              <h3>Marketplace - dicovering what your devices can do</h3>
+              <p>
+                Marketplace of Nymea offers pluging for hindresd of devices,
+                servces and situation (made by 3rd party developers or manufactureres)
+                that now can extend possiblity of ones devices to an inimaginable level.
+                This allows for customers of Nymea to offer amazing services to their cusomter
+                that before they could’d even imagined.
+              </p>
+            </div>
+          </div>
+          <div class="col-right pull-left">
+            <img class="marketplace-above foo6" src="./../../assets/portfolios/guh/guh-marketplace-above.svg"/>
+            <img class="marketplace-below foo6" src="./../../assets/portfolios/guh/guh-marketplace-below.svg"/>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="container section4">
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <img class="ds-under" src="./../../assets/portfolios/guh/dsunder.jpg"/>
-          <img class="ds" src="./../../assets/portfolios/guh/ds@2x.png"/>
-        </div>
-        <div class="col-10 offset-1 col-lg-4 offset-md-1 col-sm-12">
-          <div class="m-title g-light t4">Intaling new connected service easy as online shopping</div>
-          <div class="para g-book para-fix">Adding new abilityes for your nymea device is easy as shopping for a book. All you need to do is find a plugin of your intrest and with a click of a button is being applyed to your system.</div>
+      <div class="section font-dark" id="guh-product">
+        <div class="row">
+          <div class="col-left-1">
+            <img class="product-above foo7" src="./../../assets/portfolios/guh/guh-product-above.svg"/>
+            <img class="product-below foo7" src="./../../assets/portfolios/guh/guh-product-below.svg"/>
+          </div>
+          <div class="col-right-1 foo8">
+            <div class="inner-col-wrap">
+              <h3>Adding a service - easy as online shopping</h3>
+              <p>
+                As in the intere project, imperative was hot to buld Nymea in a way that an IoT
+                servces can now be accessed, understood and used by an average interenet users,
+                no differentce was made when installing new service. All it take is simple click
+                of a button (and credit card number :)
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="container section5">
-      <div class="row">
-        <div class="col-10 offset-1 col-lg-4 offset-md-1 col-sm-12">
-          <div class="m-title g-light t5">Plugins marketplace offer endless possibilities for connecting prodcuts and services</div>
-          <div class="para g-book para-fix">One can browse pottentially large number of plugins, that offer varius connected services. With the idea of open API, nymea is looking to enrisch peoples IoT experince by providing 3rd party plugins and in that manner provide the ability to connect alsmot anything.</div>
-        </div>
-        <div class="col-12 col-md-6">
-          <img class="bundles foo" src="./../../assets/portfolios/guh/bundles.jpg"/>
+      <div class="section font-dark" id="guh-bundles">
+        <div class="row">
+          <div class="col-left foo10">
+            <div class="inner-col-wrap">
+              <h3>Freedom to customize servies to your user's needs</h3>
+              <p>
+                We built nymea with flexibility and in way that can be accomodated to varous bussiness needs.
+                Nymea OS offers the obilty to customize connected servies and offer them to end users as bundless,
+                available thought montly subscribsions.
+              </p>
+            </div>
+          </div>
+          <div class="col-right pull-left">
+            <img class="bundles foo11" src="./../../assets/portfolios/guh/guh-bundles.svg"/>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="container section6">
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <img class="users-under" src="./../../assets/portfolios/guh/userunder.jpg"/>
-          <img class="users" src="./../../assets/portfolios/guh/users.png"/>
-        </div>
-        <div class="col-10 offset-1 col-lg-4 offset-md-1 col-sm-12">
-          <div class="m-title g-light t6">Intaling new connected service easy as online shopping</div>
-          <div class="para g-book para-fix">Adding new abilityes for your nymea device is easy as shopping for a book. All you need to do is find a plugin of your intrest and with a click of a button is being applyed to your system.</div>
+      <div class="section font-dark" id="guh-users">
+        <div class="row">
+          <div class="col-left-1">
+            <img class="users-above foo12" src="./../../assets/portfolios/guh/guh-users-above.svg"/>
+            <img class="users-below foo12" src="./../../assets/portfolios/guh/guh-users-below.svg"/>
+          </div>
+          <div class="col-right-1 foo13">
+            <div class="inner-col-wrap">
+              <h3>Adding a service - easy as online shopping</h3>
+              <p>
+                As in the intere project, imperative was hot to buld Nymea in a way that an IoT servces can now be accessed,
+                understood and used by an average interenet users, no differentce was made when installing new service.
+                All it take is simple click of a button (and credit card number :)
+              </p>
+            </div>
+          </div>
         </div>
       </div>
+
+      <div class="section font-dark" id="guh-tele">
+      <div class="row">
+        <div class="col-left foo15">
+          <div class="inner-col-wrap">
+            <h3>Telemetry - devices now speak your languages</h3>
+            <p>
+              Nyema makes it possible not only to use plugins found in the marketplace, but alos programm your own devices,
+              by using simple and visual IF statments. Sorry, that about it how much we can disclaim about this functionality :)
+            </p>
+          </div>
+        </div>
+        <div class="col-right pull-left">
+          <img class="tele-above foo14" src="./../../assets/portfolios/guh/guh-tele-above.svg"/>
+          <img class="tele-below foo14" src="./../../assets/portfolios/guh/guh-tele-below.svg"/>
+        </div>
+      </div>
+      </div>
+
+      <div class="section" id="guh-be">
+        <div class="row text-center">
+          <img class="guh-be" src="./../../assets/portfolios/guh/guh-be.svg"/>
+        </div>
+      </div>
+
+      <div class="section finisher">
+        <div class="row text-center">
+          <h2>Ready to get started with a project</h2>
+          <button>Get in touch</button>
+        </div>
+      </div>
+
     </div>
   </div>
 </template>
 
 <script type="text/babel">
 import ScrollReveal from 'scrollreveal'
+import { EventBus } from './../../event-bus'
 export default {
   name: 'guh-portfolio',
-  mounted () {
-    window.sr = ScrollReveal({ reset: true })
-    sr.reveal('.foo', { duration: 1200, scale: 1, distance:'70px', easing: 'ease', viewFactor:'0.5',reset: false,}, 350)
-    sr.reveal('.foo2', {duration: 1200, scale: 1, distance:'70px', easing: 'ease', viewFactor:'0.5', reset: false, useDelay: 'always',}, 350)
-    sr.reveal('.foo3', {duration: 1200, scale: 1, distance:'70px', easing: 'ease', viewFactor:'0.4', reset: false,}, 350)
-    sr.reveal('.foo4', {duration: 1200, scale: 1, opacity:'1', distance:'270px', easing: 'ease', viewFactor:'0.4', reset: false,}, 350)
-    sr.reveal('.foo5', {duration: 1200, scale: 1, distance:'170px', easing: 'ease', viewFactor:'0.4', reset: false,}, 350)
-    sr.reveal('.foo6', {duration: 1200, scale: 1, distance:'70px', easing: 'ease', viewFactor:'0.4', reset: false,}, 350)
+  data () {
+    return {
+      showContent: false
+    }
+  },
+  created () {
+    EventBus.$on('morphEnded', () => {
+      this.showContent = true
+      this.attachScrollReveal()
+    })
+  },
+  methods: {
+    attachScrollReveal () {
+      window.sr = ScrollReveal({ reset: true })
+      sr.reveal('.foo', { duration: 1200, scale: 1, distance:'30px', easing: 'ease', viewFactor:'0.2', reset: false}, 350)
+      sr.reveal('.foo2', { duration: 1200, scale: 1, distance:'30px', easing: 'ease', viewFactor:'0.2', reset: false}, 350)
+      sr.reveal('.foo3', { duration: 1200, scale: 1, distance:'70px', easing: 'ease', viewFactor:'0.7', reset: false}, 350)
+      sr.reveal('.foo4', { duration: 1200, scale: 1, distance:'30px', easing: 'ease', viewFactor:'0.3', reset: false}, 350)
+      sr.reveal('.foo6', { duration: 1200, scale: 1, distance:'70px', easing: 'ease', viewFactor:'0.7', reset: false}, 350)
+      sr.reveal('.foo5', { duration: 1200, scale: 1, distance:'30px', easing: 'ease', viewFactor:'0.3', reset: false}, 350)
+      sr.reveal('.foo7', { duration: 1200, scale: 1, distance:'70px', easing: 'ease', viewFactor:'0.7', reset: false}, 350)
+      sr.reveal('.foo8', { duration: 1200, scale: 1, distance:'30px', easing: 'ease', viewFactor:'0.7', reset: false}, 350)
+      sr.reveal('.foo9', { duration: 1200, scale: 1, distance:'30px', easing: 'ease', viewFactor:'0.3', reset: false}, 350)
+      sr.reveal('.foo10', { duration: 1200, scale: 1, distance:'30px', easing: 'ease', viewFactor:'0.3', reset: false}, 350)
+      sr.reveal('.foo11', { duration: 1200, scale: 1, distance:'70px', easing: 'ease', viewFactor:'0.3', reset: false}, 350)
+      sr.reveal('.foo12', { duration: 1200, scale: 1, distance:'70px', easing: 'ease', viewFactor:'0.3', reset: false}, 350)
+      sr.reveal('.foo13', { duration: 1200, scale: 1, distance:'30px', easing: 'ease', viewFactor:'0.7', reset: false}, 350)
+    }
   }
 }
 </script>

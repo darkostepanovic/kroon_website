@@ -2,7 +2,7 @@
   <div id="app">
     <top-nav v-show="showContent" />
     <router-view v-show="showContent"></router-view>
-    <svg width="100%" height="100%" id="app-svg">
+    <svg width="100%" height="100%" id="app-svg" :class="{'portfolio-state': portfolioState}">
         <defs>
           <linearGradient x1="133.66887%" y1="-48.1971154%" x2="-34.5552885%" y2="144.906851%" id="linearGradient-1">
               <stop stop-color="#4973FF" offset="0%"></stop>
@@ -30,6 +30,7 @@ export default {
     return {
       homeSlide: 0,
       showContent: false,
+      portfolioState: false
     }
   },
   created () {
@@ -60,14 +61,21 @@ export default {
         let route = routeName
         switch (route) {
           case 'home':
+            this.portfolioState = false
             this.homeSlide = 1
             this.morphSvg(1)
             this.resizeAndPositionSvg()
             break
           case 'guh-portfolio':
-            console.log('guh portfolio state')
-            this.morphSvg(3)
+            this.portfolioState = true
+            this.homeSlide = 2
+            this.morphSvg(2)
+            this.resizeAndPositionSvg()
+            break
+          case 'lyt-portfolio':
+            this.portfolioState = true
             this.homeSlide = 3
+            this.morphSvg(3)
             this.resizeAndPositionSvg()
             break
         }
@@ -151,7 +159,7 @@ export default {
       fromPath.animate({ d: toPathPoints }, 1000, mina.backout, this.morphCallback)
     },
     morphCallback () {
-      console.log('morph callback')
+      if (this.portfolioState) EventBus.$emit('morphEnded')
     }
   }
 }

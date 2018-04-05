@@ -3,22 +3,25 @@
   text-align: left;
   padding-bottom: 250px;
 
-  .doesit {
-    overflow-x: hidden;
-    position: absolute;
-    top:0px;
+  .finisher button {
+    width:300px;
+    height: 80px;
+    color:white;
+    font-weight: 500;
+    font-size:16px;
+    border:none;
+    background: linear-gradient(224deg, #4973ff, #ff2e2e, #ff5c00);
+    background-size: 600% 600%;
+  -webkit-animation: AnimationName 5s ease infinite;
+  -moz-animation: AnimationName 5s ease infinite;
+  animation: AnimationName 5s ease infinite;
+  text-transform: uppercase;
   }
 
-  .gray {
-    color:#333;
-  }
-
-  .light-gray {
-      color:#686868;
-  }
-
-  .white {
-    color:#fff;
+  .finisher .row {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
 
   .g-light {
@@ -33,983 +36,1659 @@
     font-weight: 700;
   }
 
-  .topsvg {
-    width: 160%;
-    position: absolute;
-    top: -390px;
-    left: 30px;
-    z-index: -1;
+  .font-dark {
+    color:#333;
   }
 
-  .topgraphic {
-    position: relative;
-    width: 100%;
-    top: 80px;
+  .text-center {
+    text-align: center;
   }
 
-  .margin-top-fix {
-    margin-top:80px;
-  }
-
-  .l-title {
-   font-size: 30px;
-  }
-
-  .para {
-    font-size: 20px;
-    line-height: 32px;
-  }
-
-  .para-fix {
-    margin-top:20px;
-  }
-
-  .special-title {
-    margin-top:20px;
-  }
-
-  .image1 {
-    width: 100%;
-    margin-top:40px;
-    display: block;
-  }
-
-  .m-title {
-    font-size: 30px;
-
-  }
-
-  .container-margin-fix {
-    margin-top: 100px;
-  }
-
-  .image-abs {
-    width: 100%;
-    position: absolute;
-    right: -48px;
-    top: 20px;
-    z-index: 1
-  }
-
-  .image-abs-under {
-    width: 100%;
-    position: absolute;
-    right: -30px;
-    top: 60px;
-    z-index: -1;
-  }
-
-  .overtop-fix {
-      margin-top: 100px;
-  }
-
-  .image1-1 {
-    display: none;
-  }
-
-  .trick-off {
-  display: none;
-  }
-
-
-  .trick-on {
-    display: block;
-  }
-
-  .l-title-spec {
-    font-size:30px;
-  }
-
-  .full-img {
-    width: 100%;
-    margin-top: 50px;
-  }
-
-  .section2 {
-  margin-top:400px;
-
-  }
-
-  .section3 {
-  margin-top:150px;
-
-  }
-
-  .sm-under {
-    width: 100%;
-        position: absolute;
-        right: -30px;
-        top: 60px;
-        z-index: -1;
-  }
-
-  .sm {
-    width: 120%;
-    position: absolute;
-    right: -48px;
-    top: 142px;
-    z-index: 1;
-  }
-
-  .section4 {
-  margin-top:500px;
-
-  }
-
-  .ds-under {
-    width: 100%;
-    position: absolute;
-    left: -30px;
-    top: 230px;
-    z-index: -1;
-  }
-
-  .ds {
-    width: 90%;
-    position: absolute;
-    left: 92px;
-    top: 322px;
-    z-index: 1;
-  }
-
-
-  .bundles {
-    width: 80%;
-    position: absolute;
-    left: 46px;
-    top: 1px;
-    z-index: 1;
-  }
-
-  .t5 {
-   margin-top:100px !important;
-  }
-
-  .section5 {
-    margin-top: 460px;
-  }
-
-
-  .section6 {
-  margin-top:50px;
-
-  }
-
-  .t6 {
-   margin-top:450px !important;
-  }
-
-  .users-under {
-    width: 110%;
-    position: absolute;
-    left: -170px;
-    top: 230px;
-    z-index: -1;
-  }
-
-  .users {
-    width: 60%;
-        position: absolute;
-        left: 282px;
-        top: 332px;
-        z-index: 1;
-  }
-
-
-  @media (min-width: 768px) {
-    .topsvg {
-      width: 110%;
-    position: absolute;
-    top: -410px;
-    left: 50px;
-    z-index: -1;
-    }
-
-    .topgraphic {
-      position: relative;
-    width: 70%;
-    top: 150px;
-  }
-
-  .overtop-fix {
-      margin-top: 140px;
-  }
-
-  .image1-1 {
-    display: block;
-    width: 100%;
-    margin-top:60px;
-  }
-
-  .image1 {
-    display: none;
-
-  }
-
-  .image-abs {
-      width: 200%;
-      position: absolute;
-      right: -459px;
-      top: -9px;
-      z-index: 1;
-  }
-
-  .image-abs-under {
-      width: 200%;
-      position: absolute;
-      right: -400px;
-      top: 170px;
-      z-index: -1;
-  }
-
-  .section2 {
-  margin-top:700px;
-
-  }
-  .section3 {
-  margin-top:150px;
-
-  }
-
-  .sm-under {
-    width: 200%;
-        position: absolute;
-        right: -490px;
-        top: 41px;
-        z-index: -1;
-  }
-
-  .sm {
-    width: 230%;
-        position: absolute;
-        right: -469px;
-        top: 161px;
-        z-index: 1;
-  }
-
-  .section4 {
-  margin-top:700px;
-
-  }
-
-  .ds-under {
-    width: 188%;
-  position: absolute;
-  left: -50px;
-  top: 160px;
-  z-index: -1;
-  }
-
-  .ds {
-    width: 167%;
-  position: absolute;
-  left: 92px;
-  top: 260px;
-  z-index: 1;
-  }
-  .trick-off {
-  display: block;
-  }
-
-  .trick-on {
-    display: none;
-  }
-
-  .bundles {
-    width: 180%;
-    position: absolute;
-    left: 46px;
-    top: 1px;
-    z-index: 1;
-  }
-
-  .t5 {
-   margin-top:100px !important;
-  }
-
-  .section5 {
-    margin-top: 460px;
-  }
-
-  .section6 {
-  margin-top:50px;
-
-  }
-
-  .t6 {
-   margin-top:450px !important;
-  }
-
-  .users-under {
-    width: 110%;
-    position: absolute;
-    left: -170px;
-    top: 230px;
-    z-index: -1;
-  }
-
-  .users {
-    width: 60%;
-        position: absolute;
-        left: 282px;
-        top: 332px;
-        z-index: 1;
-  }
-
-  }
-
-
-  @media (min-width: 1024px) {
-
-
-
-    .l-title-spec {
-      font-size:40px;
-      line-height: 66px;
-      margin-top:160px;
-    }
-
-    .l-title {
-        margin-top: -41px;
-    }
-
-    .topgraphic {
-      position: relative;
-      width: 55%;
-      top: 150px;
-  }
-
-  .topsvg {
-      width: 151%;
-      position: absolute;
-      top: -98px;
-      left: 138px;
-      z-index: -1;
-  }
-
-
-
-  .topsvg {
-      width: 142%;
-      position: absolute;
-      top: -148px;
-      left: 78px;
-      z-index: -1;
-  }
-
-  .topgraphic {
-      position: relative;
-      width: 110%;
-      top: 150px;
-      left: -19px;
-  }
-
-  .image-abs {
-    width: 120%;
-  position: absolute;
-  right: -158px;
-  top: -109px;
-  z-index: 1;
-  }
-
-  .image-abs-under {
-    width: 125%;
-    position: absolute;
-    right: -148px;
-    top: 11px;
-    z-index: -1;
-  }
-
-  .m-title {
-      font-size: 30px;
-      line-height: 31px;
-      margin-top: 90px;
-  }
-
-  .section2 {
-  margin-top:200px;
-
-  }
-
-  .section3 {
-  margin-top:150px;
-
-  }
-
-  .sm-under {
-      width: 128%;
-      position: absolute;
-      right: -300px;
-      top: 0px;
-      z-index: -1;
-  }
-
-  .sm {
-      width: 147%;
-      position: absolute;
-      right: -258px;
-      top: 108px;
-      z-index: 1;
-  }
-
-  .section4 {
-  margin-top: 354px;
-
-  }
-
-  .ds-under {
-    width: 148%;
-    position: absolute;
-    left: -190px;
-    top: -90px;
-    z-index: -1;
-  }
-
-  .ds {
-    width: 118%;
-    position: absolute;
-    left: 2px;
-    top: 61px;
-    z-index: 1;
-  }
-
-  .bundles {
-    width: 110%;
-    position: absolute;
-    right: -110px;
-    top: 1px;
-    z-index: 1;
-  }
-
-  .t5 {
-   margin-top:100px !important;
-  }
-
-  .section5 {
-      margin-top: 220px;
-  }
-
-  .section6 {
-  margin-top:50px;
-
-  }
-
-  .t6 {
-   margin-top:450px !important;
-  }
-
-  .users-under {
-    width: 110%;
-    position: absolute;
-    left: -170px;
-    top: 230px;
-    z-index: -1;
-  }
-
-  .users {
-    width: 60%;
-        position: absolute;
-        left: 282px;
-        top: 332px;
-        z-index: 1;
-  }
-
-
-  }
-
-
-  @media (min-width: 1200px) {
-
-    .l-title-spec {
-        font-size: 50px;
-        line-height: 66px;
-        margin-top: 80px;
-    }
-
-    .l-title {
-        margin-top: -61px;
-    }
-
-    .topgraphic {
-        position: relative;
-        width: 101%;
-        top: 80px;
-        left: 16px;
-    }
-
-    .topsvg {
-        width: 115%;
-        position: absolute;
-        top: -115px;
-        left: 180px;
-        z-index: -1;
-    }
-
-    .image-abs {
-      width: 125%;
-      position: absolute;
-      right: -238px;
-      top: -70px;
-      z-index: 1;
-  }
-
-  .image-abs-under {
-      width: 125%;
-      position: absolute;
-      right: -180px;
-      top: 90px;
-      z-index: -1;
-  }
-
-  .m-title {
-    font-size: 30px;
-    line-height: 30px;
-    margin-top: 200px;
-  }
-
-  .section2 {
-  margin-top: 240px;
-
-  }
-
-  .section3 {
-  margin-top: 30px;
-
-  }
-
-  .sm-under {
-      width: 128%;
-      position: absolute;
-      right: -300px;
-      top: 70px;
-      z-index: -1;
-  }
-
-  .sm {
-      width: 147%;
-      position: absolute;
-      right: -298px;
-      top: 198px;
-      z-index: 1;
-  }
-
-  .section4 {
-      margin-top: 240px;
-
-  }
-
-  .ds-under {
-    width: 118%;
-      position: absolute;
-      left: -80px;
-      top: 70px;
-      z-index: -1;
-  }
-
-  .ds {
-    width: 100%;
-  position: absolute;
-  left: 92px;
-  top: 191px;
-  z-index: 1;
-  }
-
-  .para {
-      font-size: 20px;
-      line-height: 24px;
-  }
-
-  .t4 {
-    margin-top: 260px;
-  }
-
-  .bundles {
-    width: 110%;
-    position: absolute;
-    right: -110px;
-    top: 1px;
-    z-index: 1;
-  }
-
-  .t5 {
-   margin-top:100px !important;
-  }
-
-  .section5 {
-      margin-top: 220px;
-  }
-
-  .section6 {
-  margin-top:50px;
-
-  }
-
-  .t6 {
-   margin-top:450px !important;
-  }
-
-  .users-under {
-    width: 110%;
-    position: absolute;
-    left: -170px;
-    top: 230px;
-    z-index: -1;
-  }
-
-  .users {
-    width: 60%;
-        position: absolute;
-        left: 282px;
-        top: 332px;
-        z-index: 1;
-  }
-
-  }
-
-  @media (min-width: 1440px) {
-
-    .para {
-        font-size: 20px;
-        line-height: 32px;
-    }
-
-    .l-title-spec {
-        font-size: 60px;
-        line-height: 66px;
-        margin-top: 300px;
-    }
-
-    .l-title {
-      font-size: 40px;
-      margin-top:100px;
-    }
-
-    .container {
-      max-width: 1600px;
-    }
-
-    .topgraphic {
-        position: relative;
-        width: 91%;
-        top: 150px;
-        left: 28px;
-    }
-    .topsvg {
-        width: 108%;
-        position: absolute;
-        top: -42px;
-        left: 290px;
-        z-index: -1;
-    }
-
-    .image-abs {
-        width: 100%;
-        position: absolute;
-        right: -148px;
-        top: -9px;
-        z-index: 1;
-    }
-
-
-    .image-abs-under {
-        width: 106%;
-        position: absolute;
-        right: -130px;
-        top: 160px;
-        z-index: -1;
-    }
-
-    .m-title {
-      font-size: 30px;
-      line-height: 30px;
-      margin-top: 340px;
-  }
-
-  .section2 {
-  margin-top:300px;
-
-  }
-
-  .section3 {
-  margin-top:150px;
-
-  }
-
-  .sm-under {
-      width: 108%;
-      position: absolute;
-      right: -300px;
-      top: 70px;
-      z-index: -1;
-  }
-
-  .sm {
-      width: 130%;
-      position: absolute;
-      right: -298px;
-      top: 231px;
-      z-index: 1;
-  }
-
-
-  .section4 {
-  margin-top:400px;
-
-  }
-
-
-  .ds-under {
-      width: 118%;
-      position: absolute;
-      left: -160px;
-      top: 70px;
-      z-index: -1;
-  }
-
-  .ds {
-      width: 97%;
-      position: absolute;
-      left: 92px;
-      top: 261px;
-      z-index: 1;
-  }
-
-  .col-xxl {
-
-  }
-
-  .bundles {
-    width: 90%;
-    position: absolute;
-    right: -110px;
-    top: -29px;
-    z-index: 1;
-  }
-
-  .t5 {
-   margin-top:100px !important;
-  }
-
-  .section5 {
-      margin-top: 420px;
-  }
-
-
-  .section6 {
-  margin-top:200px;
-
-  }
-
-  .t6 {
-   margin-top:450px !important;
-  }
-
-  .users-under {
-    width: 110%;
-    position: absolute;
-    left: -170px;
-    top: 230px;
-    z-index: -1;
-  }
-
-  .users {
-    width: 60%;
-    position: absolute;
-    left: 382px;
-    top: 382px;
-    z-index: 1;
-  }
-
-
-
-
-  }
-
-  @media (min-width: 1601px) {
-  .t3 {
-    margin-top:240px !important;
-
-  }
-
-  .t4 {
-    margin-top: 360px;
-  }
-    .col-xxxl-4 {
-      -webkit-box-flex: 0;
-  -ms-flex: 0 0 33.333333%;
-  flex: 0 0 33.333333%;
-  max-width: 33.333333%;
-    }
-
-
-
-    .special-title {
-      margin-top: 30px;
-    }
-
-    .l-title {
-      font-size: 60px;
-      margin-top: 40px;
-    }
-
-    .topgraphic {
-      position: relative;
-          width: 83%;
-          top: 170px;
-          left: 28px;
-  }
-
-  .topsvg {
-    width: 123%;
-  position: absolute;
-  top: -302px;
-  left: 334px;
-  z-index: -1;
-  }
-
-  .l-title-spec {
-      font-size: 60px;
-      line-height: 66px;
-      margin-top: 240px;
-  }
-
-  .m-title {
-      font-size: 40px;
-      line-height: 50px;
-      margin-top: 360px;
-  }
-
-  .image-abs {
-    width: 120%;
-  position: absolute;
-  right: -298px;
-  top: -9px;
-  z-index: 1;
-  }
-
-
-  .image-abs-under {
-      width: 130%;
-      position: absolute;
-      right: -300px;
-      top: 150px;
-      z-index: -1;
-  }
-
-  .container-margin-fix2 {
-    margin-top: 350px;
-  }
-
-
-  .section2 {
-      margin-top: 390px;
-
-  }
-
-  .section3 {
-  margin-top: 180px
-
-  }
-
-
-  .sm-under {
-      width: 108%;
-      position: absolute;
-      right: -300px;
-      top: 70px;
-      z-index: -1;
-  }
-
-  .sm {
-      width: 130%;
-      position: absolute;
-      right: -298px;
-      top: 231px;
-      z-index: 1;
-  }
-
-  .section4 {
-  margin-top: 240px;
-
-  }
-
-
-  .ds-under {
-      width: 118%;
-      position: absolute;
-      left: -160px;
-      top: 70px;
-      z-index: -1;
-  }
-
-  .ds {
-      width: 97%;
-      position: absolute;
-      left: 92px;
-      top: 261px;
-      z-index: 1;
-  }
-
-  .bundles {
-    width: 90%;
-    position: absolute;
-    right: -110px;
-    top: -29px;
-    z-index: 1;
-  }
-
-  .t5 {
-   margin-top:100px !important;
-  }
-
-  .section5 {
-      margin-top: 420px;
-  }
-
-
-
-  .section6 {
-  margin-top:200px;
-
-  }
-
-  .t6 {
-   margin-top:450px !important;
-  }
-
-  .users-under {
-    width: 110%;
-    position: absolute;
-    left: -170px;
-    top: 230px;
-    z-index: -1;
-  }
-
-  .users {
-    width: 60%;
-    position: absolute;
-    left: 382px;
-    top: 382px;
-    z-index: 1;
-  }
-
-
-  h1 {
-    font-size: 70px;
-    line-height: 90px;
-    letter-spacing: -3px;
+  .med-wrap{
+    max-width: 810px;
+    margin: 0 auto;
   }
 
   h2 {
+    font-size: 66px;
+    margin-bottom: 30px;
+  }
+
+  h4 {
+    font-size: 20px;
+    line-height: 28px;
+    margin-top:-24px;
+  }
+
+  h3 {
     font-size: 40px;
-    line-height: 60px;
+    line-height: 45px;
+    margin-top:-24px;
+  }
+
+  span {
+    font-size: 16px;
+    margin-top:20px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    color:#333;
+    line-height: 28px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .image-center {
+    margin-top:100px;
+    width: 100%;
+    max-width: 1000px;
+  }
+
+
+
+  .section {
+    width:100%;
+    height:auto;
+    float: left;
 
   }
 
-  .main-g {
-    margin-top:50px;
-    margin-bottom: 150px;
+  .row {
+      width:100%;
+      max-width: 1600px;
+      margin: 0 auto;
   }
+
+  .col-left {
+    width:50%;
+    height: auto;
+    position: relative;
+  }
+
+  .col-right {
+    width:50%;
+    height: 0px;
+    position: relative;
+  }
+
+  .pull-left {
+    float: left;
+  }
+
+  .head-wrap {
+    width: 100%;
+    height: 100vh;
+    float: left;
+    display: flex;
+    align-items: center;
+  }
+
+
+  .cont {
+    width: 100vw;
+    height: auto;
+    float: left;
+    overflow: hidden;
+    margin: 0;
+    // margin-left: -8px;
+    // margin-top: -8px;
+  }
+
+  .guh-be {
+    width: 90%;
+    margin: 0 auto;
+
+  }
+
+  @media (min-width: 320px) {
+
+    p {
+        font-weight: 400;
+        font-size: 16px;
+        color: #333;
+        line-height: 24px;
+    }
+
+
+    h1 {
+      font-size: 40px;
+      font-weight: 300;
+    }
+
+    h2 {
+      font-size: 32px;
+      font-weight: 300;
+    }
+
+
+    h3 {
+      font-size: 24px;
+      line-height: 28px;
+      margin-top: -24px;
+      font-weight: 700;
+  }
+
+  h4 {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 10px;
+    font-weight: 400;
+  }
+
+    .col-left {
+      width:80%;
+      height: auto;
+      margin: 0 auto;
+      position: relative;
+    }
+
+
+    .no-mobile {
+      display: none;
+    }
+
+    .yes-mobile {
+      display: block;
+
+    }
+
+    .image-center {
+      width: 70%;
+      max-width: 1000px;
+      margin: 60px auto;
+  }
+
+  .col-left-1 {
+    width:80%;
+    height: auto;
+    position: relative;
+    float: left;
+    min-height: 1px;
+  }
+
+  .col-right-1 {
+    width:80%;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .s-fix {
+      margin-top: 860px;
+  }
+
+    #guh-header {
+      margin-top:100px;
+    }
+    #guh-dashboard {
+      margin-top:40px;
+    }
+
+    #guh-usage {
+      margin-top: 420px;
+
+    }
+
+    #guh-parts {
+      margin-top: 340px;
+  }
+
+    #guh-marketplace {
+      margin-top:20px;
+    }
+
+    #guh-product {
+          margin-top: 480px;
+    }
+
+    #guh-bundles {
+        margin-top: 390px;
+    }
+
+    #guh-users {
+          margin-top: 340px;
+    }
+
+    #guh-tele {
+        margin-top: 450px;
+    }
+
+    #guh-be {
+      margin-top:400px;
+    }
+
+    .med-wrap {
+        max-width: 610px;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+   .guh-header-below {
+     width: 310%;
+     position: absolute;
+      top: -1250px;
+
+  }
+
+   .guh-header-above {
+     position: relative;
+     z-index: 0;
+     width: 160%;
+     top: -840px;
+     margin: 0 auto;
+     left: calc(51% - 29%);
+   }
+
+
+    .dashboard-above {
+      width: 340%;
+      position: absolute;
+      top: -10px;
+      z-index: 0;
+      left: 18px;
+      overflow: hidden;
+    }
+
+    .col-right {
+
+    }
+
+    .dashboard-below {
+      display: none;
+    }
+
+    .marketplace-above {
+      width: 350%;
+    position: absolute;
+    top: 96px;
+    z-index: 0;
+    left: -10px;
+    }
+
+    .marketplace-below {
+      width: 391%;
+      position: absolute;
+      top: -10px;
+      z-index: -1;
+      left: 12px;
+    }
+
+    .product-below {
+      left: -212px;
+        position: absolute;
+        width: 180%;
+        top: 360px;
+
+    }
+
+  .product-above {
+    left: 12px;
+    position: absolute;
+    z-index: 1;
+    width: 120%;
+    top: 434px;
+  }
+
+
+  .bundles {
+    left: 12px;
+    position: absolute;
+    z-index: 1;
+    width: 190%;
+    top: 10px;
+  }
+
+  .users-above {
+    width: 116%;
+        position: absolute;
+        top: 348px;
+        z-index: 0;
+        left: 12px;
+  }
+
+  .users-below {
+    width: 211%;
+    position: absolute;
+    top: 500px;
+    z-index: -1;
+    left: -206px;
+    display: none;
+  }
+
+
+  .tele-above {
+    width: 350%;
+        position: absolute;
+        top: 44px;
+        z-index: 0;
+        left: -10px;
+  }
+
+
+  .tele-below {
+    width: 281%;
+        position: absolute;
+        top: 3px;
+        z-index: -1;
+        left: 12px;
+  }
+
+  }
+
+
+
+  @media (min-width: 323px) {
+    .guh-header-below {
+        width: 310%;
+        position: absolute;
+        top: -1330px;
+    }
+
+    .users-above {
+      width: 116%;
+      position: absolute;
+      top: 288px;
+      z-index: 0;
+      left: 12px;
+  }
+
+    #guh-parts {
+      margin-top: 410px;
+  }
+
+  #guh-usage {
+      margin-top: 340px;
+  }
+  .marketplace-below {
+      width: 311%;
+      position: absolute;
+      top: -10px;
+      z-index: -1;
+      left: 12px;
+  }
+  #guh-users {
+      margin-top: 380px;
+  }
+  #guh-bundles {
+      margin-top: 440px;
+  }
+
+  #guh-tele {
+      margin-top: 554px;
+  }
+
+  .marketplace-above {
+      width: 350%;
+      position: absolute;
+      top: 74px;
+      z-index: 0;
+      left: -10px;
+  }
+
+  .product-above {
+      left: 2px;
+      position: absolute;
+      z-index: 1;
+      width: 120%;
+      top: 375px;
+  }
+
+  .product-below {
+      left: -190px;
+      position: absolute;
+      width: 167%;
+      top: 310px;
+  }
+
+  .tele-above {
+      width: 350%;
+      position: absolute;
+      top: 54px;
+      z-index: 0;
+      left: -10px;
+  }
+
+  }
+
+  @media (min-width: 411px) {
+    .product-above {
+      left: 21px;
+      position: absolute;
+      z-index: 1;
+      width: 120%;
+      top: 363px;
+  }
+    .product-below {
+        left: -179px;
+        position: absolute;
+        width: 167%;
+        top: 303px;
+    }
+
+    .users-above {
+        width: 116%;
+        position: absolute;
+        top: 276px;
+        z-index: 0;
+        left: 12px;
+    }
+
+    .bundles {
+      left: 12px;
+      position: absolute;
+      z-index: 1;
+      width: 190%;
+      top: -10px;
+  }
+
+  }
+
+
+  @media (min-width: 576px) {
+
+    .guh-header-below {
+        width: 220%;
+        position: absolute;
+        top: -1300px;
+    }
+
+    .guh-header-above {
+        position: relative;
+        z-index: 0;
+        width: 130%;
+        top: -780px;
+        margin: 0 auto;
+        left: calc(51% - 14%);
+    }
+
+    h2 {
+      font-size: 46px;
+
+    }
+
+    .col-left {
+      width:80%;
+      height: auto;
+      margin: 0 auto;
+      position: relative;
+    }
+
+
+
+
+      .col-left-1 {
+        width:80%;
+        height: auto;
+        position: relative;
+        float: left;
+        min-height: 1px;
+      }
+
+      .col-right-1 {
+        width:80%;
+        height: auto;
+        position: relative;
+        margin: 0 auto;
+      }
+
+
+
+    .dashboard-below {
+      display: none;
+    }
+
+    .no-mobile {
+      display: none;
+    }
+
+    .yes-mobile {
+      display: block;
+
+    }
+
+
+
+    #guh-dashboard {
+    margin-top: 40px;
+    }
+
+    #guh-parts {
+        margin-top: 620px;
+    }
+
+    #guh-marketplace {
+    margin-top: 10px;
+    }
+
+    #guh-product {
+        margin-top: 740px;
+    }
+
+    #guh-bundles {
+        margin-top: 620px;
+    }
+
+    #guh-users {
+        margin-top: 620px;
+    }
+
+
+
+
+
+    .dashboard-above {
+      width: 340%;
+    position: absolute;
+    top: -10px;
+    z-index: 0;
+    left: 32px;
+    }
+
+    .marketplace-above {
+      width: 350%;
+      position: absolute;
+      top: 112px;
+      z-index: 0;
+      left: -10px;
+    }
+
+    .marketplace-below {
+      width: 391%;
+      position: absolute;
+      top: -10px;
+      z-index: -1;
+      left: 25px;
+    }
+
+    .product-below {
+
+      left: -200px;
+      position: absolute;
+      width: 137%;
+      top: 260px;
+    }
+
+  .product-above {
+    left: 162px;
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+      top: 350px;
+  }
+
+  .bundles {
+    left: 12px;
+    position: absolute;
+    z-index: 1;
+    width: 190%;
+    top: 10px;
+  }
+
+  .users-above {
+    width: 80%;
+        position: absolute;
+        top: 262px;
+        z-index: 0;
+        left: 230px;
+  }
+
+  .users-below {
+    width: 151%;
+      position: absolute;
+      top: 300px;
+      z-index: -1;
+      left: -245px;
+  }
+
+  }
+
+
+
+
+  @media (min-width: 768px) {
+
+
+    h2 {
+        font-size: 40px;
+        font-weight: 300;
+    }
+
+    h3 {
+      font-size: 36px;
+      line-height: 43px;
+      margin-top: -24px;
+      font-weight: 300;
+  }
+
+    .yes-mobile {
+      display: none;
+    }
+
+    .no-mobile {
+      display: initial;
+    }
+
+    .col-left {
+      width:80%;
+      height: auto;
+      margin: 0 auto;
+      position: relative;
+    }
+
+
+
+
+    .col-left-1 {
+      width:80%;
+      height: auto;
+      position: relative;
+      float: left;
+      min-height: 1px;
+    }
+
+    .col-right-1 {
+      width:80%;
+      height: auto;
+      position: relative;
+      margin: 0 auto;
+    }
+
+    #guh-usage {
+        margin-top: -30px;
+    }
+
+    #guh-dashboard {
+      margin-top: 30px;
+  }
+
+    #guh-parts {
+          margin-top: 650px;
+    }
+
+    #guh-marketplace {
+        margin-top: 80px;
+    }
+
+    #guh-product {
+        margin-top: 700px;
+    }
+
+    #guh-bundles {
+      margin-top: 620px;
+  }
+
+  #guh-users {
+      margin-top: 690px;
+  }
+
+  #guh-tele {
+      margin-top: 715px;
+  }
+
+  #guh-be {
+    margin-top:650px;
+  }
+
+  .guh-header-below {
+    width: 300%;
+    position: absolute;
+    top: -1770px;
+  }
+
+
+  .guh-header-above {
+    position: relative;
+        z-index: 0;
+        width: 130%;
+        top: -840px;
+        margin: 0 auto;
+        left: calc(51% - 13%);
+  }
+
+    .image-center {
+      margin-top: 100px;
+      width: 80%;
+      max-width: 1000px;
+  }
+
+  .dashboard-above {
+    width: 230%;
+    position: absolute;
+    top: 10px;
+    z-index: 0;
+    left: 59px;
+  }
+
+
+  .dashboard-below {
+    width: 211%;
+    position: absolute;
+    top: 122px;
+    z-index: -1;
+    left: 0px;
+    display: none;
+  }
+
+
+    .marketplace-above {
+      width: 220%;
+        position: absolute;
+        top: 132px;
+        z-index: 0;
+        left: 10px;
+    }
+
+    .marketplace-below {
+        width: 221%;
+        position: absolute;
+        top: 5px;
+        z-index: -1;
+        left: 54px;
+    }
+
+    .product-below {
+      left: -182px;
+        position: absolute;
+        width: 137%;
+        top: 230px;
+    }
+
+  .product-above {
+    left: 122px;
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+      top: 320px;
+  }
+
+  .bundles {
+    left: 12px;
+    position: absolute;
+    z-index: 1;
+    width: 190%;
+    top: 10px;
+  }
+
+  .users-above {
+      width: 73%;
+      position: absolute;
+      top: 262px;
+      z-index: 0;
+      left: 230px;
+  }
+
+  .users-below {
+      width: 113%;
+      position: absolute;
+      top: 303px;
+      z-index: -1;
+      left: -136px;
+      display: block;
+  }
+
+  .tele-below {
+      width: 258%;
+      position: absolute;
+      top: -7px;
+      z-index: -1;
+      left: 12px;
+  }
+
+  .tele-above {
+      width: 320%;
+      position: absolute;
+      top: 92px;
+      z-index: 0;
+      left: -10px;
+  }
+
+
+  }
+
+  @media (min-width: 800px) {
+    .guh-header-below {
+      width: 250%;
+    position: absolute;
+    top: -1720px;
+    }
+  .guh-header-above {
+    position: relative;
+      z-index: 0;
+      width: 100%;
+      top: -770px;
+      margin: 0 auto;
+      left: calc(51% - -9%);
+  }
+
+  .marketplace-below {
+      width: 181%;
+      position: absolute;
+      top: -8px;
+      z-index: -1;
+      left: 54px;
+  }
+
+  .marketplace-above {
+      width: 220%;
+      position: absolute;
+      top: 107px;
+      z-index: 0;
+      left: 10px;
+  }
+
+  .product-above {
+      left: 192px;
+      position: absolute;
+      z-index: 1;
+      width: 84%;
+      top: 320px;
+  }
+
+  .product-below {
+      left: -182px;
+      position: absolute;
+      width: 118%;
+      top: 230px;
+  }
+
+  .bundles {
+      left: 62px;
+      position: absolute;
+      z-index: 1;
+      width: 150%;
+      top: 10px;
+  }
+
+  .users-below {
+      width: 103%;
+      position: absolute;
+      top: 223px;
+      z-index: -1;
+      left: -136px;
+      display: block;
+  }
+
+  .users-above {
+      width: 57%;
+      position: absolute;
+      top: 262px;
+      z-index: 0;
+      left: 300px;
+  }
+
+  .tele-below {
+      width: 188%;
+      position: absolute;
+      top: -7px;
+      z-index: -1;
+      left: 152px;
+  }
+
+
+  .tele-above {
+      width: 210%;
+      position: absolute;
+      top: 92px;
+      z-index: 0;
+      left: 80px;
+  }
+
+  }
+
+
+  @media (min-width: 960px) {
+
+    .s-fix {
+        margin-top: 0px;
+    }
+
+    .row {
+      max-width: 768px;
+    }
+
+    .inner-col-wrap {
+      width: 100%;
+      padding-left: 0%;
+    }
+
+    .col-left {
+      width:50%;
+      height: auto;
+      float: left;
+      position: relative;
+    }
+
+    .col-left-1 {
+      width:50%;
+      height: auto;
+      position: relative;
+      float: left;
+      min-height: 1px;
+    }
+
+    .col-right-1 {
+      width:50%;
+      height: auto;
+      position: relative;
+      float: left;
+    }
+
+
+      .guh-header-below {
+        width: 199%;
+        position: absolute;
+        top: -378px;
+        z-index: 0;
+        left: 110px;
+      }
+
+      .guh-header-above {
+        width: 123%;
+      position: absolute;
+      top: -28px;
+      z-index: 0;
+      left: 30px;
+      }
+
+      .image-center {
+          margin-top: 130px;
+          width: 100%;
+          max-width: 1000px;
+      }
+      #guh-header {
+          margin-top: 10px;
+      }
+      #guh-usage {
+        margin-top: 80px;
+      }
+
+  #guh-dashboard {
+    margin-top: 80px;
+  }
+
+
+
+  #guh-parts {
+        margin-top: 180px;
+  }
+
+  #guh-marketplace {
+        margin-top: 210px;
+  }
+
+  #guh-product {
+    margin-top: 330px;
+  }
+
+  #guh-bundles {
+      margin-top: 280px;
+  }
+
+  #guh-users {
+      margin-top: 390px;
+  }
+
+  #guh-tele {
+      margin-top: 270px;
+  }
+
+  #guh-be {
+    margin-top:150px;
+  }
+
+  .guh-be {
+    width: 100%;
+  }
+
+    .dashboard-above {
+      width: 220%;
+      position: absolute;
+      top: -100px;
+      z-index: 0;
+      left: 90px;
+  }
+
+    .dashboard-below {
+      width: 161%;
+      position: absolute;
+      top: -30px;
+      z-index: -1;
+      left: 20px;
+      display: block;
+    }
+
+    .marketplace-above {
+      width: 220%;
+      position: absolute;
+      top: -8px;
+      z-index: 0;
+      left: 10px;
+    }
+
+    .marketplace-below {
+        width: 212%;
+        position: absolute;
+        top: -130px;
+        z-index: -1;
+        left: 30px;
+    }
+
+    .product-below {
+      left: -600px;
+      position: absolute;
+      width: 230%;
+      top: -140px;
+  }
+
+    .product-above {
+      left: -218px;
+      position: absolute;
+      z-index: 1;
+      width: 150%;
+      top: -20px;
+  }
+
+  .bundles {
+    left: 12px;
+  position: absolute;
+  z-index: 1;
+  width: 140%;
+  top: -64px;
+  }
+
+  .users-above {
+    width: 95%;
+      position: absolute;
+      top: -89px;
+      z-index: 0;
+      left: -47px;
+  }
+
+  .users-below {
+      width: 171%;
+      position: absolute;
+      top: -135px;
+      z-index: -1;
+      left: -397px;
+  }
+
+  .tele-below {
+      width: 178%;
+      position: absolute;
+      top: -67px;
+      z-index: -1;
+      left: 68px;
+  }
+
+  .tele-above {
+      width: 190%;
+      position: absolute;
+      top: 19px;
+      z-index: 0;
+      left: 41px;
+  }
+
+
+
+
+
+    .med-wrap {
+        max-width: 810px;
+        margin: 0 auto;
+    }
+
+
+  }
+
+
+
+
+
+
+
+
+  @media (min-width: 1200px) {
+    .row {
+      max-width: 1140px;
+    }
+
+    .guh-be {
+      width: 90%;
+    }
+
+    .col-left-1 {
+      width:50%;
+      height: auto;
+      position: relative;
+      float: left;
+      min-height: 1px;
+    }
+
+    .col-right-1 {
+      width:50%;
+      height: auto;
+      position: relative;
+      float: left;
+    }
+
+    .inner-col-wrap {
+      width: 70%;
+      padding-left: 10%;
+    }
+
+    .dashboard-above {
+      width: 160%;
+      position: absolute;
+      top: -148px;
+      z-index: 0;
+      left: 10px;
+    }
+
+    .dashboard-below {
+
+      width: 161%;
+      position: absolute;
+      top: -70px;
+      z-index: -1;
+      left: -70px;
+    }
+
+    .marketplace-above {
+      width: 140%;
+      position: absolute;
+      top: -28px;
+      z-index: 0;
+      left: -70px;
+    }
+
+    .marketplace-below {
+      width: 171%;
+      position: absolute;
+      top: -144px;
+      z-index: -1;
+      left: 30px;
+    }
+
+    .guh-header-below {
+      width: 139%;
+    position: absolute;
+    top: -368px;
+    z-index: 0;
+    left: 160px;
+    }
+
+    .guh-header-above {
+        width: 93%;
+        position: absolute;
+        top: -60px;
+        z-index: 0;
+        left: -40px;
+    }
+
+    .image-center {
+        margin-top: 130px;
+        width: 100%;
+        max-width: 1000px;
+    }
+
+    #guh-header {
+        margin-top: 10px;
+    }
+
+    #guh-usage {
+      margin-top: 170px;
+    }
+
+    #guh-parts {
+      margin-top: 230px;
+    }
+
+    #guh-dashboard {
+      margin-top: 150px;
+  }
+
+    #guh-marketplace {
+          margin-top: 230px;
+    }
+
+    #guh-product {
+      margin-top: 350px;
+  }
+
+
+  #guh-bundles {
+      margin-top: 280px;
+  }
+
+
+  #guh-users {
+      margin-top: 390px;
+  }
+
+  #guh-tele {
+      margin-top: 300px;
+  }
+
+  #guh-be {
+    margin-top:250px;
+  }
+
+    .marketplace-above {
+      width: 160%;
+      position: absolute;
+      top: -28px;
+      z-index: 0;
+      left: -90px;
+    }
+
+    .marketplace-below {
+        width: 151%;
+        position: absolute;
+        top: -150px;
+        z-index: -1;
+        left: 30px;
+    }
+
+    .product-below {
+      left: -340px;
+        position: absolute;
+        width: 150%;
+        top: -160px;
+    }
+
+    .product-above {
+      left: 10px;
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+      top: -50px;
+    }
+
+    .bundles {
+      left: 12px;
+      position: absolute;
+      z-index: 1;
+      width: 98%;
+      top: -77px;
+    }
+
+    .users-above {
+      width: 68%;
+    position: absolute;
+    top: -119px;
+    z-index: 0;
+    left: 163px;
+    }
+
+    .users-below {
+        width: 131%;
+        position: absolute;
+        top: -180px;
+        z-index: -1;
+        left: -245px;
+    }
+
+    .tele-above {
+      width: 150%;
+      position: absolute;
+      top: 9px;
+      z-index: 0;
+      left: -30px;
+  }
+
+    .tele-below {
+      width: 138%;
+      position: absolute;
+      top: -87px;
+      z-index: -1;
+      left: 12px;
+  }
+
+
+
+
+  }
+
+  @media (min-width: 1400px) {
+    .row {
+      max-width:1200px;
+    }
+
+    .col-left-1 {
+      width:50%;
+      height: auto;
+      position: relative;
+      float: left;
+      min-height: 1px;
+    }
+
+    .col-right-1 {
+      width:50%;
+      height: auto;
+      position: relative;
+      float: left;
+    }
+
+    #guh-header {
+        margin-top: 10px;
+    }
+
+    #guh-usage {
+        margin-top: 200px;
+    }
+
+    #guh-dashboard {
+      margin-top: 250px;
+  }
+
+  #guh-parts {
+    margin-top: 290px;
+  }
+
+  #guh-marketplace {
+      margin-top: 380px;
+  }
+
+
+  #guh-product {
+      margin-top: 460px;
+  }
+
+
+  #guh-bundles {
+      margin-top: 410px;
+  }
+
+  #guh-users {
+      margin-top: 430px;
+  }
+
+  #guh-tele {
+      margin-top: 460px;
+  }
+
+  #guh-be {
+    margin-top:350px;
+  }
+
+  .guh-header-below {
+    width: 139%;
+    position: absolute;
+    top: -378px;
+    z-index: 0;
+    left: 160px;
+  }
+
+  .guh-header-above {
+    width: 93%;
+    position: absolute;
+    top: calc(50% - 60px);
+    z-index: 0;
+    left: -40px;
+  }
+
+  .image-center {
+      margin-top: 130px;
+      width: 100%;
+      max-width: 1000px;
+  }
+
+
+    .dashboard-above {
+      width: 160%;
+      position: absolute;
+      top: -198px;
+      z-index: 0;
+      left: 10px;
+    }
+
+    .dashboard-below {
+      width: 161%;
+      position: absolute;
+      top: -109px;
+      z-index: -1;
+      left: -70px;
+    }
+
+    .marketplace-above {
+      width: 160%;
+      position: absolute;
+      top: -38px;
+      z-index: 0;
+      left: -90px;
+    }
+
+    .marketplace-below {
+        width: 151%;
+        position: absolute;
+        top: -168px;
+        z-index: -1;
+        left: 30px;
+    }
+
+    .product-below {
+      left: -460px;
+        position: absolute;
+        width: 150%;
+        top: -190px;
+    }
+
+    .product-above {
+      left: 10px;
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+      top: -50px;
+    }
+
+    .bundles {
+      left: 12px;
+          position: absolute;
+          z-index: 1;
+          width: 98%;
+          top: -147px;
+    }
+
+    .users-above {
+      width: 68%;
+  position: absolute;
+  top: -119px;
+  z-index: 0;
+  left: 203px;
+    }
+
+    .users-below {
+      width: 131%;
+      position: absolute;
+      top: -190px;
+      z-index: -1;
+      left: -215px;
+  }
+
+  .tele-below {
+      width: 128%;
+      position: absolute;
+      top: -87px;
+      z-index: -1;
+      left: 12px;
+  }
+
+  .tele-above {
+      width: 130%;
+      position: absolute;
+      top: 18px;
+      z-index: 0;
+      left: -70px;
+  }
+
+
+
+
+
+  }
+
+
+  @media (min-width: 1600px) {
+    .row {
+      max-width:1400px;
+    }
+
+  #guh-be {
+    margin-top:350px;
+  }
+
+    #guh-header {
+      margin-top: -60px;
+  }
+
+    #guh-usage {
+      margin-top:290px;
+    }
+
+
+    #guh-dashboard {
+      margin-top:290px;
+    }
+
+    #guh-marketplace {
+          margin-top: 360px;
+    }
+
+    #guh-bundles {
+        margin-top: 540px;
+    }
+
+    #guh-parts {
+      margin-top: 400px;
+  }
+
+    #guh-product {
+      margin-top: 520px;
+    }
+
+    #guh-users {
+      margin-top: 530px;
+  }
+
+  #guh-tele {
+    margin-top: 630px;
+  }
+
+    .col-left-1 {
+      width:50%;
+      height: auto;
+      position: relative;
+      float: left;
+      min-height: 1px;
+    }
+
+    .col-right-1 {
+      width:50%;
+      height: auto;
+      position: relative;
+      float: left;
+    }
+
+    .image-center {
+        margin-top: 30px;
+        width: 100%;
+        max-width: 1000px;
+    }
+
+    .guh-header-below {
+      width: 159%;
+    position: absolute;
+    top: calc(50% - 550px);
+    z-index: 0;
+    left: 160px;
+    }
+
+    .guh-header-above {
+      width: 83%;
+    position: absolute;
+  top: calc(50% - 79px);
+    z-index: 0;
+    left: -40px;
+    }
+
+    .dashboard-above {
+        width: 160%;
+        z-index: 0;
+        top: -270px;
+    }
+
+  .dashboard-below {
+      width: 155%;
+      z-index: -1;
+      top: -140px;
+  }
+
+
+    .marketplace-above {
+      width: 140%;
+      position: absolute;
+      top: -70px;
+      z-index: 0;
+      left: -90px;
+    }
+
+    .marketplace-below {
+      width: 141%;
+          position: absolute;
+          top: -210px;
+          z-index: -1;
+          left: 30px;
+    }
+
+    .product-below {
+      left: -460px;
+        position: absolute;
+        width: 150%;
+        top: -190px;
+    }
+
+    .product-above {
+      left: 10px;
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+      top: -50px;
+    }
+
+    .users-above {
+      width: 71%;
+          position: absolute;
+          top: -119px;
+          z-index: 0;
+          left: 211px;
+    }
+
+    .users-below {
+      width: 131%;
+      position: absolute;
+      top: -220px;
+      z-index: -1;
+      left: -350px;
+    }
+
+    .tele-above {
+      width: 140%;
+      position: absolute;
+      top: -70px;
+      z-index: 0;
+      left: -90px;
+    }
+
+    .tele-below {
+      width: 141%;
+    position: absolute;
+    top: -210px;
+    z-index: -1;
+    left: -12px;
+    }
+
 
   }
 
