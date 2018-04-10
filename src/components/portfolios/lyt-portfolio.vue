@@ -100,6 +100,9 @@ export default {
       this.attachScrollReveal()
     })
   },
+  beforeDestroy () {
+    EventBus.$off('morphEnded')
+  },
   methods: {
     attachScrollReveal () {
       window.sr = ScrollReveal({ reset: true })

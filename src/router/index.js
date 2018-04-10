@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from './../components/home-page/home'
 import Guh from './../components/portfolios/guh-portfolio'
 import Lyt from './../components/portfolios/lyt-portfolio'
+import Trainerize from './../components/portfolios/trainerize-portfolio'
 
 Vue.use(Router)
 
@@ -23,6 +24,11 @@ let router = new Router({
       path: '/lyt',
       name: 'lyt-portfolio',
       component: Lyt
+    },
+    {
+      path: '/trainerize',
+      name: 'trainerize-portfolio',
+      component: Trainerize
     }
   ]
 })

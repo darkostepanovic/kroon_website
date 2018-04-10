@@ -53,6 +53,7 @@ export default {
   methods: {
     handleRouteChange (routeName) {
       this.showContent = false
+      this.portfolioState = false
       this.homeSlide = 0
       this.morphSvg('full')
       this.resizeAndPositionSvg()
@@ -61,7 +62,6 @@ export default {
         let route = routeName
         switch (route) {
           case 'home':
-            this.portfolioState = false
             this.homeSlide = 1
             this.morphSvg(1)
             this.resizeAndPositionSvg()
@@ -76,6 +76,12 @@ export default {
             this.portfolioState = true
             this.homeSlide = 3
             this.morphSvg(3)
+            this.resizeAndPositionSvg()
+            break
+          case 'trainerize-portfolio':
+            this.portfolioState = true
+            this.homeSlide = 4
+            this.morphSvg(4)
             this.resizeAndPositionSvg()
             break
         }
@@ -159,7 +165,10 @@ export default {
       fromPath.animate({ d: toPathPoints }, 1000, mina.backout, this.morphCallback)
     },
     morphCallback () {
-      if (this.portfolioState) EventBus.$emit('morphEnded')
+      if (this.portfolioState) {
+        console.log('morph ended')
+        EventBus.$emit('morphEnded')
+      }
     }
   }
 }
