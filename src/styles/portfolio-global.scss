@@ -1,0 +1,41 @@
+.portfolio-wrapper {
+  .portfolio-top-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  .portfolio-main-title {
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #333333;
+  }
+  .portfolio-main-subtitle {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #5B5C5F;
+    margin-top: 35px;
+  }
+  .portfolio-main-location-text {
+    font-size: 16px;
+    font-weight: 700;
+    color: #898A89;
+    margin-top: 70px;
+  }
+  .portfolio-section-main-title {
+
+  }
+  .portfolio-section-title {
+
+  }
+  .portfolio-section-text {
+
+  }
+  section {
+    text-align: left;
+  }
+  .text-white {
+    color: #FFFFFF;
+  }
+}
