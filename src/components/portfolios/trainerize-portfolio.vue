@@ -18,16 +18,46 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="trainerize-dark-bcg" id="trz-dashboard-overview">
         <div class="container">
-          <h2 class="col-12 portfolio-section-main-title text-center">Dashboard overview</h2>
-          <div class="col-12">
-            <h3 class="portfolio-section-title">Widget system</h3>
-            <p class="portfolio-section-text">
-              The dashboard widgets offer trainers an overview of all major components of their business needs.
-              It is an easy way to understand who are clients that need attention, scheduled activities,
-              clients' notifications, business growth.
-            </p>
+          <div class="row">
+            <h2 class="col-12 portfolio-section-main-title text-center text-white">Dashboard overview</h2>
+            <div class="col-12 col-lg-4">
+              <h3 class="portfolio-section-title text-white">Widget system</h3>
+              <p class="portfolio-section-text text-grey-9c">
+                The dashboard widgets offer trainers an overview of all major components of their business needs.
+                It is an easy way to understand who are clients that need attention, scheduled activities,
+                clients' notifications, business growth.
+              </p>
+            </div>
+            <div class="col-12 col-lg-8 img-wrapper">
+              <img src="./../../assets/portfolios/trainerize/trz-dashboard.svg" alt="trainerize-dashborad">
+            </div>
+            <div class="col-12">
+              <h3 class="portfolio-section-title text-white">Switching into</h3>
+              <p class="portfolio-section-text text-grey-9c">
+                Most of the functionalities of the web app are also available via mobile,
+                allowing trainers large flexibility when it comes to client management.
+                The mobile app allows for "Switch into" view, enabling trainers to manage workouts,
+                review stats, communicate and provide feedback to the clients, all on the go.
+              </p>
+            </div>
+            <div class="col-12 text-center img-wrapper">
+              <img src="./../../assets/portfolios/trainerize/trz-switching.png" width="579" height="530" alt="trainerize-switching">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="trz-visuals">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center img-wrapper">
+              <img src="./../../assets/portfolios/trainerize/trz-laptop.svg" alt="trainerize-dashborad">
+            </div>
+            <div class="col-12 text-center img-wrapper">
+              <img src="./../../assets/portfolios/trainerize/trz-visuals.svg" alt="trainerize-visuals">
+            </div>
+            <h2 class="col-12 portfolio-section-main-title text-center">Trainerize visuals</h2>
           </div>
         </div>
       </section>

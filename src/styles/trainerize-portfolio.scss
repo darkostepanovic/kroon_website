@@ -1,3 +1,18 @@
 #trainerize-portfolio {
   overflow: hidden;
+  .trainerize-dark-bcg {
+    background-color: #22252A;
+  }
+  .img-wrapper {
+    img {
+      margin-top: 80px;
+    }
+  }
+  #trz-dashboard-overview {
+    padding-top: 100px;
+    padding-bottom: 360px;
+  }
+  #trz-visuals {
+    margin-top: -340px;
+  }
 }

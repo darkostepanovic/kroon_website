@@ -1,4 +1,7 @@
 .portfolio-wrapper {
+  section {
+    text-align: left;
+  }
   .portfolio-top-section {
     height: 100vh;
     display: flex;
@@ -24,18 +27,24 @@
     margin-top: 70px;
   }
   .portfolio-section-main-title {
-
+    font-weight: 300;
+    font-size: 40px;
   }
   .portfolio-section-title {
-
+    font-weight: 300;
+    font-size: 28px;
+    margin-top: 100px;
   }
   .portfolio-section-text {
-
-  }
-  section {
-    text-align: left;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    margin-top: 30px;
   }
   .text-white {
     color: #FFFFFF;
+  }
+  .text-grey-9c {
+    color: #9C9C9C;
   }
 }
