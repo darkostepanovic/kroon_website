@@ -1,5 +1,10 @@
 #trainerize-portfolio {
   overflow: hidden;
+  color: #5B5C5F;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
   .trainerize-dark-bcg {
     background-color: #22252A;
   }
@@ -11,8 +16,80 @@
   #trz-dashboard-overview {
     padding-top: 100px;
     padding-bottom: 360px;
+    .row {
+      > div.full-img-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        img {
+          max-width: 200%;
+          width: 100vw;
+          margin-left: 50px;
+          flex-shrink: 0;
+        }
+      }
+    }
   }
   #trz-visuals {
     margin-top: -340px;
+    padding-bottom: 375px;
+    .portfolio-section-main-title {
+      margin-top: 40px;
+    }
+  }
+  #trz-system-overview {
+    .top-wrapper {
+      margin-top: -170px;
+      img {
+        margin-top: 50px;
+      }
+    }
+    .row {
+      > div.full-img-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          max-width: 200%;
+          width: 100vw;
+          flex-shrink: 0;
+        }
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    #trz-dashboard-overview {
+      padding-top: 100px;
+      padding-bottom: 360px;
+        .row {
+         > div:nth-child(2) {
+           h3 {
+             margin-top: 180px;
+           }
+         }
+         > div.full-img-wrapper {
+           margin-top: 100px;
+           img {
+             max-width: 200%;
+             width: 75vw;
+             margin-left: 180px;
+             flex-shrink: 0;
+           }
+         }
+      }
+    }
+    #trz-system-overview {
+      .top-wrapper {
+        margin-top: -183px;
+      }
+      .row {
+       > div.full-img-wrapper {
+         img {
+           width: 75vw;
+         }
+       }
+    }
+    }
   }
 }

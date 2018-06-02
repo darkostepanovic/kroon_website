@@ -47,4 +47,45 @@
   .text-grey-9c {
     color: #9C9C9C;
   }
+  .margin-bottom-40 {
+    margin-bottom: 40px;
+  }
+  .z-index-1 {
+    z-index: 1;
+  }
+  @media (min-width: 992px) {
+    .margin-lg-0 {
+      margin: 0;
+      margin-top: 0 !important;
+    }
+    .section-item-lg-margin-top {
+      margin-top: 120px;
+    }
+    .portfolio-main-title {
+      font-size: 70px;
+    }
+    .portfolio-section-main-title {
+      font-size: 50px;
+    }
+    .portfolio-section-title {
+      font-size: 36px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .section-item-lg-margin-top {
+      margin-top: 150px;
+    }
+    .portfolio-main-title {
+      font-size: 81px;
+    }
+    .portfolio-main-subtitle {
+      font-size: 18px;
+    }
+    .portfolio-section-main-title {
+      font-size: 60px;
+    }
+    .portfolio-section-title {
+      font-size: 40px;
+    }
+  }
 }
