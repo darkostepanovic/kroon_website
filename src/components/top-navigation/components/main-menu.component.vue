@@ -1,49 +1,55 @@
 <template>
   <div class="main-menu-component">
-    <img src="./../../../assets/main-menu/blob.png" id="c7-menu-blob">
-    <img src="./../../../assets/main-menu/blob2.png" id="c7-menu-blob2">
-    <div class="container c7-menu">
-      <div class="row">
-          <!-- First Column Start -->
-          <div class="col-xl-3 col-md-4 col-sm-8 c7-hr c7-menu-c1 order-last order-md-first">
-            <ul class="list-unstyled c7-location">
-              <li class="c7-li-main g-bold">Switzerland</li>
-              <li class="g-light" >Brauerstrasse 11,</li>
-              <li class="g-light" >88088 Zurich</li>
-            </ul>
-            <ul class="list-unstyled">
-              <li class="c7-li-main g-bold">Serbia</li>
-              <li class="g-light" >Kumanovska 14,</li>
-              <li class="g-light" >11000 Belgrade</li>
-            </ul>
-            <ul class="list-unstyled c7-social">
-              <li><a class="g-bold" href="#">Facebook</a></li>
-              <li><a class="g-bold" href="#">LinkedIn</a></li>
-              <li><a class="g-bold" href="#">Dribble</a></li>
-              <li><a class="g-bold" href="#">Behence</a></li>
-              <li><a class="g-bold" href="#">Instagram</a></li>
-            </ul>
+    <div class="container">
+      <!-- <img src="./../../../assets/main-menu/blob.png" class="d-none d-md-block col-2" id="c7-menu-blob">
+      <img src="./../../../assets/main-menu/blob2.png" class="d-md-none" id="c7-menu-blob2"> -->
+      <div class="row flex-md-row-reverse">
+        <div class="col-12 col-md-7 offset-md-1 main-links-wrapper">
+          <ul>
+            <li @click="homePage">Home</li>
+            <li @click="aboutPage">People</li>
+            <li>Portfolio</li>
+            <li>Careers</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+        <div class="col-9 offset-md-1 col-md-3 location-social-wrapper">
+          <div class="locations-wrapper">
+            <div class="location-item">
+              <div class="country">Switzerland</div>
+              <div class="address">Brauerstrasse 11,</div>
+              <div class="address">88088 Zurich</div>
+            </div>
+            <div class="location-item">
+              <div class="country">Switzerland</div>
+              <div class="address">Brauerstrasse 11,</div>
+              <div class="address">88088 Zurich</div>
+            </div>
           </div>
-          <!-- First Column End -->
-
-          <!-- Second Column Start -->
-          <div class="col-xl-3 col-md-4 col-sm-8 c7-menu-c2 order-first order-md-last">
-            <ul class="list-unstyled">
-              <li class="g-book" ><a href="#">Home</a></li>
-              <li class="g-book" ><a href="#">The people</a></li>
-              <li class="g-book" ><a href="#">Portfolio</a></li>
-              <li class="g-book" ><a href="#">Careers</a></li>
-              <li class="g-book" ><a href="#">Contact</a></li>
-            </ul>
-            <hr>
-          </div>
-          <!-- Second Column End -->
+          <ul class="social-links">
+            <li><a href="#" target="_blank">Facebook</a></li>
+            <li><a href="#" target="_blank">LinkedIn</a></li>
+            <li><a href="#" target="_blank">Dribble</a></li>
+            <li><a href="#" target="_blank">Behance</a></li>
+            <li><a href="#" target="_blank">Instagram</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
-<script>
-export default {
-}
+<script type="text/babel">
+  export default {
+    methods: {
+      aboutPage () {
+        this.$router.push('/about')
+        this.$emit('close-menu')
+      },
+      homePage () {
+        this.$router.push('/')
+        this.$emit('close-menu')
+      }
+    }
+  }
 </script>

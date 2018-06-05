@@ -2,7 +2,7 @@
   <div id="app">
     <top-nav v-show="showContent" />
     <router-view v-show="showContent"></router-view>
-    <svg width="100%" height="100%" id="app-svg" :class="{'portfolio-state': portfolioState}">
+    <svg width="100%" height="100%" id="app-svg" v-show="showCurve" :class="{'portfolio-state': portfolioState}">
         <defs>
           <linearGradient x1="133.66887%" y1="-48.1971154%" x2="-34.5552885%" y2="144.906851%" id="linearGradient-1">
               <stop stop-color="#4973FF" offset="0%"></stop>
@@ -30,7 +30,8 @@ export default {
     return {
       homeSlide: 0,
       showContent: false,
-      portfolioState: false
+      portfolioState: false,
+      showCurve: true
     }
   },
   created () {
@@ -55,37 +56,43 @@ export default {
       this.showContent = false
       this.portfolioState = false
       this.homeSlide = 0
+      this.showCurve = true
       this.morphSvg('full')
       this.resizeAndPositionSvg()
-      setTimeout(() => {
+      const route = routeName
+      if (route === 'about') {
         this.showContent = true
-        let route = routeName
-        switch (route) {
-          case 'home':
-            this.homeSlide = 1
-            this.morphSvg(1)
-            this.resizeAndPositionSvg()
-            break
-          case 'guh-portfolio':
-            this.portfolioState = true
-            this.homeSlide = 2
-            this.morphSvg(2)
-            this.resizeAndPositionSvg()
-            break
-          case 'lyt-portfolio':
-            this.portfolioState = true
-            this.homeSlide = 3
-            this.morphSvg(3)
-            this.resizeAndPositionSvg()
-            break
-          case 'trainerize-portfolio':
-            this.portfolioState = true
-            this.homeSlide = 4
-            this.morphSvg(4)
-            this.resizeAndPositionSvg()
-            break
-        }
-      }, 2000)
+        this.showCurve = false
+      } else {
+        setTimeout(() => {
+          this.showContent = true
+          switch (route) {
+            case 'home':
+              this.homeSlide = 1
+              this.morphSvg(1)
+              this.resizeAndPositionSvg()
+              break
+            case 'guh-portfolio':
+              this.portfolioState = true
+              this.homeSlide = 2
+              this.morphSvg(2)
+              this.resizeAndPositionSvg()
+              break
+            case 'lyt-portfolio':
+              this.portfolioState = true
+              this.homeSlide = 3
+              this.morphSvg(3)
+              this.resizeAndPositionSvg()
+              break
+            case 'trainerize-portfolio':
+              this.portfolioState = true
+              this.homeSlide = 4
+              this.morphSvg(4)
+              this.resizeAndPositionSvg()
+              break
+          }
+        }, 2000)
+      }
     },
     onWindowResize () {
       this.resizeAndPositionSvg()

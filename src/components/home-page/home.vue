@@ -110,6 +110,13 @@ export default {
       this.showContactForm = false
       this.allowSlideChange = true
     })
+    EventBus.$on('menuOpened', (value) => {
+      this.allowSlideChange = !value
+    })
+  },
+  beforeDestroy () {
+    EventBus.$off('showContactForm')
+    EventBus.$off('closeContactForm')
   }
 }
 </script>

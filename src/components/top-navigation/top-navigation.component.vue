@@ -2,7 +2,7 @@
   <div>
     <div class="top-navigation-component">
       <router-link id="top-nav-home-btn" to="/">concept7</router-link>
-      <svg @click="openMenu" width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <svg @click="toggleMenu" width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <defs></defs>
           <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
               <g transform="translate(-1825, -10)" fill="#000000">
@@ -12,7 +12,7 @@
       </svg>
     </div>
     <transition name="fade">
-      <main-menu v-show="menuOpened" />
+      <main-menu @close-menu="closeMenu" v-show="menuOpened" />
     </transition>
   </div>
 </template>
@@ -20,6 +20,7 @@
 <script>
 import Snap from 'snapsvg'
 import MainMenu from './components/main-menu.component'
+import { EventBus } from '../../event-bus'
 export default {
   name: 'top-navigation',
   components: {
@@ -35,11 +36,15 @@ export default {
     this.menuBtn = Snap.select('#menu-btn-path')
   },
   methods: {
-    openMenu() {
+    toggleMenu() {
       this.menuOpened = !this.menuOpened
+      EventBus.$emit('menuOpened', this.menuOpened)
       let path = !this.menuOpened ? 'M1864,36 C1862.34315,36 1861,34.6568542 1861,33 C1861,31.3431458 1862.34315,30 1864,30 C1865.65685,30 1867,31.3431458 1867,33 C1867,34.6568542 1865.65685,36 1864,36 Z M1874,36 C1872.34315,36 1871,34.6568542 1871,33 C1871,31.3431458 1872.34315,30 1874,30 C1875.65685,30 1877,31.3431458 1877,33 C1877,34.6568542 1875.65685,36 1874,36 Z M1884,36 C1882.34315,36 1881,34.6568542 1881,33 C1881,31.3431458 1882.34315,30 1884,30 C1885.65685,30 1887,31.3431458 1887,33 C1887,34.6568542 1885.65685,36 1884,36 Z M1864,46 C1862.34315,46 1861,44.6568542 1861,43 C1861,41.3431458 1862.34315,40 1864,40 C1865.65685,40 1867,41.3431458 1867,43 C1867,44.6568542 1865.65685,46 1864,46 Z M1874,46 C1872.34315,46 1871,44.6568542 1871,43 C1871,41.3431458 1872.34315,40 1874,40 C1875.65685,40 1877,41.3431458 1877,43 C1877,44.6568542 1875.65685,46 1874,46 Z M1884,46 C1882.34315,46 1881,44.6568542 1881,43 C1881,41.3431458 1882.34315,40 1884,40 C1885.65685,40 1887,41.3431458 1887,43 C1887,44.6568542 1885.65685,46 1884,46 Z M1864,56 C1862.34315,56 1861,54.6568542 1861,53 C1861,51.3431458 1862.34315,50 1864,50 C1865.65685,50 1867,51.3431458 1867,53 C1867,54.6568542 1865.65685,56 1864,56 Z M1874,56 C1872.34315,56 1871,54.6568542 1871,53 C1871,51.3431458 1872.34315,50 1874,50 C1875.65685,50 1877,51.3431458 1877,53 C1877,54.6568542 1875.65685,56 1874,56 Z M1884,56 C1882.34315,56 1881,54.6568542 1881,53 C1881,51.3431458 1882.34315,50 1884,50 C1885.65685,50 1887,51.3431458 1887,53 C1887,54.6568542 1885.65685,56 1884,56 Z' : 'M1872,72 C1859.29745,72 1849,61.7025492 1849,49 C1849,36.2974508 1859.29745,26 1872,26 C1884.70255,26 1895,36.2974508 1895,49 C1895,61.7025492 1884.70255,72 1872,72 Z M1872.5,58 C1877.19442,58 1881,54.1944204 1881,49.5 C1881,44.8055796 1877.19442,41 1872.5,41 C1867.80558,41 1864,44.8055796 1864,49.5 C1864,54.1944204 1867.80558,58 1872.5,58 Z'
       this.menuBtn.animate({ d: path }, 100)
-      console.log('open menu')
+    },
+    closeMenu () {
+      this.menuOpened = false
+      EventBus.$emit('menuOpened', this.menuOpened)
     }
   }
 }
