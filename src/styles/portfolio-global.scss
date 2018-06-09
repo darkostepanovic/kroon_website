@@ -28,17 +28,17 @@
   }
   .portfolio-section-main-title {
     font-weight: 300;
-    font-size: 40px;
+    font-size: 32px;
   }
   .portfolio-section-title {
     font-weight: 300;
-    font-size: 28px;
-    margin-top: 100px;
+    font-size: 22px;
+    margin-top: 50px;
   }
   .portfolio-section-text {
     font-weight: 400;
     font-size: 14px;
-    line-height: 26px;
+    line-height: 22px;
     margin-top: 30px;
   }
   .text-white {
@@ -57,12 +57,18 @@
     .full-width-lg {
       width: 100%;
     }
+    .lg-margin-top-0 {
+      margin-top: 0;
+    }
+    .lg-justify-flex-end {
+      justify-content: flex-end !important;
+    }
     .margin-lg-0 {
       margin: 0;
       margin-top: 0 !important;
     }
     .section-item-lg-margin-top {
-      margin-top: 120px;
+      margin-top: 160px !important;
     }
     .portfolio-main-title {
       font-size: 70px;

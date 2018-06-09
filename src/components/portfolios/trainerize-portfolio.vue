@@ -37,7 +37,7 @@
             </div>
           </div>
           <div class="row flex-lg-row-reverse align-items-lg-center section-item-lg-margin-top">
-            <div class="col-12 col-lg-4 offset-lg-1">
+            <div class="col-12 col-lg-4 offset-lg-1 tz-margin-negative-100">
               <h3 class="portfolio-section-title text-white margin-lg-0">Switching into</h3>
               <p class="portfolio-section-text text-grey-9c">
                 Most of the functionalities of the web app are also available via mobile,
@@ -46,7 +46,7 @@
                 review stats, communicate and provide feedback to the clients, all on the go.
               </p>
             </div>
-            <div class="col-12 col-lg-7 text-center img-wrapper">
+            <div class="col-12 col-md-8 offset-md-2 offset-lg-0 col-lg-7 text-center img-wrapper">
               <img src="./../../assets/portfolios/trainerize/trz-switching.png" class="margin-lg-0 foo3" alt="trainerize-switching">
             </div>
           </div>
@@ -56,9 +56,9 @@
         <div class="container">
           <div class="row">
             <div class="col-12 text-center img-wrapper">
-              <img class="foo4" src="./../../assets/portfolios/trainerize/trz-laptop.svg" alt="trainerize-dashborad">
+              <img class="foo4 col-xl-12" src="./../../assets/portfolios/trainerize/trz-laptop.svg" alt="trainerize-dashborad">
             </div>
-            <div class="col-12 text-center img-wrapper">
+            <div class="col-10 offset-1 text-center img-wrapper">
               <img src="./../../assets/portfolios/trainerize/trz-visuals.svg" alt="trainerize-visuals">
             </div>
             <h2 class="col-12 portfolio-section-main-title text-center">Trainerize visuals</h2>
@@ -77,7 +77,7 @@
               <img class="foo5" src="./../../assets/portfolios/trainerize/trz-visuals-phone.svg" alt="trainerize visuals">
             </div>
             <div class="col-12 text-center">
-              <img src="./../../assets/portfolios/trainerize/trz-visuals-graphic.svg" alt="trainerize visuals">
+              <img class="col-12" src="./../../assets/portfolios/trainerize/trz-visuals-graphic.svg" alt="trainerize visuals">
             </div>
           </div>
         </div>
@@ -105,7 +105,7 @@
           </div>
           <div class="row">
             <div class="col-12 text-center">
-              <img class="foo7" src="./../../assets/portfolios/trainerize/trz-system-overview-human.svg" alt="">
+              <img class="foo7 col-12" src="./../../assets/portfolios/trainerize/trz-system-overview-human.svg" alt="">
             </div>
           </div>
           <div class="row align-items-lg-center section-item-lg-margin-top">
@@ -132,7 +132,7 @@
                 easier and allows every gym and trainer to offer professional service.
               </p>
             </div>
-            <div class="col-12 col-lg-8 text-center full-img-wrapper">
+            <div class="col-12 col-lg-8 text-center full-img-wrapper lg-justify-flex-end">
               <img class="foo9" src="./../../assets/portfolios/trainerize/trz-system-overview-laptop-mobile.svg" alt="">
             </div>
           </div>

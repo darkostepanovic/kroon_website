@@ -11,10 +11,10 @@
                 LYT is a physical light made for festival camp residents, whose features
                 (color, intensity, saturation) are controlled using LYT mobile app.
                 The beauty and possibilities when each tent in the campsite becomes a
-                light offers amazing visual experiences. Additionally, antennas sets,
+                <!-- light offers amazing visual experiences. Additionally, antennas sets,
                 placed across festival grounds, allow for “highjacking” of LYTS by festival
                 management and controll using the desktop app giving the possibility of
-                providing truly unique experiences to festival attendees.
+                providing truly unique experiences to festival attendees. -->
               </p>
               <p class="portfolio-main-location-text">Vancouver, Canada</p>
             </div>
@@ -67,9 +67,9 @@
       </section>
       <section class="lyt-dark-bcg" id="lyt-disco">
         <div class="container">
-          <div class="row">
+          <div class="row align-items-lg-center">
             <div class="col-12 col-lg-4">
-              <h3 class="portfolio-section-title text-white">Desktop app to control all LYTs on the fesitval site</h3>
+              <h3 class="portfolio-section-title text-white lg-margin-top-0">Desktop app to control all LYTs on the fesitval site</h3>
               <p class="portfolio-section-text text-grey-9c">
                 Festival lightning operator can scan for antennas (devices that are sending the signal to LYTs),
                 make a visual reference to their position in the physical world.

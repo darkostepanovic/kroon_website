@@ -3,9 +3,9 @@
     <transition name="fadeOut" mode="out-in">
       <component :is="currentslide"></component>
     </transition>
-    <soc-nav v-show="showSocialAndPagination" />
-    <slide-nav v-show="showSocialAndPagination" :slide="slide" @changeSlide="changeSlide"></slide-nav>
-    <div id="pagination" v-show="showSocialAndPagination">
+    <soc-nav class="d-none d-sm-block" v-show="showSocialAndPagination" />
+    <slide-nav class="d-none d-sm-flex" v-show="showSocialAndPagination" :slide="slide" @changeSlide="changeSlide"></slide-nav>
+    <div id="pagination" class="d-none d-sm-block" v-show="showSocialAndPagination">
       {{ slide }} / 5
     </div>
     <contact-modal v-if="showContactForm" />
@@ -103,6 +103,7 @@ export default {
       window.attachEvent('onmousewheel', this.handleScroll)
     }
     EventBus.$on('showContactForm', () => {
+      console.log('111111')
       this.showContactForm = true
       this.allowSlideChange = false
     })
@@ -115,8 +116,8 @@ export default {
     })
   },
   beforeDestroy () {
-    EventBus.$off('showContactForm')
-    EventBus.$off('closeContactForm')
+    // EventBus.$off('showContactForm')
+    // EventBus.$off('closeContactForm')
   }
 }
 </script>

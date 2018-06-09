@@ -1,8 +1,9 @@
 <template>
   <transition name="modal">
-    <div @click="closeModal" class="modal-mask">
+    <div @click="closeModalBackdrop" class="modal-mask">
       <div class="modal-wrapper">
         <div class="modal-container">
+          <div id="close-modal" @click="closeModal"></div>
           <div class="modal-body">
             <svg width="490px" height="581px" viewBox="0 0 490 581" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <defs>
@@ -28,7 +29,7 @@
                 <input type="message" v-model="message" placeholder="Your message*" name="message" :class="{ 'error-border': errorMessage }">
                 <span id="adding-numbers">{{ number1 }} + {{ number2 }} =</span>
                 <input type="number" v-model="addingValue" id="adding-value" name="result" :class="{ 'error-border': errorAddingValue }">
-                <input type="submit" @click.prevent="submitForm" id="submit-message-btn" value="Send email">
+                <input type="submit" @click.prevent="submitForm" id="submit-message-btn" value="Send message">
               </form>
               <div class="error-text">
                 <span v-if="mandatoryFieldsError">Mandatory fields are not populated.</span>
@@ -77,10 +78,12 @@ export default {
     this.curvePath = Snap.select('#contact-path')
   },
   methods: {
-    closeModal (e) {
-      console.log(e.target.className)
+    closeModalBackdrop (e) {
       if (e.target.className === 'modal-wrapper' || e.target.className === 'close-modal-btn')
-       EventBus.$emit('closeContactForm')
+       this.closeModal()
+    },
+    closeModal () {
+      EventBus.$emit('closeContactForm')
     },
     validate () {
       this.errorName = false

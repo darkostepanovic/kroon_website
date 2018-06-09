@@ -12,6 +12,7 @@
     display: table-cell;
     vertical-align: middle;
     .modal-container {
+      position: relative;
       width: 490px;
       margin: 0px auto;
       background-color: #fff;
@@ -19,6 +20,19 @@
       overflow: hidden;
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
       transition: all 0.3s ease;
+      #close-modal {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        height: 16px;
+        width: 16px;
+        cursor: pointer;
+        background-image: url(./assets/global/x-icon-white.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 1;
+      }
       .modal-body {
         min-height: 581px;
         position: relative;
@@ -97,8 +111,7 @@
             -webkit-background-clip: text;
             font-weight: 700;
             font-size: 14px;
-            text-align: left;
-            padding-left: 15px;
+            text-align: center;
             cursor: pointer;
           }
           .error-text {
@@ -139,6 +152,27 @@
             background: none;
             cursor: pointer;
             margin-top: 100px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 490px) {
+  .modal-mask {
+    overflow-x: hidden;
+    .modal-wrapper {
+      .modal-container {
+        width: auto;
+        .modal-body {
+          .modal-form-content {
+            padding: 10px 10px 65px;
+            max-height: calc(100vh - 140px);
+            overflow-y: auto;
+            #submit-message-btn {
+              width: 135px;
+            }
           }
         }
       }

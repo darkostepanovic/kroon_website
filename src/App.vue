@@ -117,7 +117,7 @@ export default {
           break;
         case 3:
           if (window.outerWidth > 992) {
-            scaleMatrix.translate(window.outerWidth + 100 - (window.outerWidth / 2), window.innerHeight - 300 - (window.innerHeight / 2))
+            scaleMatrix.translate(window.outerWidth + 200 - (window.outerWidth / 2), window.innerHeight - 300 - (window.innerHeight / 2))
           } else {
             scaleMatrix.translate(window.outerWidth - (window.outerWidth / 1.2), -100 -(960 / window.innerHeight) * 100)
           }
@@ -130,10 +130,14 @@ export default {
           }
           break;
         case 5:
-          scaleMatrix.scale(window.outerWidth / 1920, window.innerHeight / 960)
-          if (window.outerWidth < 993) {
-            scaleMatrix.translate(-100, -250)
+          if (window.outerWidth < 961) {
+            scaleMatrix.scale(window.outerWidth / 1500, window.innerHeight / 700)
+            scaleMatrix.translate(-200, -100)
+          } else if (window.outerWidth < 993) {
+            scaleMatrix.scale(window.outerWidth / 1920, window.innerHeight / 960)
+            scaleMatrix.translate(-100, -100)
           } else {
+            scaleMatrix.scale(window.outerWidth / 1920, window.innerHeight / 960)
             scaleMatrix.translate(-100, -100)
           }
           break;
