@@ -1,8 +1,11 @@
 <template>
-  <div>
+  <div v-touch:swipe="swipeCallback">
     <transition name="fadeOut" mode="out-in">
       <component :is="currentslide"></component>
     </transition>
+    <div>
+      {{ swipeDirection }}
+    </div>
     <soc-nav class="d-none d-sm-block" v-show="showSocialAndPagination" />
     <!-- <slide-nav class="d-none d-sm-flex" v-show="showSocialAndPagination" :slide="slide" @changeSlide="changeSlide"></slide-nav> -->
     <div id="pagination" class="d-none d-sm-block" v-show="showSocialAndPagination">
@@ -12,7 +15,6 @@
 </template>
 
 <script type="text/babel">
-
 import Slide_1 from './components/slide_1.component'
 import Slide_2 from './components/slide_2.component'
 import Slide_3 from './components/slide_3.component'
@@ -37,10 +39,7 @@ export default {
       currentslide: '',
       allowSlideChange: false,
       showSocialAndPagination: false,
-      touchstartX: 0,
-      touchstartY: 0,
-      touchendX: 0,
-      touchendY: 0
+      swipeDirection: null
     }
   },
   methods: {
@@ -73,32 +72,6 @@ export default {
         }
       }
     },
-    handleGesture () {
-      if (this.touchendY < this.touchstartY) {
-        if (this.slide < 5) {
-          this.allowSlideChange = false
-          this.slide++
-          EventBus.$emit('slideChanged', {
-            currentSlide: this.slide
-          })
-          setTimeout(() => {
-            this.allowSlideChange = true
-          }, 2000)
-        }
-      }
-      if (this.touchendY > this.touchstartY) {
-        if (this.slide > 1) {
-          this.allowSlideChange = false
-          this.slide--
-          EventBus.$emit('slideChanged', {
-            currentSlide: this.slide
-          })
-          setTimeout(() => {
-            this.allowSlideChange = true
-          }, 2000)
-        }
-      }
-    },
     changeSlide (val) {
       this.allowSlideChange = false
       this.slide = val
@@ -108,6 +81,10 @@ export default {
       setTimeout(() => {
         this.allowSlideChange = true
       }, 2000)
+    },
+    swipeCallback (swipeDirection) {
+      console.log(swipeDirection)
+      this.swipeDirection = swipeDirection
     }
   },
   watch: {
@@ -125,16 +102,7 @@ export default {
     if (window.addEventListener) {
       window.addEventListener('mousewheel', this.handleScroll, false)
       window.addEventListener('DOMMouseScroll', this.handleScroll, false)
-      window.addEventListener('keydown', this.handleScroll, false)
-      window.addEventListener('touchstart', function(event) {
-          this.touchstartX = event.changedTouches[0].screenX
-          this.touchstartY = event.changedTouches[0].screenY
-      }, false)
-      window.addEventListener('touchend', function(event) {
-          this.touchendX = event.changedTouches[0].screenX
-          this.touchendY = event.changedTouches[0].screenY
-          this.handleGesture()
-      }, false)
+      window.addEventListener('keydown', this.handleScroll, false);
     } else {
       window.attachEvent('onmousewheel', this.handleScroll)
     }
