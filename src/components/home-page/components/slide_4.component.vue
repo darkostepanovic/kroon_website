@@ -1,9 +1,9 @@
 <template>
   <div class="home-slide" id="home-slide-4">
     <div class="left-cont">
-      <h2 class="animated" :class="{'fadeInDown': allowFadeIn}">Get in shape with Trainerize</h2>
-      <p class="animated animation-delay-1 d-none d-sm-block" :class="{'fadeInDown': allowFadeIn}">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac venenatis nunc. Cras mattis dolor magna, ut dignissim est interdum eu. Praesent eget pulvinar nisl, eget gravida nisi.</p>
-      <button @click="goToTrainerize" class="animated animation-delay-2" :class="{'fadeInDown': allowFadeIn}" type="button">
+      <h2 class="animated" :class="{'fadeInDown': allowFadeIn}">Control festival lighting with Lyt</h2>
+      <p class="animated animation-delay-1 d-none d-sm-block" :class="{'fadeInDown': allowFadeIn}">Mobile and desktop app that brings a twist to festival lights control.</p>
+      <button @click="goToLyt" class="animated animation-delay-2" :class="{'fadeInDown': allowFadeIn}" type="button">
         Explore project
         <img src="./../../../assets/home-page/button-arrow.svg" width="14" height="16" alt="">
       </button>
@@ -26,8 +26,8 @@ export default {
     this.allowFadeIn = true
   },
   methods: {
-    goToTrainerize () {
-      this.$router.push('/trainerize')
+    goToLyt () {
+      this.$router.push('/lyt')
     }
   }
 }

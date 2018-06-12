@@ -1,19 +1,19 @@
 <template>
-  <div class="home-slide" id="home-slide-5">
-    <div id="open-contact-form-wrapper">
-      <h3 class="animated" :class="{'fadeInDown': allowFadeIn}">Ready to get started?</h3>
-      <button @click="showContactForm" class="animated animation-delay-1" :class="{'fadeInDown': allowFadeIn}" type="button">drop us a line</button>
+  <footer id="shared-footer-wrapper">
+    <div class="open-contact-form-wrapper">
+      <h3>Ready to get started?</h3>
+      <button @click="showContactForm" class="animated animation-delay-1" type="button">drop us a line</button>
     </div>
-    <div id="footer" class="animated animation-delay-2 d-none d-md-flex" :class="{'fadeInDown': allowFadeIn}">
-      <div id="contact-and-join-wrapper">
-        <div id="contact">
+    <div class="footer-bottom">
+      <div class="contact-and-join-wrapper">
+        <div class="contact">
           <h4>Contact</h4>
           <div>
             <span class="bold">Mail</span>
             <span>hello@kroonstudio.com</span>
           </div>
         </div>
-        <div id="join">
+        <div class="join">
           <h4>Join Kroon</h4>
           <div>
             <span class="bold">We are hiring</span>
@@ -21,7 +21,7 @@
           </div>
         </div>
       </div>
-      <div id="latest">
+      <div class="latest">
         <h4>Latest in magazine</h4>
         <div>
           <span class="bold">Management</span>
@@ -29,20 +29,13 @@
         </div>
       </div>
     </div>
-  </div>
+  </footer>
 </template>
 
 <script>
-import { EventBus } from '../../../event-bus'
+import { EventBus } from './../../event-bus'
 export default {
-  data () {
-    return {
-      allowFadeIn: false
-    }
-  },
-  created () {
-    this.allowFadeIn = true
-  },
+  name: 'shared-footer',
   methods: {
     showContactForm () {
       EventBus.$emit('showContactForm')

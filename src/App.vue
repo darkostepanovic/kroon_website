@@ -13,25 +13,31 @@
           <path id="home-svg-path" d="M0,2578 C1507.41389,2578 4057.96296,2578 4583.11111,2578 C4582.99456,2578 4582.99456,1718.66667 4583.11111,0 C2601.07469,2.89466338e-12 1073.37099,3.74138423e-12 2.47258387e-12,2.54016252e-12 C3.9175746e-12,960.782407 2.60519705e-11,1466.83426 0,2578 Z" fill="url(#linearGradient-1)"></path>
         </g>
     </svg>
+    <div class="animated" :class="{'fadeOutUp': !showLoadingText, 'fadeInDown': showLoadingText}" id="svg-loading-text">loading...</div>
+    <contact-modal v-if="showContactForm" />
   </div>
 </template>
 
 
 <script>
 import TopNav from './components/top-navigation/top-navigation.component.vue'
+import ContactForm from './components/contact-form/contact-modal.component'
 import { EventBus } from './event-bus'
 import Snap from 'snapsvg'
 export default {
   name: 'app',
   components: {
-    'top-nav': TopNav
+    'top-nav': TopNav,
+    'contact-modal': ContactForm
   },
   data () {
     return {
       homeSlide: 0,
       showContent: false,
       portfolioState: false,
-      showCurve: true
+      showCurve: true,
+      showContactForm: false,
+      showLoadingText: false
     }
   },
   created () {
@@ -40,6 +46,12 @@ export default {
       this.morphSvg(data.currentSlide)
       this.resizeAndPositionSvg()
       this.loaderHomeClass = 'home-svg-' + data.currentSlide
+    })
+    EventBus.$on('showContactForm', () => {
+      this.showContactForm = true
+    })
+    EventBus.$on('closeContactForm', () => {
+      this.showContactForm = false
     })
     window.addEventListener('resize', this.onWindowResize)
   },
@@ -57,15 +69,18 @@ export default {
       this.portfolioState = false
       this.homeSlide = 0
       this.showCurve = true
+      this.showLoadingText = true
       this.morphSvg('full')
       this.resizeAndPositionSvg()
       const route = routeName
-      if (route === 'about') {
+      if (route === 'about' || route === 'our-work') {
         this.showContent = true
         this.showCurve = false
+        this.showLoadingText = false
       } else {
         setTimeout(() => {
           this.showContent = true
+          this.showLoadingText = false
           switch (route) {
             case 'home':
               this.homeSlide = 1
@@ -177,7 +192,6 @@ export default {
     },
     morphCallback () {
       if (this.portfolioState) {
-        console.log('morph ended')
         EventBus.$emit('morphEnded')
       }
     }

@@ -4,15 +4,19 @@
       <component :is="currentslide"></component>
     </transition>
     <soc-nav class="d-none d-sm-block" v-show="showSocialAndPagination" />
-    <slide-nav class="d-none d-sm-flex" v-show="showSocialAndPagination" :slide="slide" @changeSlide="changeSlide"></slide-nav>
+    <!-- <slide-nav class="d-none d-sm-flex" v-show="showSocialAndPagination" :slide="slide" @changeSlide="changeSlide"></slide-nav> -->
     <div id="pagination" class="d-none d-sm-block" v-show="showSocialAndPagination">
       {{ slide }} / 5
     </div>
-    <contact-modal v-if="showContactForm" />
   </div>
 </template>
 
 <script type="text/babel">
+let touchstartX = 0;
+let touchstartY = 0;
+let touchendX = 0;
+let touchendY = 0;
+
 import Slide_1 from './components/slide_1.component'
 import Slide_2 from './components/slide_2.component'
 import Slide_3 from './components/slide_3.component'
@@ -20,7 +24,6 @@ import Slide_4 from './components/slide_4.component'
 import Slide_5 from './components/slide_5.component'
 import SocialNav from './components/social-navigation.component'
 import SlideNav from './components/slide-navigation.component'
-import ContactForm from './components/contact-modal.component'
 import { EventBus } from '../../event-bus'
 export default {
   components: {
@@ -30,22 +33,20 @@ export default {
     'slide_4': Slide_4,
     'slide_5': Slide_5,
     'soc-nav': SocialNav,
-    'slide-nav': SlideNav,
-    'contact-modal': ContactForm
+    'slide-nav': SlideNav
   },
   data () {
     return {
       slide: 0,
       currentslide: '',
       allowSlideChange: false,
-      showSocialAndPagination: false,
-      showContactForm: false
+      showSocialAndPagination: false
     }
   },
   methods: {
     handleScroll (event) {
       if (this.allowSlideChange && this.$route.name === 'home') {
-        if (event.wheelDelta > 0 || event.detail < 0 || event.keyCode === 38) {
+        if (event.wheelDelta > 0 || event.detail < 0 || event.keyCode === 38 || touchendY >= touchstartY) {
           // scroll up
           if (this.slide > 1) {
             this.allowSlideChange = false
@@ -57,7 +58,7 @@ export default {
               this.allowSlideChange = true
             }, 2000)
           }
-        } else if (event.wheelDelta < 0 || event.detail > 0 || event.keyCode === 40) {
+        } else if (event.wheelDelta < 0 || event.detail > 0 || event.keyCode === 40 || touchendY <= touchstartY) {
           // scroll down
           if (this.slide < 5) {
             this.allowSlideChange = false
@@ -98,17 +99,23 @@ export default {
     if (window.addEventListener) {
       window.addEventListener('mousewheel', this.handleScroll, false)
       window.addEventListener('DOMMouseScroll', this.handleScroll, false)
-      window.addEventListener('keydown', this.handleScroll, false);
+      window.addEventListener('keydown', this.handleScroll, false)
+      window.addEventListener('touchstart', function(event) {
+          touchstartX = event.changedTouches[0].screenX
+          touchstartY = event.changedTouches[0].screenY
+      }, false)
+      window.addEventListener('touchend', function(event) {
+          touchendX = event.changedTouches[0].screenX
+          touchendY = event.changedTouches[0].screenY
+          this.handleScroll()
+      }, false)
     } else {
       window.attachEvent('onmousewheel', this.handleScroll)
     }
     EventBus.$on('showContactForm', () => {
-      console.log('111111')
-      this.showContactForm = true
       this.allowSlideChange = false
     })
     EventBus.$on('closeContactForm', () => {
-      this.showContactForm = false
       this.allowSlideChange = true
     })
     EventBus.$on('menuOpened', (value) => {

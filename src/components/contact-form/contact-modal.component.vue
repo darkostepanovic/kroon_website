@@ -50,7 +50,7 @@
 </template>
 
 <script>
-import { EventBus } from '../../../event-bus'
+import { EventBus } from '../../event-bus'
 import Snap from 'snapsvg'
 export default {
   name: 'contact-form',

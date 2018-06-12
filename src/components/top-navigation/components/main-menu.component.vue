@@ -8,7 +8,7 @@
           <ul>
             <li @click="homePage">Home</li>
             <li @click="aboutPage">People</li>
-            <li>Portfolio</li>
+            <li @click="ourWorkPage">Our work</li>
             <li>Careers</li>
             <li>Contact Us</li>
           </ul>
@@ -48,6 +48,10 @@
       },
       homePage () {
         this.$router.push('/')
+        this.$emit('close-menu')
+      },
+      ourWorkPage () {
+        this.$router.push('/our-work')
         this.$emit('close-menu')
       }
     }

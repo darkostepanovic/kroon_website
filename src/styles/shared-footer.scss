@@ -1,0 +1,74 @@
+#shared-footer-wrapper {
+  margin-top: 150px;
+  flex-direction: column;
+  h3 {
+    font-size: 40px;
+    font-weight: 400;
+    color: #333;
+    margin-top: 70px;
+  }
+  span {
+    font-size: 16px;
+    line-height: 1.5;
+    display: block;
+    &.bold {
+      font-size: 14px;
+      font-weight: 700;
+    }
+  }
+  button {
+    width: 283px;
+    height: 59px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    color: #333;
+    line-height: 59px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: transparent;
+    text-transform: uppercase;
+    margin-top: 23px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    flex-shrink: 0;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  .footer-bottom {
+    margin-top: 100px;
+    display: flex;
+    text-align: left;
+    max-width: 850px;
+    margin-left: 100px;
+    h4 {
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .contact-and-join-wrapper {
+      display: flex;
+      flex: 2;
+      .contact {
+        flex: 1;
+        padding-right: 50px;
+        div {
+          margin-top: 20px;
+        }
+      }
+      .join {
+        flex: 1;
+        padding-right: 50px;
+        div {
+          margin-top: 20px;
+        }
+      }
+    }
+    .latest {
+      flex: 1.3;
+      padding-right: 50px;
+      div {
+        margin-top: 20px;
+      }
+    }
+  }
+}
