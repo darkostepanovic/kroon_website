@@ -12,10 +12,6 @@
 </template>
 
 <script type="text/babel">
-let touchstartX = 0;
-let touchstartY = 0;
-let touchendX = 0;
-let touchendY = 0;
 
 import Slide_1 from './components/slide_1.component'
 import Slide_2 from './components/slide_2.component'
@@ -40,7 +36,11 @@ export default {
       slide: 0,
       currentslide: '',
       allowSlideChange: false,
-      showSocialAndPagination: false
+      showSocialAndPagination: false,
+      touchstartX: 0,
+      touchstartY: 0,
+      touchendX: 0,
+      touchendY: 0
     }
   },
   methods: {
@@ -74,7 +74,7 @@ export default {
       }
     },
     handleGesture () {
-      if (touchendY < touchstartY) {
+      if (this.touchendY < this.touchstartY) {
         if (this.slide < 5) {
           this.allowSlideChange = false
           this.slide++
@@ -86,7 +86,7 @@ export default {
           }, 2000)
         }
       }
-      if (touchendY > touchstartY) {
+      if (this.touchendY > this.touchstartY) {
         if (this.slide > 1) {
           this.allowSlideChange = false
           this.slide--
@@ -127,14 +127,12 @@ export default {
       window.addEventListener('DOMMouseScroll', this.handleScroll, false)
       window.addEventListener('keydown', this.handleScroll, false)
       window.addEventListener('touchstart', function(event) {
-          touchstartX = event.changedTouches[0].screenX
-          touchstartY = event.changedTouches[0].screenY
-          console.log(event)
+          this.touchstartX = event.changedTouches[0].screenX
+          this.touchstartY = event.changedTouches[0].screenY
       }, false)
       window.addEventListener('touchend', function(event) {
-          touchendX = event.changedTouches[0].screenX
-          touchendY = event.changedTouches[0].screenY
-          console.log(event)
+          this.touchendX = event.changedTouches[0].screenX
+          this.touchendY = event.changedTouches[0].screenY
           this.handleGesture()
       }, false)
     } else {
