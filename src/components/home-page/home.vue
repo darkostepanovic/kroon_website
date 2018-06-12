@@ -46,7 +46,7 @@ export default {
   methods: {
     handleScroll (event) {
       if (this.allowSlideChange && this.$route.name === 'home') {
-        if (event.wheelDelta > 0 || event.detail < 0 || event.keyCode === 38 || touchendY >= touchstartY) {
+        if (event.wheelDelta > 0 || event.detail < 0 || event.keyCode === 38) {
           // scroll up
           if (this.slide > 1) {
             this.allowSlideChange = false
@@ -58,7 +58,7 @@ export default {
               this.allowSlideChange = true
             }, 2000)
           }
-        } else if (event.wheelDelta < 0 || event.detail > 0 || event.keyCode === 40 || touchendY <= touchstartY) {
+        } else if (event.wheelDelta < 0 || event.detail > 0 || event.keyCode === 40) {
           // scroll down
           if (this.slide < 5) {
             this.allowSlideChange = false
@@ -70,6 +70,32 @@ export default {
               this.allowSlideChange = true
             }, 2000)
           }
+        }
+      }
+    },
+    handleGesture () {
+      if (touchendY < touchstartY) {
+        if (this.slide < 5) {
+          this.allowSlideChange = false
+          this.slide++
+          EventBus.$emit('slideChanged', {
+            currentSlide: this.slide
+          })
+          setTimeout(() => {
+            this.allowSlideChange = true
+          }, 2000)
+        }
+      }
+      if (touchendY > touchstartY) {
+        if (this.slide > 1) {
+          this.allowSlideChange = false
+          this.slide--
+          EventBus.$emit('slideChanged', {
+            currentSlide: this.slide
+          })
+          setTimeout(() => {
+            this.allowSlideChange = true
+          }, 2000)
         }
       }
     },
@@ -103,11 +129,13 @@ export default {
       window.addEventListener('touchstart', function(event) {
           touchstartX = event.changedTouches[0].screenX
           touchstartY = event.changedTouches[0].screenY
+          console.log(event)
       }, false)
       window.addEventListener('touchend', function(event) {
           touchendX = event.changedTouches[0].screenX
           touchendY = event.changedTouches[0].screenY
-          this.handleScroll()
+          console.log(event)
+          this.handleGesture()
       }, false)
     } else {
       window.attachEvent('onmousewheel', this.handleScroll)
