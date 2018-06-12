@@ -415,6 +415,7 @@
 
 @media (max-width: 577px) {
   .home-slide {
+    height: calc(100vh - 54px);
     padding: 0 70px;
     overflow: hidden;
     &#home-slide-1 {

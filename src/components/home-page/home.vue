@@ -3,9 +3,6 @@
     <transition name="fadeOut" mode="out-in">
       <component :is="currentslide"></component>
     </transition>
-    <div>
-      {{ swipeDirection }}
-    </div>
     <soc-nav class="d-none d-sm-block" v-show="showSocialAndPagination" />
     <!-- <slide-nav class="d-none d-sm-flex" v-show="showSocialAndPagination" :slide="slide" @changeSlide="changeSlide"></slide-nav> -->
     <div id="pagination" class="d-none d-sm-block" v-show="showSocialAndPagination">
@@ -38,8 +35,7 @@ export default {
       slide: 0,
       currentslide: '',
       allowSlideChange: false,
-      showSocialAndPagination: false,
-      swipeDirection: null
+      showSocialAndPagination: false
     }
   },
   methods: {
@@ -83,8 +79,29 @@ export default {
       }, 2000)
     },
     swipeCallback (swipeDirection) {
-      console.log(swipeDirection)
-      this.swipeDirection = swipeDirection
+      if (swipeDirection === 'swipeup') {
+        if (this.slide < 5) {
+          this.allowSlideChange = false
+          this.slide++
+          EventBus.$emit('slideChanged', {
+            currentSlide: this.slide
+          })
+          setTimeout(() => {
+            this.allowSlideChange = true
+          }, 2000)
+        }
+      } else if (swipeDirection === 'swipedown') {
+        if (this.slide > 1) {
+          this.allowSlideChange = false
+          this.slide--
+          EventBus.$emit('slideChanged', {
+            currentSlide: this.slide
+          })
+          setTimeout(() => {
+            this.allowSlideChange = true
+          }, 2000)
+        }
+      }
     }
   },
   watch: {

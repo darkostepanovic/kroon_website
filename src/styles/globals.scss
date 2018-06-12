@@ -94,7 +94,10 @@ a {
 }
 
 @media (max-width: 577px) {
-  #app-svg {
-    display: none;
+  #app {
+    max-height: calc(100vh - 54px);
+    #app-svg {
+      display: none;
+    }
   }
 }
