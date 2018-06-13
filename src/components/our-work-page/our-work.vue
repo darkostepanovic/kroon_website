@@ -4,7 +4,7 @@
       <div class="container">
         <div class="row">
           <div class="col-5 offset-1">
-            <div class="our-work-item" id="our-work-trainerize">
+            <div class="our-work-item" id="our-work-trainerize" @click="goTo('/trainerize')">
               <div class="parent">
                 <div class="child"></div>
               </div>
@@ -16,7 +16,7 @@
                 </div>
               </div>
             </div>
-            <div class="our-work-item" id="our-work-lyt">
+            <div class="our-work-item" id="our-work-lyt" @click="goTo('/lyt')">
               <div class="parent">
                 <div class="child"></div>
               </div>
@@ -30,7 +30,7 @@
             </div>
           </div>
           <div class="col-5">
-            <div class="our-work-item" id="our-work-nymea">
+            <div class="our-work-item" id="our-work-nymea" @click="goTo('/guh')">
               <div class="parent">
                 <div class="child"></div>
               </div>
@@ -42,7 +42,7 @@
                 </div>
               </div>
             </div>
-            <div class="our-work-item" id="our-work-hasler">
+            <div class="our-work-item" id="our-work-hasler" @click="goTo('/hasler')">
               <div class="parent">
                 <div class="child"></div>
               </div>
@@ -72,6 +72,11 @@ export default {
   name: 'our-work',
   components: {
     SharedFooter
+  },
+  methods: {
+    goTo (route) {
+      this.$router.push(route)
+    }
   }
 }
 </script>

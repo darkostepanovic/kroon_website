@@ -108,15 +108,28 @@
         <img id="tent-middle" src="src/assets/portfolios/lyt/lyt-middle-tent.gif" alt="">
         <img id="tent-right" src="src/assets/portfolios/lyt/lyt-right-tent.gif" alt="">
       </section>
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <shared-footer />
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   </div>
 </template>
 
 <script type="text/babel">
+import SharedFooter from './../shared-footer/shared-footer.component'
 import ScrollReveal from 'scrollreveal'
 import { EventBus } from './../../event-bus'
 export default {
   name: 'lyt-portfolio',
+  components: {
+    SharedFooter
+  },
   data () {
     return {
       showContent: false

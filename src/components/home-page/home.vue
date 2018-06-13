@@ -5,7 +5,7 @@
     </transition>
     <soc-nav class="d-none d-sm-block" v-show="showSocialAndPagination" />
     <!-- <slide-nav class="d-none d-sm-flex" v-show="showSocialAndPagination" :slide="slide" @changeSlide="changeSlide"></slide-nav> -->
-    <div id="pagination" class="d-none d-sm-block" v-show="showSocialAndPagination">
+    <div id="pagination" v-show="showSocialAndPagination">
       {{ slide }} / 5
     </div>
   </div>

@@ -1,6 +1,7 @@
 #about-page-wrapper {
   text-align: left;
   padding-top: 80px;
+  padding-bottom: 100px;
   overflow: hidden;
   img {
     max-width: 100%;
@@ -51,6 +52,8 @@
         font-weight: 400;
         font-size: 18px;
         line-height: 35px;
+        height: 300px;
+        overflow: hidden;
       }
       .client-name {
         margin-top: 50px;
@@ -71,11 +74,56 @@
   #about-images-section {
     margin-top: 95px;
     .img-row {
-      img {
-        float: left;
-        width: 25%;
-        height: auto;
-        border: 1px solid black;
+      display: flex;
+      flex-wrap: wrap;
+      .team-member-thumb-wrapper {
+        width: 50%;
+        position: relative;
+        img {
+          filter: grayscale(100%);
+          transition: filter 0.2s ease-in-out;
+        }
+        .info {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          .name {
+            position: absolute;
+            top: -90px;
+            left: 40px;
+            cursor: default;
+            color: #fff;
+            transition: top 0.2s ease-in-out;
+            text-transform: uppercase;
+            font-size: 24px;
+            font-weight: 700;
+          }
+          .position {
+            opacity: 0;
+            transition: opacity 0.2s ease-in-out;
+            position: absolute;
+            left: 40px;
+            top: -80px;
+            cursor: default;
+            color: #fff;
+            font-weight: 400;
+            font-size: 16px;
+          }
+        }
+        &:hover {
+          img {
+            filter: grayscale(0%);
+          }
+          .info {
+            .name {
+              top: -110px;
+            }
+            .position {
+              opacity: 1;
+            }
+          }
+        }
       }
     }
   }
@@ -103,6 +151,11 @@
     }
     #about-images-section {
       margin-top: 155px;
+      .img-row {
+        .team-member-thumb-wrapper {
+          width: 25%;
+        }
+      }
     }
   }
 }

@@ -1,6 +1,6 @@
 #shared-footer-wrapper {
   margin-top: 150px;
-  flex-direction: column;
+  text-align: center;
   h3 {
     font-size: 40px;
     font-weight: 400;
@@ -37,37 +37,50 @@
   }
   .footer-bottom {
     margin-top: 100px;
-    display: flex;
     text-align: left;
-    max-width: 850px;
-    margin-left: 100px;
+    display: flex;
     h4 {
       font-size: 18px;
       font-weight: 700;
     }
-    .contact-and-join-wrapper {
-      display: flex;
-      flex: 2;
-      .contact {
-        flex: 1;
-        padding-right: 50px;
-        div {
-          margin-top: 20px;
-        }
-      }
-      .join {
-        flex: 1;
-        padding-right: 50px;
-        div {
-          margin-top: 20px;
-        }
-      }
-    }
-    .latest {
-      flex: 1.3;
+    .contact {
       padding-right: 50px;
       div {
         margin-top: 20px;
+      }
+    }
+    .join {
+      padding-right: 50px;
+      div {
+        margin-top: 20px;
+      }
+    }
+    .latest {
+      padding-right: 50px;
+      div {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 577px) {
+  #shared-footer-wrapper {
+    .footer-bottom {
+      .join,
+      .latest {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  #shared-footer-wrapper {
+    .footer-bottom {
+      .join,
+      .latest {
+        margin-top: 30px;
       }
     }
   }

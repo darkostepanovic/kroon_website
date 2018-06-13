@@ -6,6 +6,7 @@ import OurWork from './../components/our-work-page/our-work'
 import Guh from './../components/portfolios/guh-portfolio'
 import Lyt from './../components/portfolios/lyt-portfolio'
 import Trainerize from './../components/portfolios/trainerize-portfolio'
+import Hasler from './../components/portfolios/hasler-portfolio'
 
 Vue.use(Router)
 
@@ -41,6 +42,11 @@ let router = new Router({
       path: '/trainerize',
       name: 'trainerize-portfolio',
       component: Trainerize
+    },
+    {
+      path: '/hasler',
+      name: 'hasler-portfolio',
+      component: Hasler
     }
   ]
 })

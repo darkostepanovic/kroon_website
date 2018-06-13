@@ -6,15 +6,15 @@
       <div class="row flex-md-row-reverse">
         <div class="col-12 col-md-7 offset-md-1 main-links-wrapper">
           <ul>
-            <li @click="homePage">Home</li>
-            <li @click="aboutPage">People</li>
-            <li @click="ourWorkPage">Our work</li>
+            <li @click="goTo('/')">Home</li>
+            <li @click="goTo('/about')">People</li>
+            <li @click="goTo('/our-work')">Our work</li>
             <li>Careers</li>
-            <li>Contact Us</li>
+            <li @click="showContactForm">Contact Us</li>
           </ul>
         </div>
         <div class="col-9 offset-md-1 col-md-3 location-social-wrapper">
-          <div class="locations-wrapper">
+          <!-- <div class="locations-wrapper">
             <div class="location-item">
               <div class="country">Switzerland</div>
               <div class="address">Brauerstrasse 11,</div>
@@ -25,7 +25,7 @@
               <div class="address">Brauerstrasse 11,</div>
               <div class="address">88088 Zurich</div>
             </div>
-          </div>
+          </div> -->
           <ul class="social-links">
             <li><a href="#" target="_blank">Facebook</a></li>
             <li><a href="#" target="_blank">LinkedIn</a></li>
@@ -40,20 +40,16 @@
 </template>
 
 <script type="text/babel">
-  export default {
-    methods: {
-      aboutPage () {
-        this.$router.push('/about')
-        this.$emit('close-menu')
-      },
-      homePage () {
-        this.$router.push('/')
-        this.$emit('close-menu')
-      },
-      ourWorkPage () {
-        this.$router.push('/our-work')
-        this.$emit('close-menu')
-      }
+import { EventBus } from '../../../event-bus'
+export default {
+  methods: {
+    goTo (route) {
+      this.$router.push(route)
+      this.$emit('close-menu')
+    },
+    showContactForm () {
+      EventBus.$emit('showContactForm')
     }
   }
+}
 </script>

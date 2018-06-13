@@ -151,15 +151,28 @@
           </div>
         </div>
       </section>
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <shared-footer />
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   </div>
 </template>
 
 <script type="text/babel">
+import SharedFooter from './../shared-footer/shared-footer.component'
 import ScrollReveal from 'scrollreveal'
 import { EventBus } from './../../event-bus'
 export default {
   name: 'trainerize-portfolio',
+  components: {
+    SharedFooter
+  },
   data () {
     return {
       showContent: false

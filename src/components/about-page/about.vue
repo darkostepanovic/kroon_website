@@ -40,16 +40,16 @@
     </section>
     <section id="about-images-section">
       <div class="img-row">
-        <img src="http://eemcnow.net/wp-content/uploads/different-shades-grey-color-palette_2962.jpg" alt="">
-        <img src="http://eemcnow.net/wp-content/uploads/different-shades-grey-color-palette_2962.jpg" alt="">
-        <img src="http://eemcnow.net/wp-content/uploads/different-shades-grey-color-palette_2962.jpg" alt="">
-        <img src="http://eemcnow.net/wp-content/uploads/different-shades-grey-color-palette_2962.jpg" alt="">
+        <team-member-thumb v-for="(member, index) in teamMembers" :member="member" :key="index" />
       </div>
-      <div class="img-row">
-        <img src="http://eemcnow.net/wp-content/uploads/different-shades-grey-color-palette_2962.jpg" alt="">
-        <img src="http://eemcnow.net/wp-content/uploads/different-shades-grey-color-palette_2962.jpg" alt="">
-        <img src="http://eemcnow.net/wp-content/uploads/different-shades-grey-color-palette_2962.jpg" alt="">
-        <img src="http://eemcnow.net/wp-content/uploads/different-shades-grey-color-palette_2962.jpg" alt="">
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <shared-footer />
+          </div>
+        </div>
       </div>
     </section>
   </div>
@@ -57,12 +57,66 @@
 
 <script>
 import { testimonials } from './../../helpers/index'
+import TeamMemberThumb from './components/team-member-thumb.component'
+import SharedFooter from './../shared-footer/shared-footer.component'
+import Dusan from './../../assets/about-page/team/dusan.jpg'
 export default {
   name: 'about',
+  components: {
+    TeamMemberThumb,
+    SharedFooter
+  },
   data () {
     return {
       testimonials: testimonials,
-      currentTestimonialIndex: 0
+      currentTestimonialIndex: 0,
+      teamMembers: [
+        {
+          name: 'Braca',
+          position: 'Fronend dev',
+          imgUrl: Dusan
+        },
+        {
+          name: 'Dusan',
+          position: 'Backend dev',
+          imgUrl: Dusan
+        },
+        {
+          name: 'Ognjen',
+          position: 'Fronend dev',
+          imgUrl: Dusan
+        },
+        {
+          name: 'Milica',
+          position: 'Fronend dev',
+          imgUrl: Dusan
+        },
+        {
+          name: 'Hristos',
+          position: 'Fronend dev',
+          imgUrl: Dusan
+        },
+        {
+          name: 'Jelena',
+          position: 'Fronend dev',
+          imgUrl: Dusan
+        },
+        {
+          name: 'Darko',
+          position: 'Fronend dev',
+          imgUrl: Dusan
+        },
+        {
+          name: 'Jovana',
+          position: 'Fronend dev',
+          imgUrl: Dusan
+        },
+        {
+          name: 'Peca',
+          position: 'Fronend dev',
+          imgUrl: Dusan
+        }
+      ]
     }
   },
   methods: {
