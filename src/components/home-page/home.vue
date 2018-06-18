@@ -1,7 +1,7 @@
 <template>
   <div v-touch:swipe="swipeCallback">
     <transition name="fadeOut" mode="out-in">
-      <component :is="currentslide"></component>
+      <component :is="currentslide" :images="homePageImages"></component>
     </transition>
     <soc-nav class="d-none d-sm-block" v-show="showSocialAndPagination" />
     <!-- <slide-nav class="d-none d-sm-flex" v-show="showSocialAndPagination" :slide="slide" @changeSlide="changeSlide"></slide-nav> -->
@@ -20,6 +20,9 @@ import Slide_5 from './components/slide_5.component'
 import SocialNav from './components/social-navigation.component'
 import SlideNav from './components/slide-navigation.component'
 import { EventBus } from '../../event-bus'
+import Slide2Img from './../../assets/home-page/slide-2-img.png'
+import Slide3Img from './../../assets/home-page/slide-3-img.png'
+import Slide4Img from './../../assets/home-page/slide-4-img.png'
 export default {
   components: {
     'slide_1': Slide_1,
@@ -35,7 +38,12 @@ export default {
       slide: 0,
       currentslide: '',
       allowSlideChange: false,
-      showSocialAndPagination: false
+      showSocialAndPagination: false,
+      homePageImages: {
+        image1: Slide2Img,
+        image2: Slide3Img,
+        image3: Slide4Img
+      }
     }
   },
   methods: {

@@ -24,6 +24,7 @@ import TopNav from './components/top-navigation/top-navigation.component.vue'
 import ContactForm from './components/contact-form/contact-modal.component'
 import { EventBus } from './event-bus'
 import Snap from 'snapsvg'
+
 export default {
   name: 'app',
   components: {
@@ -127,7 +128,7 @@ export default {
           break;
         case 1:
           scaleMatrix.scale(window.outerWidth / 1920, window.innerHeight / 960)
-          scaleMatrix.translate(-900, -1000)
+          scaleMatrix.translate(-window.outerWidth/window.innerHeight *700, -window.innerHeight/window.outerWidth*900)
           break;
         case 2:
           if (window.outerWidth > 992) {
