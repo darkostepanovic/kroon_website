@@ -1,6 +1,9 @@
 <template>
   <div id="app">
     <top-nav v-show="showContent" />
+    <div>
+      {{ ww }}, {{ wh }}
+    </div>
     <router-view v-show="showContent"></router-view>
     <svg width="100%" height="100%" id="app-svg" v-show="showCurve" :class="{'portfolio-state': portfolioState}">
         <defs>
@@ -38,7 +41,9 @@ export default {
       portfolioState: false,
       showCurve: true,
       showContactForm: false,
-      showLoadingText: false
+      showLoadingText: false,
+      ww: window.outerWidth,
+      wh: window.innerHeight
     }
   },
   created () {
@@ -127,8 +132,8 @@ export default {
           scaleMatrix.translate(0, 0)
           break;
         case 1:
-          // scaleMatrix.scale(0, 0)
-          // scaleMatrix.translate(0, 0)
+          scaleMatrix.scale(window.outerWidth / 1920, window.innerHeight / 960)
+          scaleMatrix.translate(-900, -1000)
           break;
         case 2:
           if (window.outerWidth > 992) {
