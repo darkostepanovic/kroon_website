@@ -9,7 +9,7 @@
       </button>
     </div>
     <div class="right-cont">
-      <img class="animated animation-delay-3 home-slide-img" :class="{'fadeInDown': allowFadeIn}" src="./../../../assets/home-page/slide-4-img.png" width="599" height="490" alt="phone image">
+      <img class="animated animation-delay-3 home-slide-img" :class="{'fadeInDown': allowFadeIn}" :src="images.image3" width="599" height="490" alt="phone image">
     </div>
   </div>
   </div>
@@ -22,6 +22,7 @@ export default {
       allowFadeIn: false
     }
   },
+  props: ['images'],
   created () {
     this.allowFadeIn = true
   },
