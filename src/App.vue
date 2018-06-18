@@ -128,7 +128,7 @@ export default {
           break;
         case 1:
           scaleMatrix.scale(window.outerWidth / 1920, window.innerHeight / 960)
-          scaleMatrix.translate(-window.outerWidth/window.innerHeight *700, -window.innerHeight/window.outerWidth*900)
+          scaleMatrix.translate(0, 0)
           break;
         case 2:
           if (window.outerWidth > 992) {
