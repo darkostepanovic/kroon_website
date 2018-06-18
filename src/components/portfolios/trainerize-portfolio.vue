@@ -1,23 +1,7 @@
 <template>
   <div id="trainerize-portfolio" class="portfolio-wrapper">
     <div v-show="showContent">
-      <section class="portfolio-top-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-lg-10 offset-lg-1 text-center foo">
-              <h1 class="portfolio-main-title">trainerize</h1>
-              <p class="portfolio-main-subtitle">
-                Serving more than 17k personal trainers and total of 250k users,
-                Trainerize is-in-one fitness solutions featuring an amazing set of
-                functionalities to cover all of the needs for personal training.
-                Development of this incredible software was a collaboration between
-                our and the founding team based in Vancouver, Canada.
-              </p>
-              <p class="portfolio-main-location-text">Vancouver, Canada</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <shared-header class="foo" :portfolio-info="portfolioInfo" />
       <section class="trainerize-dark-bcg" id="trz-dashboard-overview">
         <div class="container">
           <div class="row">
@@ -153,6 +137,11 @@
       </section>
       <section>
         <div class="container">
+          <shared-bottom-nav :project-info="{text: 'Connect everything using Nymea', link: '/guh'}" />
+        </div>
+      </section>
+      <section>
+        <div class="container">
           <div class="row">
             <div class="col-12">
               <shared-footer />
@@ -165,28 +154,43 @@
 </template>
 
 <script type="text/babel">
+import SharedBottomNav from './../shared-bottom-navigation/shared-bottom-navigation.component'
 import SharedFooter from './../shared-footer/shared-footer.component'
+import SharedHeader from './../shared-header/shared-header.component'
 import ScrollReveal from 'scrollreveal'
 import { EventBus } from './../../event-bus'
 export default {
   name: 'trainerize-portfolio',
   components: {
-    SharedFooter
+    SharedFooter,
+    SharedBottomNav,
+    SharedHeader
   },
   data () {
     return {
-      showContent: false
+      showContent: false,
+      portfolioInfo: {
+        title: 'trainerize',
+        subtitle: 'Serving more than 17k personal trainers and total of 250k users, Trainerize is-in-one fitness solutions featuring an amazing set of functionalities to cover all of the needs for personal training. Development of this incredible software was a collaboration between our and the founding team based in Vancouver, Canada.',
+        location: 'Vancouver, Canada'
+      }
     }
   },
-  created () {
-    EventBus.$on('morphEnded', () => {
+  mounted () {
+    setTimeout(() => {
       this.showContent = true
       this.attachScrollReveal()
-    })
+    }, 2500)
   },
-  beforeDestroy () {
-    EventBus.$off('morphEnded')
-  },
+  // created () {
+  //   EventBus.$on('morphEnded', () => {
+  //     this.showContent = true
+  //     this.attachScrollReveal()
+  //   })
+  // },
+  // beforeDestroy () {
+  //   EventBus.$off('morphEnded')
+  // },
   methods: {
     attachScrollReveal () {
       window.sr = ScrollReveal({ reset: true })

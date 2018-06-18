@@ -1,26 +1,7 @@
 <template>
   <div id="lyt-portfolio" class="portfolio-wrapper">
     <div v-show="showContent">
-      <section class="portfolio-top-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-lg-10 offset-lg-1 text-center foo">
-              <h1 class="portfolio-main-title">lyt</h1>
-              <p class="portfolio-main-subtitle">
-                LYT CO. makes lighting and light effects products for music festivals.
-                LYT is a physical light made for festival camp residents, whose features
-                (color, intensity, saturation) are controlled using LYT mobile app.
-                The beauty and possibilities when each tent in the campsite becomes a
-                <!-- light offers amazing visual experiences. Additionally, antennas sets,
-                placed across festival grounds, allow for “highjacking” of LYTS by festival
-                management and controll using the desktop app giving the possibility of
-                providing truly unique experiences to festival attendees. -->
-              </p>
-              <p class="portfolio-main-location-text">Vancouver, Canada</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <shared-header class="foo" :portfolio-info="portfolioInfo" />
       <section id="lyt-flow" class="lyt-dark-bcg">
         <div class="container">
           <div class="row align-items-lg-center">
@@ -110,6 +91,11 @@
       </section>
       <section>
         <div class="container">
+          <shared-bottom-nav :project-info="{text: 'Reduce delivery delays with Hasler', link: '/hasler'}" />
+        </div>
+      </section>
+      <section>
+        <div class="container">
           <div class="row">
             <div class="col-12">
               <shared-footer />
@@ -123,27 +109,42 @@
 
 <script type="text/babel">
 import SharedFooter from './../shared-footer/shared-footer.component'
+import SharedHeader from './../shared-header/shared-header.component'
+import SharedBottomNav from './../shared-bottom-navigation/shared-bottom-navigation.component'
 import ScrollReveal from 'scrollreveal'
 import { EventBus } from './../../event-bus'
 export default {
   name: 'lyt-portfolio',
   components: {
-    SharedFooter
+    SharedFooter,
+    SharedBottomNav,
+    SharedHeader
   },
   data () {
     return {
-      showContent: false
+      showContent: false,
+      portfolioInfo: {
+        title: 'lyt',
+        subtitle: 'LYT CO. makes lighting and light effects products for music festivals. LYT is a physical light made for festival camp residents, whose features (color, intensity, saturation) are controlled using LYT mobile app. The beauty and possibilities when each tent in the campsite becomes a light offers amazing visual experiences. Additionally, antennas sets, placed across festival grounds, allow for “highjacking” of LYTS by festival management and controll using the desktop app giving the possibility of providing truly unique experiences to festival attendees.',
+        location: 'Vancouver, Canada'
+      }
     }
   },
-  created () {
-    EventBus.$on('morphEnded', () => {
+  mounted () {
+    setTimeout(() => {
       this.showContent = true
       this.attachScrollReveal()
-    })
+    }, 2500)
   },
-  beforeDestroy () {
-    EventBus.$off('morphEnded')
-  },
+  // created () {
+  //   EventBus.$on('morphEnded', () => {
+  //     this.showContent = true
+  //     this.attachScrollReveal()
+  //   })
+  // },
+  // beforeDestroy () {
+  //   EventBus.$off('morphEnded')
+  // },
   methods: {
     attachScrollReveal () {
       window.sr = ScrollReveal({ reset: true })
