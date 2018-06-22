@@ -23,7 +23,7 @@
         <div class="container">
           <div class="row">
             <div class="col-12 img-wrapper text-center">
-              <img class="foo3" src="./../../assets/portfolios/lyt/lyt-iphone.svg" alt="">
+              <img class="foo3" src="./../../assets/portfolios/lyt/lyt-iphone.png" alt="">
             </div>
           </div>
         </div>
@@ -85,9 +85,9 @@
         </div>
       </section>
       <section id="lyt-tents">
-        <img id="tent-left" src="src/assets/portfolios/lyt/lyt-left-tent.gif" alt="">
+        <!-- <img id="tent-left" src="src/assets/portfolios/lyt/lyt-left-tent.gif" alt="">
         <img id="tent-middle" src="src/assets/portfolios/lyt/lyt-middle-tent.gif" alt="">
-        <img id="tent-right" src="src/assets/portfolios/lyt/lyt-right-tent.gif" alt="">
+        <img id="tent-right" src="src/assets/portfolios/lyt/lyt-right-tent.gif" alt=""> -->
       </section>
       <section>
         <div class="container">

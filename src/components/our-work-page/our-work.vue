@@ -77,6 +77,9 @@ export default {
     goTo (route) {
       this.$router.push(route)
     }
+  },
+  mounted () {
+    window.scrollTo(0, 0)
   }
 }
 </script>

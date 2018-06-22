@@ -26,7 +26,7 @@
               <form action="/Concept7/mail.php" method="POST">
                 <input type="text" v-model="name" placeholder="Your name*" name="name" :class="{ 'error-border': errorName }">
                 <input type="email" v-model="email" placeholder="Your email*" name="email" :class="{ 'error-border': errorEmail }">
-                <input type="message" v-model="message" placeholder="Your message*" name="message" :class="{ 'error-border': errorMessage }">
+                <textarea rows="2" type="message" v-model="message" placeholder="Your message*" name="message" :class="{ 'error-border': errorMessage }"></textarea>
                 <span id="adding-numbers">{{ number1 }} + {{ number2 }} =</span>
                 <input type="number" v-model="addingValue" id="adding-value" name="result" :class="{ 'error-border': errorAddingValue }">
                 <input type="submit" @click.prevent="submitForm" id="submit-message-btn" value="Send message">
@@ -39,7 +39,7 @@
             </div>
             <div v-else class="modal-thank-you">
               <h2>Thank you!</h2>
-              <p>We got your message, and we look forward to keep in touch. We’ll get back to you asap, no longer then 24h from now. <br><br>Talk to you soon! <br><span>C7 Team</span></p>
+              <p>We got your message and we are looking forward to doing something great together. We'll get back to you in no time. <br><br>Talk to you soon! <br><span>Kroon Studio</span></p>
               <button type="button" class="close-modal-btn">ok</button>
             </div>
           </div>

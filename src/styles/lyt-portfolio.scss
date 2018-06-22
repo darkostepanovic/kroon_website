@@ -32,11 +32,10 @@
     background-repeat: no-repeat;
     padding-top: 150px;
     padding-bottom: 200px;
-    .img-wrapper {
-      background-image: url(./assets/portfolios/lyt/lyt-iphone-backdrop.svg);
-      background-size: 100%;
-      background-position: center;
-      background-repeat: no-repeat;
+    img {
+      max-width: 144%;
+      width: 144%;
+      margin-left: -22%;
     }
   }
   #lyt-features {
@@ -57,7 +56,7 @@
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
-    height: 440px;
+    height: 63vw;
     position: relative;
     #tent-left {
       position: absolute;
@@ -89,16 +88,21 @@
       padding-top: 50px;
     }
     #lyt-tents {
-      height: 570px; //440
-      #tent-left {
-        top: 170px;
-      }
-      #tent-middle {
-        top: 120px;
-      }
-      #tent-right {
-        top: 157px;
-      }
+      // height: 570px; //440
+      // #tent-left {
+      //   top: 170px;
+      // }
+      // #tent-middle {
+      //   top: 120px;
+      // }
+      // #tent-right {
+      //   top: 157px;
+      // }
+    }
+  }
+  @media (min-width: 1200px) {
+    #lyt-curved-section {
+      padding-top: 260px;
     }
   }
 }

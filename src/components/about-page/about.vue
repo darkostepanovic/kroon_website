@@ -1,12 +1,12 @@
 <template>
-  <div id="about-page-wrapper">
+  <div id="about-page-wrapper" ref="aboutPage">
     <section id="about-header-section">
       <div class="container">
-        <div class="row flex-md-row-reverse">
-          <div class="col-12 col-md-8 full-img-wrapper">
+        <div class="row flex-lg-row-reverse">
+          <div class="col-12 col-lg-8 full-img-wrapper">
             <img src="./../../assets/about-page/header-about-page.svg" alt="">
           </div>
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-lg-4">
             <h2 class="main-title">We are your full stack design & development agency!</h2>
             <p class="main-text">
               Kroon Studio is a team with more than 7 years of experince bulding web and
@@ -24,8 +24,35 @@
         <div class="row">
           <div class="col-12">
             <h2 class="main-title">They trust us & vice-versa</h2>
-            <img src="./../../assets/about-page/about-clients-logos.jpg" alt="">
           </div>
+        </div>
+        <div class="row">
+          <div class="col-6 col-sm-3">
+            <img src="./../../assets/about-page/logos/lo1.jpg" alt="">
+          </div>
+          <div class="col-6 col-sm-3">
+            <img src="./../../assets/about-page/logos/lo2.jpg" alt="">
+          </div>
+          <div class="col-6 col-sm-3">
+            <img src="./../../assets/about-page/logos/lo3.jpg" alt="">
+          </div>
+          <div class="col-6 col-sm-3">
+            <img src="./../../assets/about-page/logos/lo4.jpg" alt="">
+          </div>
+          <div class="col-6 col-sm-3">
+            <img src="./../../assets/about-page/logos/lo5.jpg" alt="">
+          </div>
+          <div class="col-6 col-sm-3">
+            <img src="./../../assets/about-page/logos/lo6.jpg" alt="">
+          </div>
+          <div class="col-6 col-sm-3">
+            <img src="./../../assets/about-page/logos/lo7.jpg" alt="">
+          </div>
+          <div class="col-6 col-sm-3">
+            <img src="./../../assets/about-page/logos/lo8.jpg" alt="">
+          </div>
+        </div>
+        <div class="row">
           <div class="col-12 col-md-6 offset-md-3">
             <div v-for="(item, index) in testimonials" :key="item.id" :class="{ 'fadeIn show': index === currentTestimonialIndex }" class="testimonial-wrapper animated">
               <div class="text">{{ item.text }}</div>
@@ -135,6 +162,7 @@ export default {
   },
   mounted () {
     this.autoChangeTestimonial = setInterval(this.nextTestimonial, 5000)
+    window.scrollTo(0, 0)
   }
 }
 </script>

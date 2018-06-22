@@ -154,7 +154,7 @@ export default {
     return {
       showContent: false,
       portfolioInfo: {
-        title: 'hasler transport',
+        title: 'hasler',
         subtitle: 'With more than 300 trucks in their portfolio, Hasler Transports makes the last mile deliveries of appliance goods. They were facing a rather interesting problem of accumulated delay time on deliveries due to often failure of the buyers to be present at the agreed address at the agreed delivery time. We have come up with a web and mobile platform solutions to tackle this problem by enabling real-time tracking of drivers position and automated arrival notification system for the buyers.',
         location: 'Vancouver, Canada'
       }
