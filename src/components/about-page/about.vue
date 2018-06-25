@@ -53,7 +53,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-12 col-md-6 offset-md-3">
+          <div class="col-12 col-lg-6 offset-lg-3">
             <div v-for="(item, index) in testimonials" :key="item.id" :class="{ 'fadeIn show': index === currentTestimonialIndex }" class="testimonial-wrapper animated">
               <div class="text">{{ item.text }}</div>
               <div class="client-name">{{ item.name }}</div>

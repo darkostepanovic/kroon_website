@@ -7,7 +7,7 @@
           <div class="row align-items-lg-center">
             <div class="col-12 col-lg-6">
               <h3 class="portfolio-section-title">Transforming .vip file to a nice and readble view.</h3>
-              <p class="portfolio-section-text text-grey-9c">
+              <p class="portfolio-section-text">
                 We developed a solution that enables Halser's EPR system to export a .vip file (delivery list file), push it to the server,
                 where we performed cron jobs to fetch and read the file and then feeding it into a delivery system web based admin application we developed.
               </p>
@@ -17,7 +17,7 @@
             </div>
             <div class="col-12 col-lg-6">
               <h3 class="portfolio-section-title">Admin web app.</h3>
-              <p class="portfolio-section-text text-grey-9c">
+              <p class="portfolio-section-text">
                 Web app gives the ability to easily manage delivery lists, manage orders, assigned lists from one driver to another as well as track status of all orders in real-time.
                 The dashboard, made of days column holding delivery lists, allow for a clear overview of all tasks in the active week. All delivery lists are assembled automatically by
                 reading the .vip file from the server, but also possess the ability of manual information editing by the admin.
@@ -40,7 +40,7 @@
           <div class="row">
             <div class="col-12 col-lg-6">
               <h3 class="portfolio-section-title">Admin web app.</h3>
-              <p class="portfolio-section-text text-grey-9c">
+              <p class="portfolio-section-text">
                 Web app gives the ability to easily manage delivery lists, manage orders, assigned lists from one driver to another as well as track status of all orders in real-time.
                 The dashboard, made of days column holding delivery lists, allow for a clear overview of all tasks in the active week. All delivery lists are assembled automatically by
                 reading the .vip file from the server, but also possess the ability of manual information editing by the admin.
@@ -53,7 +53,7 @@
           <div class="row align-items-lg-center section-item-lg-margin-top">
             <div class="col-12 col-lg-4">
               <h3 class="portfolio-section-title lg-margin-top-0">Automation at the heart of the system</h3>
-              <p class="portfolio-section-text text-grey-9c">
+              <p class="portfolio-section-text">
                 From initial delivery list assembly inside the ERP software to driver mobile app, complete process is automated.
                 The data import and data assembly process are made of numerous checks and loops making sure that each delivery list
                 (.vip file) contains the right information. Beside delivery lists, all LSP and driver data import is also automated.
@@ -80,7 +80,7 @@
           <div class="row align-items-lg-center section-item-lg-margin-top">
             <div class="col-12 col-lg-4">
               <h3 class="portfolio-section-title lg-margin-top-0">Order details and order statuses</h3>
-              <p class="portfolio-section-text text-grey-9c">
+              <p class="portfolio-section-text">
                 Each delivery lists is made of muttple order, that contain order details,
                 layedout in such a way that gives clarity to the driver about deliveries to be executed for the day.
                 Each order has its status (pending, completed, failed, in progress) and enables the driver to quickly overview all order statuses.
@@ -88,32 +88,32 @@
               <img class="foo6" src="./../../assets/portfolios/hasler/hasler-6.svg" alt="">
             </div>
             <div class="col-12 col-lg-8">
-              <img class="foo7" src="./../../assets/portfolios/hasler/hasler-7.png" alt="">
+              <img class="foo7 mt-30-xs-sm-md" src="./../../assets/portfolios/hasler/hasler-7.png" alt="">
             </div>
           </div>
           <div class="row section-item-lg-margin-top">
-            <div class="col-12 col-lg-4">
+            <div class="col-12 col-lg-6">
               <h3 class="portfolio-section-title lg-margin-top-0">Smart arrival times</h3>
-              <p class="portfolio-section-text text-grey-9c">
+              <p class="portfolio-section-text">
                 We have implemented complex mathematical formulas in combination with Google maps estimates that allow for communicating accurate arrival times.
                 Besides simple problem solving such as going from point A to B, we also needed to cover user stories in case of drivers pauses, notifications to
                 buyers prior arrival based on GPS location, passing by a delivery location and many other.
               </p>
             </div>
             <div class="col-12">
-              <img class="foo8 full-width-lg" src="./../../assets/portfolios/hasler/hasler-8.png" alt="">
+              <img class="foo8 full-width-lg" src="./../../assets/portfolios/hasler/hasler-8.jpg" alt="">
             </div>
           </div>
           <div class="row section-item-lg-margin-top">
-            <div class="col-12 col-lg-4">
+            <div class="col-12 col-lg-6">
               <h3 class="portfolio-section-title lg-margin-top-0">Buyers view</h3>
-              <p class="portfolio-section-text text-grey-9c">
+              <p class="portfolio-section-text">
                 Upon delivery start, buyers receive an SMS containing uniqe (per buyer) URL, which allows the buyer to track the real-time location of the driver.
                 Additional SMS triggers include delivery comeplted, failed and an automated SMS sending trigger if the deliveyr is active and driver is 3 minutes
                 away from buyer location.
               </p>
             </div>
-            <div class="col-12">
+            <div class="col-10 offset-1">
               <img class="foo9 full-width-lg" src="./../../assets/portfolios/hasler/hasler-9.png" alt="">
             </div>
           </div>
@@ -156,7 +156,7 @@ export default {
       portfolioInfo: {
         title: 'hasler',
         subtitle: 'With more than 300 trucks in their portfolio, Hasler Transports makes the last mile deliveries of appliance goods. They were facing a rather interesting problem of accumulated delay time on deliveries due to often failure of the buyers to be present at the agreed address at the agreed delivery time. We have come up with a web and mobile platform solutions to tackle this problem by enabling real-time tracking of drivers position and automated arrival notification system for the buyers.',
-        location: 'Vancouver, Canada'
+        location: 'Zurich, Switzerland'
       }
     }
   },

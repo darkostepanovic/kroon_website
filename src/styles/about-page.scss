@@ -55,7 +55,7 @@
         font-weight: 400;
         font-size: 18px;
         line-height: 35px;
-        height: 300px;
+        height: 360px;
         overflow: hidden;
       }
       .client-name {
@@ -126,6 +126,15 @@
               opacity: 1;
             }
           }
+        }
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    #about-clients-section {
+      .testimonial-wrapper {
+        .text {
+          height: 270px;
         }
       }
     }

@@ -5,9 +5,9 @@
       <section id="guh-first-section">
         <div class="container">
           <div class="row">
-            <div class="col-12 col-lg-4">
+            <div class="col-12 col-lg-6">
               <h3 class="portfolio-section-title">Complex, yet intuitive UX to Connect everything</h3>
-              <p class="portfolio-section-text text-grey-9c">
+              <p class="portfolio-section-text">
                 By combining technology and user experince rules and learnings, we were able to bring down comlexity of on operating system to level of averege web portal.
               </p>
             </div>
@@ -23,7 +23,7 @@
           <div class="row align-items-lg-center">
             <div class="col-12 col-lg-4">
               <h3 class="portfolio-section-title margin-lg-0">Dasbhoard as an overview of the system</h3>
-              <p class="portfolio-section-text text-grey-9c">
+              <p class="portfolio-section-text">
                 By utilzing the dahboard view packed with data widgets we are able to show an overview of users IoT bussines at glance. Dashboard shows user developemnt, devices overivew, income and data usage.
               </p>
             </div>
@@ -48,7 +48,7 @@
           <div class="row align-items-lg-center section-item-lg-margin-top">
             <div class="col-12 col-lg-4">
               <h3 class="portfolio-section-title margin-lg-0">Marketplace - dicovering what your devices can do</h3>
-              <p class="portfolio-section-text text-grey-9c">
+              <p class="portfolio-section-text">
                 Marketplace of Nymea offers pluging for hindresd of devices, servces and situation (made by 3rd party developers or manufactureres) that now can extend possiblity of ones devices to an inimaginable level. This allows for customers of Nymea to offer amazing services to their cusomter that before they could’d even imagined.
               </p>
             </div>
@@ -70,12 +70,12 @@
           <div class="row align-items-lg-center">
             <div class="col-12 col-lg-4">
               <h3 class="portfolio-section-title margin-lg-0">Freedom to customize servies to your user's needs</h3>
-              <p class="portfolio-section-text text-grey-9c">
+              <p class="portfolio-section-text">
                 We built nymea with flexibility and in way that can be accomodated to varous bussiness needs. Nymea OS offers the obilty to customize connected servies and offer them to end users as bundless, available thought montly subscribsions.
               </p>
             </div>
             <div class="col-12 col-lg-8 full-img-wrapper">
-              <img class="foo7" src="./../../assets/portfolios/guh/guh-bundles.svg"/>
+              <img class="foo7 vw60" src="./../../assets/portfolios/guh/guh-bundles.svg"/>
             </div>
           </div>
           <div class="row flex-lg-row-reverse align-items-lg-center section-item-lg-margin-top">
@@ -86,13 +86,13 @@
               </p>
             </div>
             <div class="col-12 col-lg-8 text-center full-img-wrapper lg-justify-flex-end">
-              <img class="foo8" src="./../../assets/portfolios/guh/guh-users-below.svg" alt="">
+              <img class="foo8 vw60" src="./../../assets/portfolios/guh/guh-users-below.svg" alt="">
             </div>
           </div>
           <div class="row align-items-lg-center">
             <div class="col-12 col-lg-4">
               <h3 class="portfolio-section-title margin-lg-0">Telemetry - devices now speak your languages</h3>
-              <p class="portfolio-section-text text-grey-9c">
+              <p class="portfolio-section-text">
                 Nyema makes it possible not only to use plugins found in the marketplace, but alos programm your own devices, by using simple and visual IF statments. Sorry, that about it how much we can disclaim about this functionality :)
               </p>
             </div>
@@ -139,7 +139,7 @@ export default {
       portfolioInfo: {
         title: 'nymea',
         subtitle: 'Nymea is IoT operating system, that allows any device with interntect connection to become an IoT device. With the vision that it’s time to connect everything, Nymea is disrupting the IoT space but allowing other business to make their services and products IoT with incredible easiness and few simple steps.',
-        location: 'Vancouver, Canada'
+        location: 'Vienna, Austria'
       }
     }
   },

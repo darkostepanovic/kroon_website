@@ -8,7 +8,7 @@
   justify-content: space-between;
   height: 80px;
   padding: 0 35px;
-  z-index: 2;
+  z-index: 3;
   #top-nav-home-btn {
     .logo-wrapper {
       position: relative;
@@ -46,6 +46,73 @@
       }
     }
   }
+  .toggle-menu-btn {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    //background: red;
+    cursor: pointer;
+    .dot {
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      background-color: black;
+      border-radius: 50%;
+      transition: all 0.3s ease-in;
+      &:nth-child(1) {
+        left: 0;
+        top: 0;
+      }
+      &:nth-child(2) {
+        left: 10px;
+        top: 0;
+      }
+      &:nth-child(3) {
+        left: 20px;
+        top: 0;
+      }
+      &:nth-child(4) {
+        left: 0;
+        top: 10px;
+      }
+      &:nth-child(5) {
+        left: 10px;
+        top: 10px;
+      }
+      &:nth-child(6) {
+        left: 20px;
+        top: 10px;
+      }
+      &:nth-child(7) {
+        left: 0;
+        top: 20px;
+      }
+      &:nth-child(8) {
+        left: 10px;
+        top: 20px;
+      }
+      &:nth-child(9) {
+        left: 20px;
+        top: 20px;
+      }
+    }
+    &.menu-opened {
+      .dot {
+        left: 12px;
+        top: 12px;
+        width: 0px;
+        height: 0px;
+        &:nth-child(5) {
+          width: 31px;
+          height: 31px;
+          left: -3px;
+          top: -3px;
+          background-color: transparent;
+          border: 10px solid black;
+        }
+      }
+    }
+  }
 }
 
 .main-menu-component {
@@ -55,7 +122,7 @@
   right: 0;
   bottom: 0;
   background: #fff;
-  z-index: 1;
+  z-index: 2;
   overflow-y: auto;
   padding-top: 80px;
   background-image: url(./assets/main-menu/menu-bcg.svg);

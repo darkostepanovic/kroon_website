@@ -125,8 +125,8 @@ export default {
       showContent: false,
       portfolioInfo: {
         title: 'lyt',
-        subtitle: 'LYT CO. makes lighting and light effects products for music festivals. LYT is a physical light made for festival camp residents, whose features (color, intensity, saturation) are controlled using LYT mobile app. The beauty and possibilities when each tent in the campsite becomes a light offers amazing visual experiences. Additionally, antennas sets, placed across festival grounds, allow for “highjacking” of LYTS by festival management and controll using the desktop app giving the possibility of providing truly unique experiences to festival attendees.',
-        location: 'Vancouver, Canada'
+        subtitle: 'LYT CO. makes light effects products for music festivals. LYT is a physical light made for festival camp residents, whose features (color, intensity, saturation) are controlled using LYT mobile app. The beauty and possibilities when each tent in the campsite becomes a light offer amazing visual experiences. Also, antennas, placed across festival grounds, allow for “highjacking” of LYTS by festival management and control over using the desktop app.',
+        location: 'Los Angeles, CA, USA'
       }
     }
   },

@@ -10,7 +10,7 @@
           <h4>Contact</h4>
           <div>
             <span class="bold">Mail</span>
-            <span>hello@kroonstudio.com</span>
+            <span>contact@kroonstudio.com</span>
           </div>
         </div>
         <div class="join col-12 col-lg-3">

@@ -137,7 +137,7 @@
       </section>
       <section>
         <div class="container">
-          <shared-bottom-nav :project-info="{text: 'Connect everything using Nymea', link: '/guh'}" />
+          <shared-bottom-nav :project-info="{text: 'Connect everything using Nymea', link: '/nymea'}" />
         </div>
       </section>
       <section>

@@ -27,11 +27,11 @@
             </div>
           </div> -->
           <ul class="social-links">
-            <li><a href="#" target="_blank">Facebook</a></li>
-            <li><a href="#" target="_blank">LinkedIn</a></li>
-            <li><a href="#" target="_blank">Dribble</a></li>
-            <li><a href="#" target="_blank">Behance</a></li>
-            <li><a href="#" target="_blank">Instagram</a></li>
+            <!-- <li><a href="#" target="_blank">Facebook</a></li> -->
+            <li><a href="https://www.linkedin.com/company/kroon-studio/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://dribbble.com/kroonstudio" target="_blank">Dribble</a></li>
+            <li><a href="https://www.behance.net/kroonstudio" target="_blank">Behance</a></li>
+            <li><a href="https://www.instagram.com/kroonstudio/" target="_blank">Instagram</a></li>
           </ul>
         </div>
       </div>

@@ -30,7 +30,7 @@
             </div>
           </div>
           <div class="col-5">
-            <div class="our-work-item" id="our-work-nymea" @click="goTo('/guh')">
+            <div class="our-work-item" id="our-work-nymea" @click="goTo('/nymea')">
               <div class="parent">
                 <div class="child"></div>
               </div>

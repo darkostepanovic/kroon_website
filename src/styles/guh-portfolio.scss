@@ -70,9 +70,6 @@
       }
     }
   }
-  #shared-bottom-navigation {
-    margin-top: 100px;
-  }
   @media (min-width: 768px) {
     #trz-visuals {
       padding-bottom: 285px;
@@ -90,9 +87,12 @@
         justify-content: flex-start;
         img {
           max-width: 200%;
-          width: 56vw;
+          width: 69vw;
           margin-left: 80px;
           flex-shrink: 0;
+        }
+        img.vw60 {
+          width: 60vw;
         }
       }
     }

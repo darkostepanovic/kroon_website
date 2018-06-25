@@ -29,7 +29,7 @@ let router = new Router({
       component: OurWork
     },
     {
-      path: '/guh',
+      path: '/nymea',
       name: 'guh-portfolio',
       component: Guh
     },

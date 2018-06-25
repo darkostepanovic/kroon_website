@@ -33,9 +33,9 @@
     padding-top: 150px;
     padding-bottom: 200px;
     img {
-      max-width: 144%;
-      width: 144%;
-      margin-left: -22%;
+      max-width: 240%;
+      width: 240%;
+      margin-left: -70%;
     }
   }
   #lyt-features {
@@ -82,6 +82,13 @@
       justify-content: flex-start;
       img {
         width: 80vw;
+      }
+    }
+    #lyt-curved-section {
+      img {
+        max-width: 144%;
+        width: 144%;
+        margin-left: -22%;
       }
     }
     #lyt-disco {

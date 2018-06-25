@@ -165,7 +165,7 @@ export default {
           break;
           case 6:
             scaleMatrix.scale(0.5, 0.5)
-            scaleMatrix.translate(window.innerWidth - 100, window.innerHeight + 400)
+            scaleMatrix.translate(window.innerWidth - 100, window.innerHeight * 2 - 250)
             break;
       }
       if (this.homeSlide === 6) {

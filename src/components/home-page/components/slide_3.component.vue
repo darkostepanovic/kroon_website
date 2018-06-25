@@ -28,7 +28,7 @@ export default {
   },
   methods: {
     goToGuh () {
-      this.$router.push('/guh')
+      this.$router.push('/nymea')
     }
   }
 }
