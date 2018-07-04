@@ -11,9 +11,7 @@
             <div class="col-12 col-lg-4">
               <h3 class="portfolio-section-title text-white margin-lg-0">Widget system</h3>
               <p class="portfolio-section-text text-grey-9c">
-                The dashboard widgets offer trainers an overview of all major components of their business needs.
-                It is an easy way to understand who are clients that need attention, scheduled activities,
-                clients' notifications, business growth.
+                The dashboard widgets offer trainers an overview of all major components of their busines needs. It is an easy way to understand who are clients that need additional attention, to access scheduled activities, clients' notifications, and business growth stats.
               </p>
             </div>
             <div class="col-12 col-lg-8 full-img-wrapper">
@@ -51,10 +49,7 @@
             <div class="col-12 col-lg-4">
               <h3 class="portfolio-section-title margin-lg-0">Shapes & color</h3>
               <p class="portfolio-section-text">
-                Clients' mobile app use is mostly intended while in the gym,
-                hence we developed colors and shapes system in which clients can easily,
-                at glance, understand their training plan structure, workout,
-                cardio or flexibility exercises, progress photos or measurement request etc.
+                Clients' mobile app is intended to be used mostly while in the gym, hence we developed colors and shapes system in which clients can easily, at glance, understand their training plan structure, workout, cardio or flexibility exercises, progress photos or measurement request etc.
               </p>
             </div>
             <div class="col-12 col-lg-7 offset-lg-1 text-center">
@@ -96,10 +91,7 @@
             <div class="col-12 col-lg-4">
               <h3 class="portfolio-section-title text-white margin-lg-0">Progress feedback</h3>
               <p class="portfolio-section-text text-grey-9c">
-                Besides the 3rd party integrations with Fitbit, Withings, MindBody and other products,
-                Trainierze allows clients to leave feedback for each of the exercises they tackled.
-                This simple yet powerful tool helps trainers understand the level of fitness and body
-                state of their clients hence assemble appropriate exercises.
+                Besides the 3rd party integrations with Fitbit, Withings, MindBody and other products, Trainierze allows clients to leave feedback for each of the exercises they tackled. This simple, yet powerful tool, helps trainers understand the level of fitness and body state of their clients, hence assemble appropriate exercises.
               </p>
             </div>
             <div class="col-12 col-lg-8 text-center">
@@ -110,10 +102,7 @@
             <div class="col-12 col-lg-4 z-index-1">
               <h3 class="portfolio-section-title text-white margin-lg-0">Tracking & workout assembily</h3>
               <p class="portfolio-section-text text-grey-9c">
-                Trainerize comes with a library of hundreds of high-quality exercise videos,
-                enabling clients to easily understand and correctly perform given exercises.
-                Drag and drop system and ability to upload custom videos makes trainers job
-                easier and allows every gym and trainer to offer professional service.
+                Trainerize comes with a library of hundreds of high-quality exercise videos, enabling clients to easily understand and correctly perform given exercises. Drag and drop system and ability to upload custom videos makes trainers job easier, and allows every gym and trainer to offer professional service.
               </p>
             </div>
             <div class="col-12 col-lg-8 text-center full-img-wrapper lg-justify-flex-end">
@@ -124,9 +113,7 @@
             <div class="col-12 col-lg-4">
               <h3 class="portfolio-section-title text-white margin-lg-0">Complete communication system</h3>
               <p class="portfolio-section-text text-grey-9c">
-                Trainerize features completed communication system available both on mobile and web app.
-                This tool allows trainers to assemble group and 1 on 1 communication channels with their clients,
-                allowing for ease and frequent communiction with the trainer during or off-training hours.
+                Trainerize features completed communication system available both on mobile and web app. This tool allows trainers to assemble group and 1 on 1 communication channels with their clients, enabeling easy and frequent communication with the trainer during or off-training hours.
               </p>
             </div>
             <div class="col-12 col-lg-7 offset-lg-1 full-img-wrapper text-center">
@@ -171,7 +158,7 @@ export default {
       showContent: false,
       portfolioInfo: {
         title: 'trainerize',
-        subtitle: 'Serving more than 17k personal trainers and total of 250k users, Trainerize is-in-one fitness solutions featuring an amazing set of functionalities to cover all of the needs for personal training. Development of this incredible software was a collaboration between our and the founding team based in Vancouver, Canada.',
+        subtitle: 'Serving more than 17k personal trainers and total of 250k users, Trainerize is all-in-one fitness solution featuring an amazing set of functionalities to cover all of the needs for personal training.',
         location: 'Vancouver, Canada'
       }
     }
