@@ -9,11 +9,7 @@
           <div class="col-12 col-lg-4">
             <h2 class="main-title">We are your full stack design & development agency!</h2>
             <p class="main-text">
-              Kroon Studio is a team with more than 7 years of experince bulding web and
-              mobile products in wide viraity of tehcnology stacks and with more than 60
-              projects in our portfolio. Over the years we had the pleasure to work with
-              companies from all over the world, both big and small, creating B2B and B2C
-              software solutions.
+              Kroon Studio is a team with more than 7 years of experience building web and mobile products in wide variety of technology stacks and with more than 60 projects in our portfolio. Over the years we had the pleasure to work with companies from all over the world, both big and small, creating B2B and B2C software solutions.
             </p>
           </div>
         </div>
