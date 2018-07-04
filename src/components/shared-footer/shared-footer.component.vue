@@ -21,7 +21,7 @@
           </div>
         </div>
         <div class="latest col-12 col-lg-4">
-          <h4>Latest in magazine</h4>
+          <h4>Kroon Magazine coming soon</h4>
           <div>
             <span class="bold">Management</span>
             <span>7 Reasons why prioroties are better then daily standups or your team</span>
