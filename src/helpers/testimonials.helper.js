@@ -1,6 +1,6 @@
 const testimonials = [
   {
-    text: 'Kroon team did a great job on our project. The team communicates very well. They are flexible to opinions but also have strong ideas that made the process the effective (they won\'t just yes to your ideas unless it makes sense, but let you know in a nice way about why it is good/bad etc.). They picked our business domain very quick.',
+    text: 'Kroon team did a great job on our project. The team communicates very well. They are flexible to opinions, but also have strong ideas that made the process effective (they won\'t just say yes to your ideas unless it makes sense, but they will let you know in a nice way about why it is good/bad etc...). They picked our business domain very quickly.',
     name: 'Raj Batchu | Wepa Technologies',
     id: '1'
   },
@@ -15,7 +15,7 @@ const testimonials = [
     id: '3'
   },
   {
-    text: 'Working with the team from Kroon was great. They are highly capable and are willing to go the extra mile. If you are looking for a group that can match your creative needs, and exceeded them, I\'d highly recommend you pick up a contract with Kroon Studios.',
+    text: 'Working with Kroon team was great. They are highly capable and are willing to go the extra mile. If you are looking for a group that can match your creative needs, and exceeded them, I\'d highly recommend you pick up a contract with Kroon Studios.',
     name: 'Andrew Smith | A+ Smith Creations',
     id: '4'
   }
