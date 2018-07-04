@@ -8,7 +8,7 @@
             <div class="col-12 col-lg-6">
               <h3 class="portfolio-section-title">Complex, yet intuitive UX to Connect everything</h3>
               <p class="portfolio-section-text">
-                By combining technology and user experince rules and learnings, we were able to bring down comlexity of on operating system to level of averege web portal.
+                By combining technology and user experince rules and learnings, we were able to bring down the comlexity of an operating system to a level of an averege web portal.
               </p>
             </div>
             <div class="col-12 text-center img-wrapper foo2">
@@ -24,7 +24,7 @@
             <div class="col-12 col-lg-4">
               <h3 class="portfolio-section-title margin-lg-0">Dasbhoard as an overview of the system</h3>
               <p class="portfolio-section-text">
-                By utilzing the dahboard view packed with data widgets we are able to show an overview of users IoT bussines at glance. Dashboard shows user developemnt, devices overivew, income and data usage.
+                Utilizing the dashboard view, packed with data widgets, we are able to show an overview of users' IoT activity at glance. Dashboard shows user development, devices overview, income and data usage.
               </p>
             </div>
             <div class="col-12 col-lg-8 full-img-wrapper">
@@ -49,7 +49,7 @@
             <div class="col-12 col-lg-4">
               <h3 class="portfolio-section-title margin-lg-0">Marketplace - dicovering what your devices can do</h3>
               <p class="portfolio-section-text">
-                Marketplace of Nymea offers pluging for hindresd of devices, servces and situation (made by 3rd party developers or manufactureres) that now can extend possiblity of ones devices to an inimaginable level. This allows for customers of Nymea to offer amazing services to their cusomter that before they could’d even imagined.
+                Marketplace of Nymea offers pluging for hundreds of devices and services (made by 3rd party developers or manufacturers) that are extending usage possibilities to an unimaginable level. This allows for Nymea's clients to offer amazing services to their customers, and is opening a whole new spectrum of possibilities.
               </p>
             </div>
             <div class="col-12 col-lg-8 full-img-wrapper">
@@ -60,7 +60,7 @@
             <div class="col-12 col-lg-4 z-index-1">
               <h3 class="portfolio-section-title margin-lg-0">Adding a service - easy as online shopping</h3>
               <p class="portfolio-section-text">
-                As in the intere project, imperative was hot to buld Nymea in a way that an IoT servces can now be accessed, understood and used by an average interenet users, no differentce was made when installing new service. All it take is simple click of a button (and credit card number :)
+                As it was an imperative to build Nymea in a such way that a complex IoT servce can be accessed, understood and used by an average internet user, same rule eas applied to process of installing a new service. All it takas is a simple click of a button - and a credit card number. :)
               </p>
             </div>
             <div class="col-12 col-lg-8 text-center full-img-wrapper lg-justify-flex-end">
@@ -71,7 +71,7 @@
             <div class="col-12 col-lg-4">
               <h3 class="portfolio-section-title margin-lg-0">Freedom to customize servies to your user's needs</h3>
               <p class="portfolio-section-text">
-                We built nymea with flexibility and in way that can be accomodated to varous bussiness needs. Nymea OS offers the obilty to customize connected servies and offer them to end users as bundless, available thought montly subscribsions.
+                We built Nymea with flexibility and in such a way that it can be accommodated to various business needs. Nymea OS offers the ability to customize connected services and offer them to end users as bundles, available through monthly subscriptions.
               </p>
             </div>
             <div class="col-12 col-lg-8 full-img-wrapper">
@@ -82,7 +82,7 @@
             <div class="col-12 col-lg-4 z-index-1">
               <h3 class="portfolio-section-title margin-lg-0">Adding a service - easy as online shopping</h3>
               <p class="portfolio-section-text">
-                As in the intere project, imperative was hot to buld Nymea in a way that an IoT servces can now be accessed, understood and used by an average interenet users, no differentce was made when installing new service. All it take is simple click of a button (and credit card number :)
+                As it was an imperative to build Nymea in a such way that a complex IoT servce can be accessed, understood and used by an average internet user, same rule eas applied to process of installing a new service. All it takas is a simple click of a button - and a credit card number. :)
               </p>
             </div>
             <div class="col-12 col-lg-8 text-center full-img-wrapper lg-justify-flex-end">
@@ -93,7 +93,7 @@
             <div class="col-12 col-lg-4">
               <h3 class="portfolio-section-title margin-lg-0">Telemetry - devices now speak your languages</h3>
               <p class="portfolio-section-text">
-                Nyema makes it possible not only to use plugins found in the marketplace, but alos programm your own devices, by using simple and visual IF statments. Sorry, that about it how much we can disclaim about this functionality :)
+                Nymea makes it possible not only to use plugins found in the marketplace, but also to program your own devices, solely by using simple and visual IF statements. Sorry, that is about as much as we can disclose about this functionality. :)
               </p>
             </div>
             <div class="col-12 col-lg-8 full-img-wrapper">
@@ -138,7 +138,7 @@ export default {
       showContent: false,
       portfolioInfo: {
         title: 'nymea',
-        subtitle: 'Nymea is IoT operating system, that allows any device with interntect connection to become an IoT device. With the vision that it’s time to connect everything, Nymea is disrupting the IoT space but allowing other business to make their services and products IoT with incredible easiness and few simple steps.',
+        subtitle: 'Nymea is IoT operating system that allows any device with interntet connection to become an IoT device. With the vision that it’s time to connect everything, Nymea is disrupting the IoT space while allowing other business to make their services and products IoT with incredible easiness and few simple steps.',
         location: 'Vienna, Austria'
       }
     }
