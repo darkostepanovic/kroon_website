@@ -8,9 +8,7 @@
             <div class="col-12 col-lg-6">
               <h3 class="portfolio-section-title text-white">Intuitive flow to start using your LYT device.</h3>
               <p class="portfolio-section-text text-grey-9c">
-                The physical light to mobile device connection is established via Bluetooth.
-                It was important, that the user flow of connecting and setting up LYTs be as easy,
-                intuitive and least time-consuming possible.
+                The connection between light and your mobile device is established via Bluetooth. It was important that the way user connects and sets up LYTs is as easy, intuitive and the least time-consuming as possible.
               </p>
             </div>
             <div class="col-12">
@@ -34,10 +32,7 @@
             <div class="col-12 col-lg-6">
               <h3 class="portfolio-section-title">Mobile app features</h3>
               <p class="portfolio-section-text text-grey-9c">
-                Besides the primary ability to control light features of your LYT,
-                mobile app offers the possibility to send light patterns to your LYT,
-                to flash and visually find your LYT as well as understand when the LYT
-                is under the festival control and the time when it will become available again.
+                Besides the primary ability to control light features of your LYT, mobile app offers the possibility to send light patterns to your LYT, to flash and visually find your LYT, as well as to understand when the LYT is under the festival control, and the time when it will become available again.
               </p>
             </div>
             <div class="col-12 text-center">
@@ -52,11 +47,9 @@
             <div class="col-12 col-lg-4">
               <h3 class="portfolio-section-title text-white lg-margin-top-0">Desktop app to control all LYTs on the fesitval site</h3>
               <p class="portfolio-section-text text-grey-9c">
-                Festival lightning operator can scan for antennas (devices that are sending the signal to LYTs),
-                make a visual reference to their position in the physical world.
+                Festival lightning operator can scan for antennas (devices that are sending the signal to LYTs), and make a visual reference to their position in the physical world.
                 <br><br>
-                This allows the operators to easily group and control sets of antennas, hence control number of
-                LYTs based on their location. Doing so gives incredible possibilities to make amazing lighting effects and experiences.
+                This allows the operators to easily group and control sets of antennas, hence to control number of LYTs based on their location. Doing so allows for incredible possibilities for creating amazing lighting effects and experiences.
               </p>
             </div>
             <div class="col-12 col-lg-8 full-img-wrapper">
@@ -72,10 +65,7 @@
             <div class="col-12 col-lg-4">
               <h3 class="portfolio-section-title text-white margin-lg-0">Create, assign & save lightning patterns</h3>
               <p class="portfolio-section-text text-grey-9c">
-                Similar to the mobile app, the desktop app offers the ability to control light features
-                (color, intensity, and saturation), but also allows for the creation of light patterns and
-                ability to save and load them for later use. One can also save tower and antennas layout
-                and position, in case the festival is re-occurring.
+                Similar to the mobile app, the desktop app offers the ability to control light features (color, intensity, and saturation), but also allows for the creation of light patterns, and ability to save and load them for later use. One can also save tower and antennas layout and position, in case the festival is re-occurring.
               </p>
             </div>
             <div class="col-12 col-lg-7 offset-lg-1">
@@ -125,7 +115,7 @@ export default {
       showContent: false,
       portfolioInfo: {
         title: 'lyt',
-        subtitle: 'LYT CO. makes light effects products for music festivals. LYT is a physical light made for festival camp residents, whose features (color, intensity, saturation) are controlled using LYT mobile app. The beauty and possibilities when each tent in the campsite becomes a light offer amazing visual experiences. Also, antennas, placed across festival grounds, allow for “highjacking” of LYTS by festival management and control over using the desktop app.',
+        subtitle: 'LYT CO. makes light effects products for music festivals. LYT is a physical light made for festival camp residents, whose features (color, intensity, saturation) are controlled using LYT mobile app. Each tent in the campsite can shine its own light, which altogether offers amazing visual experience. Also, antennas, placed across festival ground, allow festival management to "hijack" LYTs and take control of this game of lights through the desktop app.',
         location: 'Los Angeles, CA, USA'
       }
     }
