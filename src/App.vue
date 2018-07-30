@@ -38,7 +38,12 @@ export default {
       portfolioState: false,
       showCurve: true,
       showContactForm: false,
-      showLoadingText: false
+      showLoadingText: false,
+      imagesForPreload: [
+        './dist/slide-2-img.png?07bf999c48c5473562cfa12cb161be6e',
+        './dist/slide-3-img.png?1ce5d0d99a175a8fd200adc56470bcf1',
+        './dist/slide-4-img.png?6e3f43f86c6634db1cd5c6da06da6a2f'
+      ]
     }
   },
   created () {
@@ -55,6 +60,7 @@ export default {
       this.showContactForm = false
     })
     window.addEventListener('resize', this.onWindowResize)
+    this.preloadImg(this.imagesForPreload)
   },
   mounted () {
     this.handleRouteChange(this.$route.name)
@@ -212,11 +218,20 @@ export default {
       } else {
         fromPath.animate({ d: toPathPoints }, 1000, mina.backout, this.morphCallback)
       }
-
     },
     morphCallback () {
       if (this.portfolioState) {
         EventBus.$emit('morphEnded')
+      }
+    },
+    preloadImg (imageArray, index) {
+      index = index || 0
+      if (imageArray && imageArray.length > index) {
+        let img = new Image()
+        img.onload = () => {
+          this.preloadImg(imageArray, index + 1)
+        }
+        img.src = imageArray[index]
       }
     }
   }

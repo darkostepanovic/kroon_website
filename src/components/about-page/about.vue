@@ -82,7 +82,17 @@
 import { testimonials } from './../../helpers/index'
 import TeamMemberThumb from './components/team-member-thumb.component'
 import SharedFooter from './../shared-footer/shared-footer.component'
-import Dusan from './../../assets/about-page/team/dusan.jpg'
+import Dule from './../../assets/about-page/team/dule.jpg'
+import Darko from './../../assets/about-page/team/darko.jpg'
+import Jelena from './../../assets/about-page/team/jelena.jpg'
+import Petar from './../../assets/about-page/team/petar.jpg'
+import Ratke from './../../assets/about-page/team/ratke.jpg'
+import Redli from './../../assets/about-page/team/redli.jpg'
+import Vlada from './../../assets/about-page/team/vlada.jpg'
+import Christos from './../../assets/about-page/team/christos.jpg'
+import Jovana from './../../assets/about-page/team/jovana.jpg'
+import Braca from './../../assets/about-page/team/braca.jpg'
+import Oggy from './../../assets/about-page/team/oggy.jpg'
 export default {
   name: 'about',
   components: {
@@ -95,49 +105,59 @@ export default {
       currentTestimonialIndex: 0,
       teamMembers: [
         {
-          name: 'Braca',
-          position: 'Fronend dev',
-          imgUrl: Dusan
-        },
-        {
-          name: 'Dusan',
-          position: 'Backend dev',
-          imgUrl: Dusan
-        },
-        {
-          name: 'Ognjen',
-          position: 'Fronend dev',
-          imgUrl: Dusan
-        },
-        {
-          name: 'Milica',
-          position: 'Fronend dev',
-          imgUrl: Dusan
-        },
-        {
-          name: 'Hristos',
-          position: 'Fronend dev',
-          imgUrl: Dusan
+          name: 'Oggy',
+          position: 'Management',
+          imgUrl: Oggy
         },
         {
           name: 'Jelena',
-          position: 'Fronend dev',
-          imgUrl: Dusan
-        },
-        {
-          name: 'Darko',
-          position: 'Fronend dev',
-          imgUrl: Dusan
+          position: 'Management',
+          imgUrl: Jelena
         },
         {
           name: 'Jovana',
-          position: 'Fronend dev',
-          imgUrl: Dusan
+          position: 'Design',
+          imgUrl: Jovana
         },
         {
-          name: 'Peca',
-          position: 'Fronend dev',
-          imgUrl: Dusan
+          name: 'Petar',
+          position: 'Design',
+          imgUrl: Petar
+        },
+        {
+          name: 'Vlada',
+          position: 'Design',
+          imgUrl: Vlada
+        },
+        {
+          name: 'Milos',
+          position: 'QA',
+          imgUrl: Ratke
+        },
+        {
+          name: 'Dusan',
+          position: 'Development',
+          imgUrl: Dule
+        },
+        {
+          name: 'Darko',
+          position: 'Development',
+          imgUrl: Darko
+        },
+        {
+          name: 'Jovan',
+          position: 'Development',
+          imgUrl: Redli
+        },
+        {
+          name: 'Chris',
+          position: 'Development',
+          imgUrl: Christos
+        },
+        {
+          name: 'Braca',
+          position: 'Development',
+          imgUrl: Braca
         }
       ]
     }
@@ -153,11 +173,11 @@ export default {
     handleClickNextTestimonial () {
       this.nextTestimonial()
       clearInterval(this.autoChangeTestimonial)
-      this.autoChangeTestimonial = setInterval(this.nextTestimonial, 5000)
+      this.autoChangeTestimonial = setInterval(this.nextTestimonial, 8000)
     }
   },
   mounted () {
-    this.autoChangeTestimonial = setInterval(this.nextTestimonial, 5000)
+    this.autoChangeTestimonial = setInterval(this.nextTestimonial, 8000)
     window.scrollTo(0, 0)
   }
 }

@@ -82,10 +82,10 @@
       .team-member-thumb-wrapper {
         width: 50%;
         position: relative;
-        img {
-          filter: grayscale(100%);
-          transition: filter 0.2s ease-in-out;
-        }
+        // img {
+        //   filter: grayscale(100%);
+        //   transition: filter 0.2s ease-in-out;
+        // }
         .info {
           position: absolute;
           left: 0;
@@ -115,9 +115,9 @@
           }
         }
         &:hover {
-          img {
-            filter: grayscale(0%);
-          }
+          // img {
+          //   filter: grayscale(0%);
+          // }
           .info {
             .name {
               top: -65px;

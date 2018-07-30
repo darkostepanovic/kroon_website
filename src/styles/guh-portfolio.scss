@@ -160,4 +160,13 @@
       }
     }
   }
+  @media (min-width: 1400px) {
+    .row {
+      .full-img-wrapper {
+        img.vw60 {
+          width: 45vw;
+        }
+      }
+    }
+  }
 }

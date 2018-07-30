@@ -22,10 +22,10 @@
         </div>
       </div>
       <div id="latest">
-        <h4>Kroon Magazine coming soon</h4>
+        <h4>Kroon Magazine</h4>
         <div>
-          <span class="bold">Management</span>
-          <span>7 Reasons why prioroties are better then daily standups or your team</span>
+          <span class="bold">Coming soon</span>
+          <!-- <span>7 Reasons why prioroties are better then daily standups or your team</span> -->
         </div>
       </div>
     </div>

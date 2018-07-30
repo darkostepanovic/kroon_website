@@ -36,9 +36,9 @@
         <div class="container">
           <div class="row">
             <div class="col-12 col-lg-6">
-              <h3 class="portfolio-section-title">Admin web app</h3>
+              <h3 class="portfolio-section-title">Companies (LSPs)</h3>
               <p class="portfolio-section-text">
-                Web app gives the ability to easily manage delivery lists, manage orders, assigned lists from one driver to another, as well as to track status of all orders in real-time. The dashboard, showing one column per day is displaying delivery lists, and allows for a clear overview of all tasks in the active week. All delivery lists are assembled automatically by reading the .vip file from the server, and admin can also edit the information manually.
+                This section of the web app holds all information about subcontracting companies and drivers. Admins are able to easily manage both and also view their delivery statistics.
               </p>
             </div>
             <div class="col-12">

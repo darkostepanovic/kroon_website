@@ -80,9 +80,9 @@
           </div>
           <div class="row flex-lg-row-reverse align-items-lg-center section-item-lg-margin-top">
             <div class="col-12 col-lg-4 z-index-1">
-              <h3 class="portfolio-section-title margin-lg-0">Adding a service - easy as online shopping</h3>
+              <h3 class="portfolio-section-title margin-lg-0">Understand user base</h3>
               <p class="portfolio-section-text">
-                As it was an imperative to build Nymea in a such way that a complex IoT servce can be accessed, understood and used by an average internet user, same rule eas applied to process of installing a new service. All it takas is a simple click of a button - and a credit card number. :)
+                Under the "Users" tab, one is able to browse and have a closer look at each of the users utilizing available services and products. Additionally, this view allows us to see if the connected devices and services are operating as expected, and also understand each users' subscription model.
               </p>
             </div>
             <div class="col-12 col-lg-8 text-center full-img-wrapper lg-justify-flex-end">
