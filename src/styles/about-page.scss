@@ -82,10 +82,12 @@
       .team-member-thumb-wrapper {
         width: 50%;
         position: relative;
-        // img {
-        //   filter: grayscale(100%);
-        //   transition: filter 0.2s ease-in-out;
-        // }
+        img {
+          // filter: grayscale(100%);
+          // transition: filter 0.2s ease-in-out;
+          width: 100%;
+          height: auto;
+        }
         .info {
           position: absolute;
           left: 0;

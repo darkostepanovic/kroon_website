@@ -4,7 +4,7 @@
       <div class="container">
         <div class="row flex-lg-row-reverse">
           <div class="col-12 col-lg-8 full-img-wrapper">
-            <img src="./../../assets/about-page/header-about-page.svg" alt="">
+            <img src="./../../assets/about-page/team/team.jpg" alt="">
           </div>
           <div class="col-12 col-lg-4">
             <h2 class="main-title">We are your full stack design & development agency!</h2>

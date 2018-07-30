@@ -23,7 +23,7 @@
             <div v-if="showForm" class="modal-form-content">
               <h2>Hey there,</h2>
               <p>Write us a message below, and we'll get back to you in the next 24h</p>
-              <form action="/Concept7/mail.php" method="POST">
+              <form action="/mail.php" method="POST">
                 <input type="text" v-model="name" placeholder="Your name*" name="name" :class="{ 'error-border': errorName }">
                 <input type="email" v-model="email" placeholder="Your email*" name="email" :class="{ 'error-border': errorEmail }">
                 <textarea rows="2" type="message" v-model="message" placeholder="Your message*" name="message" :class="{ 'error-border': errorMessage }"></textarea>
@@ -130,6 +130,17 @@ export default {
         console.log('submit')
         this.showForm = false
         this.curvePath.animate({ d: this.curveThankYouPath }, 1000, mina.backout)
+        const fields = {
+          name: this.name,
+          email: this.email,
+          message: this.message
+        }
+        fetch('/mail.php', {
+          method: 'post',
+          body: JSON.stringify(fields)
+        }).then(function(response) {
+          console.log(response)
+        })
       } else {
         console.log('missing data')
       }
