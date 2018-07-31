@@ -1,0 +1,18 @@
+<template functional>
+  <div class="col-md-6 col-lg-7 col-sm-8 col-xs-12 career">
+    <div>
+        <h4>{{ props.jobData.title }}</h4>
+        <p>{{ props.jobData.description }}</p>
+        <h3>What will you be in charge of:</h3>
+        <ul>
+          <li v-for="(item, index) in props.jobData.inChargeOf" :key="index">{{ item }}</li>
+        </ul>
+        <h3>Skills that you posses</h3>
+        <ul>
+          <li v-for="(item, index) in props.jobData.skills" :key="index">{{ item }}</li>
+        </ul>
+        <h3>How to apply</h3>
+        <p class="how">{{ props.jobData.apply }}</p>
+    </div>
+  </div>
+</template>

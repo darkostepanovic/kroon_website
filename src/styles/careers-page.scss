@@ -1,0 +1,120 @@
+.careers-page-wrapper {
+  padding-top: 80px;
+  text-align: left;
+
+  .mt-5 {
+      font-weight: 300;
+      font-size: 35px;
+      letter-spacing: -2px;
+  }
+
+  .p-space {
+    margin-top: 40px;
+    font-weight: 300;
+  }
+
+  .margin-fix {
+    margin-top: 150px;
+  }
+
+  .how {
+    margin-bottom: 100px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 40px;
+  }
+
+  .nav li {
+    // border-top: 1px solid #dcdcdc;
+    // border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: -1px;
+    line-height: 18px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #A3A3A3;
+    cursor: pointer;
+  }
+
+  .nav li:hover {
+    color: #333;
+    text-decoration: none;
+  }
+
+  .nav li.active {
+    color: #333;
+  }
+
+  .career p {
+    font-weight: 300;
+  }
+
+  .career ul {
+    list-style-type: initial;
+  }
+
+  .career li {
+    font-weight: 300;
+    font-size: 14px;
+    display: list-item;
+  }
+
+  select {
+    display: flex;
+    height: 57px;
+    width: 290px;
+    border: 1px solid #D5D5D5;
+    background-color: #FFFFFF;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+    // background-image: url("../img/arrow.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 26px 25px;
+    background-position-x: 250px;
+    border-radius: 0px;
+    cursor: pointer;
+    margin-bottom: 40px;
+  }
+
+  h2 {
+    width: 290px;
+    color: #333333;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 24px;
+    margin-bottom: 14px;
+    margin-top: 36px;
+  }
+
+  .show-xs {
+    display: none;
+  }
+
+  @media only screen and (max-width: 768px) {
+
+    .margin-fix {
+      margin-top: 20px;
+    }
+
+    .hide-xs {
+      display: none;
+    }
+
+    .show-xs {
+      display: block;
+    }
+
+  }
+
+}

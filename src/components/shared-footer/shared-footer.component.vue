@@ -17,7 +17,7 @@
           <h4>Join Kroon</h4>
           <div>
             <span class="bold">We are hiring</span>
-            <span>View open positions</span>
+            <router-link to="/careers"><span>View open positions</span></router-link>
           </div>
         </div>
         <div class="latest col-12 col-lg-4">

@@ -118,6 +118,13 @@ export default {
               this.morphSvg('portfolio')
               this.resizeAndPositionSvg()
               break
+            case 'careers-page':
+              // this.portfolioState = true
+              // this.homeSlide = 7
+              // this.morphSvg('portfolio')
+              // this.resizeAndPositionSvg()
+              this.showCurve = false
+              break
           }
         }, 2000)
       }
@@ -169,10 +176,14 @@ export default {
             scaleMatrix.translate(-100, -100)
           }
           break;
-          case 6:
-            scaleMatrix.scale(0.5, 0.5)
-            scaleMatrix.translate(window.innerWidth - 100, window.innerHeight * 2 - 250)
-            break;
+        case 6:
+          scaleMatrix.scale(0.5, 0.5)
+          scaleMatrix.translate(window.innerWidth - 100, window.innerHeight * 2 - 250)
+          break;
+        case 7:
+          scaleMatrix.scale(0, 0)
+          scaleMatrix.translate(window.innerWidth - 100, window.innerHeight * 2 - 250)
+          break;
       }
       if (this.homeSlide === 6) {
         svg.animate({ transform: scaleMatrix }, 300, mina.easeinout)

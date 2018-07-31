@@ -9,7 +9,7 @@
             <li @click="goTo('/')">Home</li>
             <li @click="goTo('/about')">People</li>
             <li @click="goTo('/our-work')">Our work</li>
-            <li>Careers</li>
+            <li @click="goTo('/careers')">Careers</li>
             <li @click="showContactForm">Contact Us</li>
           </ul>
         </div>

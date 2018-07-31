@@ -135,9 +135,12 @@ export default {
           email: this.email,
           message: this.message
         }
-        fetch('/mail.php', {
+        fetch('http://localhost:8888/c7_website/mail.php', {
           method: 'post',
           body: JSON.stringify(fields)
+          // headers: {
+          //   'Content-Type': 'text/html'
+          // }
         }).then(function(response) {
           console.log(response)
         })
