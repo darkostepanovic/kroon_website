@@ -36,7 +36,7 @@
              <option :value="4">Python Developer</option>
           </select>
         </div>
-        <job-info :job-data="jobToShow" v-if="showJob" />
+        <job-info :job-data="jobToShow" />
       </div>
     </div>
   </div>
@@ -62,11 +62,11 @@ export default {
     this.jobToShow = this.openPositions[0]
     this.jobSelect = -1
   },
-  computed: {
-    showJob () {
-      return this.jobSelect !== -1
-    }
-  },
+  // computed: {
+  //   showJob () {
+  //     return (this.jobSelect !== -1  this.jobToShow !== this.openPositions[0])
+  //   }
+  // },
   data () {
     return {
       jobToShow: null,
