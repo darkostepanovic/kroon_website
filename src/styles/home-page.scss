@@ -161,6 +161,12 @@
           padding-right: 50px;
           div {
             margin-top: 20px;
+            a {
+              color: #000;
+              &:hover {
+                text-decoration: none;
+              }
+            }
           }
         }
       }

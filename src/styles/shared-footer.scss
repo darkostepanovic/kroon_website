@@ -56,6 +56,12 @@
       padding-right: 50px;
       div {
         margin-top: 20px;
+        a {
+          color: #5B5C5F;
+          &:hover {
+            text-decoration: none;
+          }
+        }
       }
     }
     .latest {
