@@ -7,7 +7,7 @@
         <ul>
           <li v-for="(item, index) in props.jobData.inChargeOf" :key="index">{{ item }}</li>
         </ul>
-        <h3>Skills that you posses</h3>
+        <h3>Skills that you possess</h3>
         <ul>
           <li v-for="(item, index) in props.jobData.skills" :key="index">{{ item }}</li>
         </ul>

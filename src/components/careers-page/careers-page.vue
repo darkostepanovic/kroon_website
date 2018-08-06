@@ -8,7 +8,7 @@
         </div>
         <div class="col-lg-5">
           <h4 class="mt-5">About Kroon</h4>
-          <p class="p-space">We are a Swiss / Serbian company, with offices in Zurich and Belgrade. Kroon is truly an international team and place where we speaks several languages (English, Greek, Serbian, German and Spanish). Kroon is a product of pure passion for product desing and great software. We are a team that offers end-to-end solutions when it comes to building mobile and web apps. </p>
+          <p class="p-space">We are a Swiss / Serbian company, with offices in Zurich and Belgrade. Kroon is truly an international team and place where we speak several languages (English, Greek, Serbian, German and Spanish). Kroon is a product of pure passion for product design and great software. We are a team that offers end-to-end solutions when it comes to building mobile and web apps. </p>
         </div>
         <div class="offset-lg-1 col-lg-5">
           <h4 class="mt-5">Inside Kroon</h4>
@@ -78,7 +78,7 @@ export default {
           inChargeOf: [
             'Solve complex business problems with technical solutions',
             'Contribute to innovation and improvements on projects',
-            'Deliver quality software by participating in the full software life cycle from Design to Deployment to Sustainment',
+            'Deliver quality software by participating in the full software lifecycle from Design to Deployment to Sustainment',
             'Collaborate with other team members and customers',
             'Deliver state of the art code'
           ],
@@ -107,7 +107,7 @@ export default {
           inChargeOf: [
             'Solve complex business problems with technical solutions',
             'Contribute to innovation and improvements on projects',
-            'Deliver quality software by participating in the full software life cycle from Design to Deployment to Sustainment',
+            'Deliver quality software by participating in the full software lifecycle from Design to Deployment to Sustainment',
             'Collaborate with other team members and customers',
             'Deliver state of the art code'
           ],

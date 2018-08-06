@@ -135,7 +135,7 @@ export default {
           email: this.email,
           message: this.message
         }
-        fetch('http://localhost:8888/c7_website/mail.php', {
+        fetch('https://www.kroonstudio.com/mail.php', {
           method: 'post',
           body: JSON.stringify(fields)
           // headers: {

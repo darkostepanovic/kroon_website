@@ -22,7 +22,7 @@
         <div class="container">
           <div class="row align-items-lg-center">
             <div class="col-12 col-lg-4">
-              <h3 class="portfolio-section-title margin-lg-0">Dasbhoard as an overview of the system</h3>
+              <h3 class="portfolio-section-title margin-lg-0">Dashboard as an overview of the system</h3>
               <p class="portfolio-section-text">
                 Utilizing the dashboard view, packed with data widgets, we are able to show an overview of users' IoT activity at glance. Dashboard shows user development, devices overview, income and data usage.
               </p>
@@ -47,7 +47,7 @@
         <div class="container">
           <div class="row align-items-lg-center section-item-lg-margin-top">
             <div class="col-12 col-lg-4">
-              <h3 class="portfolio-section-title margin-lg-0">Marketplace - dicovering what your devices can do</h3>
+              <h3 class="portfolio-section-title margin-lg-0">Marketplace - discovering what your devices can do</h3>
               <p class="portfolio-section-text">
                 Marketplace of Nymea offers pluging for hundreds of devices and services (made by 3rd party developers or manufacturers) that are extending usage possibilities to an unimaginable level. This allows for Nymea's clients to offer amazing services to their customers, and is opening a whole new spectrum of possibilities.
               </p>
@@ -60,7 +60,7 @@
             <div class="col-12 col-lg-4 z-index-1">
               <h3 class="portfolio-section-title margin-lg-0">Adding a service - easy as online shopping</h3>
               <p class="portfolio-section-text">
-                As it was an imperative to build Nymea in a such way that a complex IoT servce can be accessed, understood and used by an average internet user, same rule eas applied to process of installing a new service. All it takas is a simple click of a button - and a credit card number. :)
+                As it was an imperative to build Nymea in a such way that a complex IoT service can be accessed, understood and used by an average internet user, same rule eas applied to process of installing a new service. All it takas is a simple click of a button - and a credit card number. :)
               </p>
             </div>
             <div class="col-12 col-lg-8 text-center full-img-wrapper lg-justify-flex-end">
@@ -69,7 +69,7 @@
           </div>
           <div class="row align-items-lg-center">
             <div class="col-12 col-lg-4">
-              <h3 class="portfolio-section-title margin-lg-0">Freedom to customize servies to your user's needs</h3>
+              <h3 class="portfolio-section-title margin-lg-0">Freedom to customize services to your user's needs</h3>
               <p class="portfolio-section-text">
                 We built Nymea with flexibility and in such a way that it can be accommodated to various business needs. Nymea OS offers the ability to customize connected services and offer them to end users as bundles, available through monthly subscriptions.
               </p>
@@ -138,7 +138,7 @@ export default {
       showContent: false,
       portfolioInfo: {
         title: 'nymea',
-        subtitle: 'Nymea is IoT operating system that allows any device with interntet connection to become an IoT device. With the vision that it’s time to connect everything, Nymea is disrupting the IoT space while allowing other business to make their services and products IoT with incredible easiness and few simple steps.',
+        subtitle: 'Nymea is IoT operating system that allows any device with internet connection to become an IoT device. With the vision that it’s time to connect everything, Nymea is disrupting the IoT space while allowing other business to make their services and products IoT with incredible easiness and few simple steps.',
         location: 'Vienna, Austria'
       }
     }

@@ -11,7 +11,7 @@
             <div class="col-12 col-lg-4">
               <h3 class="portfolio-section-title text-white margin-lg-0">Widget system</h3>
               <p class="portfolio-section-text text-grey-9c">
-                The dashboard widgets offer trainers an overview of all major components of their busines needs. It is an easy way to understand who are clients that need additional attention, to access scheduled activities, clients' notifications, and business growth stats.
+                The dashboard widgets offer trainers an overview of all major components of their business needs. It is an easy way to understand who are clients that need additional attention, to access scheduled activities, clients' notifications, and business growth stats.
               </p>
             </div>
             <div class="col-12 col-lg-8 full-img-wrapper">
@@ -113,7 +113,7 @@
             <div class="col-12 col-lg-4">
               <h3 class="portfolio-section-title text-white margin-lg-0">Complete communication system</h3>
               <p class="portfolio-section-text text-grey-9c">
-                Trainerize features completed communication system available both on mobile and web app. This tool allows trainers to assemble group and 1 on 1 communication channels with their clients, enabeling easy and frequent communication with the trainer during or off-training hours.
+                Trainerize features completed communication system available both on mobile and web app. This tool allows trainers to assemble group and 1 on 1 communication channels with their clients, enabling easy and frequent communication with the trainer during or off-training hours.
               </p>
             </div>
             <div class="col-12 col-lg-7 offset-lg-1 full-img-wrapper text-center">

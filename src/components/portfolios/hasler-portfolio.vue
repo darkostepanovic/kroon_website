@@ -6,7 +6,7 @@
         <div class="container">
           <div class="row align-items-lg-center">
             <div class="col-12 col-lg-6">
-              <h3 class="portfolio-section-title">Transforming .vip file to a nice and readble view</h3>
+              <h3 class="portfolio-section-title">Transforming .vip file to a nice and readable view</h3>
               <p class="portfolio-section-text">
                 We developed a solution that enables Halser's EPR system to export a .vip file (delivery list file), push it to the server, where we performe cron jobs to fetch and read the file, and then feed it into a delivery system web-based admin app.
               </p>

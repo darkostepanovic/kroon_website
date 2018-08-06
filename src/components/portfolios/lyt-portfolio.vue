@@ -45,7 +45,7 @@
         <div class="container">
           <div class="row align-items-lg-center">
             <div class="col-12 col-lg-4">
-              <h3 class="portfolio-section-title text-white lg-margin-top-0">Desktop app to control all LYTs on the fesitval site</h3>
+              <h3 class="portfolio-section-title text-white lg-margin-top-0">Desktop app to control all LYTs on the festival site</h3>
               <p class="portfolio-section-text text-grey-9c">
                 Festival lightning operator can scan for antennas (devices that are sending the signal to LYTs), and make a visual reference to their position in the physical world.
                 <br><br>
