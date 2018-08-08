@@ -135,7 +135,7 @@ export default {
           email: this.email,
           message: this.message
         }
-        fetch('https://www.kroonstudio.com/mail.php', {
+        fetch('https://mail.kroonstudio.net/', {
           method: 'post',
           body: JSON.stringify(fields)
           // headers: {
