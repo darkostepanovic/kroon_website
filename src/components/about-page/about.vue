@@ -93,6 +93,7 @@ import Christos from './../../assets/about-page/team/christos.jpg'
 import Jovana from './../../assets/about-page/team/jovana.jpg'
 import Braca from './../../assets/about-page/team/braca.jpg'
 import Oggy from './../../assets/about-page/team/oggy.jpg'
+import DuleDacic from './../../assets/about-page/team/dusandacic.jpg'
 export default {
   name: 'about',
   components: {
@@ -125,6 +126,11 @@ export default {
           imgUrl: Petar
         },
         {
+          name: 'Dusan',
+          position: 'Design',
+          imgUrl: DuleDacic
+        },
+        {
           name: 'Vlada',
           position: 'Design',
           imgUrl: Vlada
@@ -144,11 +150,11 @@ export default {
           position: 'Development',
           imgUrl: Darko
         },
-        {
-          name: 'Jovan',
-          position: 'Development',
-          imgUrl: Redli
-        },
+        // {
+        //   name: 'Jovan',
+        //   position: 'Development',
+        //   imgUrl: Redli
+        // },
         {
           name: 'Chris',
           position: 'Development',

@@ -3,7 +3,7 @@
     <div>
         <h4>{{ props.jobData.title }}</h4>
         <p>{{ props.jobData.description }}</p>
-        <h3>What will you be in charge of:</h3>
+        <h3>Minimum requirements:</h3>
         <ul>
           <li v-for="(item, index) in props.jobData.inChargeOf" :key="index">{{ item }}</li>
         </ul>
