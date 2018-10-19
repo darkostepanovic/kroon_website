@@ -18,11 +18,12 @@
       <div class="row margin-fix">
         <div class="offset-lg-1 col-lg-3 col-md-3 col-sm-4 hide-xs">
           <ul class="nav">
-            <li @click="showJobInfo(0)" :class="{'active': jobToShow === openPositions[0]}">Senior PHP Developer <br />(Symfony/Fintech)</li>
+            <li @click="showJobInfo(0)" :class="{'active': jobToShow === openPositions[0]}">Python Developer</li>
+            <!-- <li @click="showJobInfo(0)" :class="{'active': jobToShow === openPositions[0]}">Senior PHP Developer <br />(Symfony/Fintech)</li>
             <li @click="showJobInfo(1)" :class="{'active': jobToShow === openPositions[1]}">Senior PHP Developer</li>
             <li @click="showJobInfo(2)" :class="{'active': jobToShow === openPositions[2]}">Frontend Developer</li>
             <li @click="showJobInfo(3)" :class="{'active': jobToShow === openPositions[3]}">UI / UX Designer</li>
-            <li @click="showJobInfo(4)" :class="{'active': jobToShow === openPositions[4]}">Python Developer</li>
+            <li @click="showJobInfo(4)" :class="{'active': jobToShow === openPositions[4]}">Python Developer</li> -->
           </ul>
         </div>
         <div class="col-12 show-xs">
