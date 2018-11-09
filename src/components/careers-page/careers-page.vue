@@ -18,7 +18,7 @@
       <div class="row margin-fix">
         <div class="offset-lg-1 col-lg-3 col-md-3 col-sm-4 hide-xs">
           <ul class="nav">
-            <li @click="showJobInfo(0)" :class="{'active': jobToShow === openPositions[0]}">Python Developer</li>
+            <li @click="showJobInfo(0)" :class="{'active': jobToShow === openPositions[0]}">Account Manager</li>
             <!-- <li @click="showJobInfo(0)" :class="{'active': jobToShow === openPositions[0]}">Senior PHP Developer <br />(Symfony/Fintech)</li>
             <li @click="showJobInfo(1)" :class="{'active': jobToShow === openPositions[1]}">Senior PHP Developer</li>
             <li @click="showJobInfo(2)" :class="{'active': jobToShow === openPositions[2]}">Frontend Developer</li>
@@ -74,30 +74,51 @@ export default {
       jobSelect: null,
       openPositions: [
         {
-          title: 'Python Developer',
-          description: 'We are looking for a Senior Python Web Developer to join our backend team. You will work in a large data integration project and you will be responsible for managing the interchange of data between the server, the frontend users and otherthird-party APIs. Your primary focus will be the development of all server-side logic, ensuring high performance and responsiveness to requests from the front-end. You will also be responsible for integrating the front-end elements built by your co-workers into the application; therefore, a basic understanding of front-end technologies is necessary as well.',
+          title: 'Account Manager',
+          description: 'We are looking for a USA based Account Manager to create and maintain continuous and trusting relationships with our clients, to identify new business opportunities among existing portfolio of customers, and to actively seek new sales opportunities.',
           inChargeOf: [
-            'Fluent in English',
-            'Expert in Python, with knowledge of at least one Python web framework',
-            'At least three years experience as a Professional developer',
-            'Ability to read and understand logs and stack traces',
-            'Ability to research using internal knowledge bases and public facing documentation (Google Cloud Platform Documentation, Stack Overflow)'
+            'Serve as the lead point of contact for all customer account management matters',
+            'Build and maintain strong, long-lasting client relationships',
+            'Negotiate contracts and close agreements',
+            'Develop trusted advisor relationships with key accounts, customer stakeholders and executive sponsors',
+            'Clearly communicate the progress of monthly/quarterly initiatives to internal stakeholders',
+            'Develop new business with existing clients and/or identify areas of improvement and opportunities'
           ],
           skills: [
-            'Familiarity with some ORM (Object Relational Mapper) libraries',
-            'Able to integrate multiple data sources and databases into one system',
-            'Understanding of the threading limitations of Python, and multi-process architecture',
-            'Basic understanding of front-end technologies, such as JavaScript and HTML5',
-            'Understanding of accessibility and security compliance',
-            'Knowledge of user authentication and authorization between multiple systems, servers, and environments',
-            'Understanding of fundamental design principles behind a scalable application',
-            'Familiarity with event-driven programming in Python',
-            'Able to create database schemas that represent and support business processes',
-            'Strong unit test and debugging skills',
-            'Proficient understanding of code versioning tools'
+            'Proven work experience as an Account Manager, Key Account Manager, Sales Account Manager, Junior Account Manager or relevant role',
+            'Deep understanding of information technologies and evolution of digital concepts',
+            'Demonstrable ability to communicate, present and influence key stakeholders at all levels of an organization',
+            'Experience with CRM software (e.g. Salesforce, Zoho CRM or HubSpot)',
+            'Excellent listening, negotiation and presentation abilities',
+            'Strong verbal and written communication skills'
           ],
-          apply: 'Please send your resume to contact@kroonstudio.com with subject line Python. Would be nice that your CV contains links to project you\'ve worked on, with descriptions of your responsibilities.'
+          apply: 'If you think you would be a good fit for this role, send your resume at contact@kroonstudio.com and we will get in touch with you.'
         },
+        // {
+        //   title: 'Python Developer',
+        //   description: 'We are looking for a Senior Python Web Developer to join our backend team. You will work in a large data integration project and you will be responsible for managing the interchange of data between the server, the frontend users and otherthird-party APIs. Your primary focus will be the development of all server-side logic, ensuring high performance and responsiveness to requests from the front-end. You will also be responsible for integrating the front-end elements built by your co-workers into the application; therefore, a basic understanding of front-end technologies is necessary as well.',
+        //   inChargeOf: [
+        //     'Fluent in English',
+        //     'Expert in Python, with knowledge of at least one Python web framework',
+        //     'At least three years experience as a Professional developer',
+        //     'Ability to read and understand logs and stack traces',
+        //     'Ability to research using internal knowledge bases and public facing documentation (Google Cloud Platform Documentation, Stack Overflow)'
+        //   ],
+        //   skills: [
+        //     'Familiarity with some ORM (Object Relational Mapper) libraries',
+        //     'Able to integrate multiple data sources and databases into one system',
+        //     'Understanding of the threading limitations of Python, and multi-process architecture',
+        //     'Basic understanding of front-end technologies, such as JavaScript and HTML5',
+        //     'Understanding of accessibility and security compliance',
+        //     'Knowledge of user authentication and authorization between multiple systems, servers, and environments',
+        //     'Understanding of fundamental design principles behind a scalable application',
+        //     'Familiarity with event-driven programming in Python',
+        //     'Able to create database schemas that represent and support business processes',
+        //     'Strong unit test and debugging skills',
+        //     'Proficient understanding of code versioning tools'
+        //   ],
+        //   apply: 'Please send your resume to contact@kroonstudio.com with subject line Python. Would be nice that your CV contains links to project you\'ve worked on, with descriptions of your responsibilities.'
+        // },
         // {
         //   title: 'Senior PHP Developer (Symfony/Fintech)',
         //   description: 'We are looking for a LAMP and PHP developer that knows Symfony/Laravel frameworks and is used to creating great products. We are a Swiss/Serbian company that provides a full service from design to development of customers demands in the Web/App Space. We have interesting development projects in a variety of industries from startups to fully established corporations. We are looking for a developer that is willing to go the next step with our team of highly motivated developers to create most astonishing products.',

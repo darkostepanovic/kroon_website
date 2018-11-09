@@ -3,11 +3,13 @@
     <div>
         <h4>{{ props.jobData.title }}</h4>
         <p>{{ props.jobData.description }}</p>
-        <h3>Minimum requirements:</h3>
+        <!-- <h3>Minimum requirements</h3> -->
+        <h3>Responsibilities</h3>
         <ul>
           <li v-for="(item, index) in props.jobData.inChargeOf" :key="index">{{ item }}</li>
         </ul>
-        <h3>Skills that you possess</h3>
+        <!-- <h3>Skills that you possess</h3> -->
+        <h3>Requirements</h3>
         <ul>
           <li v-for="(item, index) in props.jobData.skills" :key="index">{{ item }}</li>
         </ul>
