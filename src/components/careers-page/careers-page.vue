@@ -19,8 +19,8 @@
         <div class="offset-lg-1 col-lg-3 col-md-3 col-sm-4 hide-xs">
           <ul class="nav">
             <li @click="showJobInfo(0)" :class="{'active': jobToShow === openPositions[0]}">Account Manager</li>
-            <!-- <li @click="showJobInfo(0)" :class="{'active': jobToShow === openPositions[0]}">Senior PHP Developer <br />(Symfony/Fintech)</li>
-            <li @click="showJobInfo(1)" :class="{'active': jobToShow === openPositions[1]}">Senior PHP Developer</li>
+            <li @click="showJobInfo(1)" :class="{'active': jobToShow === openPositions[1]}">React Native Developer</li>
+            <!-- <li @click="showJobInfo(1)" :class="{'active': jobToShow === openPositions[1]}">Senior PHP Developer</li>
             <li @click="showJobInfo(2)" :class="{'active': jobToShow === openPositions[2]}">Frontend Developer</li> -->
             <li @click="showJobInfo(3)" :class="{'active': jobToShow === openPositions[3]}">UI / UX Designer</li>
             <!-- <li @click="showJobInfo(4)" :class="{'active': jobToShow === openPositions[4]}">Python Developer</li> -->
@@ -31,7 +31,7 @@
           <select v-model="jobSelect" @change="handleJobChange" class="custom-select">
              <option selected disabled :value="-1">Select position</option>
              <option :value="0">Account Manager</option>
-             <!-- <option :value="0">Senior PHP Developer (Symfony/Fintech)</option> -->
+             <option :value="1">React Native Developer</option>
              <!-- <option :value="1">Senior PHP Developer</option> -->
              <!-- <option :value="2">Frontend Developer</option> -->
              <option :value="3">UI / UX Designer</option>
@@ -121,33 +121,25 @@ export default {
         //   apply: 'Please send your resume to contact@kroonstudio.com with subject line Python. Would be nice that your CV contains links to project you\'ve worked on, with descriptions of your responsibilities.'
         // },
         {
-          title: 'Senior PHP Developer (Symfony/Fintech)',
-          description: 'We are looking for a LAMP and PHP developer that knows Symfony/Laravel frameworks and is used to creating great products. We are a Swiss/Serbian company that provides a full service from design to development of customers demands in the Web/App Space. We have interesting development projects in a variety of industries from startups to fully established corporations. We are looking for a developer that is willing to go the next step with our team of highly motivated developers to create most astonishing products.',
+          title: 'React Native Developer',
+          description: 'React Native Developer is one of the key positions here at Kroon Studio, and the one we give a lot of attention. Given the fact that we provide design and development services, React Native Developer is a person that combines the two and makes sure, that art and technology come together in perfect harmony.',
           inChargeOf: [
-            'Solve complex business problems with technical solutions',
-            'Contribute to innovation and improvements on projects',
-            'Deliver quality software by participating in the full software lifecycle from Design to Deployment to Sustainment',
-            'Collaborate with other team members and customers',
-            'Deliver state of the art code'
+            'General responsibility to design, develop, test and document software for current and new products',
+            'Build applications for iOS and Android platforms using cross-platform frameworks',
+            'Develop new user-facing features',
+            'Build reusable code and libraries for future use',
+            'Ensure the technical feasibility of UI / UX designs',
+            'Optimize application for maximum speed and scalability',
+            'Collaborate with other team members and stakeholders'
           ],
           skills: [
-            '3+ years of experience developing LAMP and PHP',
-            'Experience with Docker and nginx a plus',
-            'Experience with Object Oriented Programming principles',
-            'Experience with Symfony',
-            'Demonstrated experience with web services and application integration with external systems',
-            'Working knowledge of JavaScript frameworks (React, Vue, etc) a big plus',
-            'Expertise in data structures, algorithms, and complexity analysis a plus',
-            'SQL experience a must, MySQL',
-            'HTML and current CSS styling',
-            'Good knowledge in GIT source code management tools',
-            'Ability to read and comprehend technical specifications',
-            'Strong conceptualization and visual communication abilities',
-            'Exceptional attention to detail',
-            'Good spoken and written english',
-            'Know-how in Fintech, Financial space very welcomed'
+            'Previous experience with React / ReactNative',
+            'In-depth understanding of Javascript programming and familiar with ES6',
+            'Familiarity with RESTful APIs or similar technologies to interface iOS/Android applications with back-end services',
+            'Proficient understanding of code versioning tools such as Git and the associated best practices',
+            'Good verbal & written communications skills'
           ],
-          apply: 'Please send your resume to contact@kroonstudio.com with subject line PHP. Would be nice that your CV contains links to project you\'ve worked on, with descriptions of your responsibilities.'
+          apply: 'Please send your resume to contact@kroonstudio.com with subject line ReactNative. Would be nice that your CV contains links to project you’ve worked on, with descriptions of your responsibilities.'
         },
         // {
         //   title: 'Senior PHP Developer',
