@@ -135,11 +135,11 @@ export default {
           skills: [
             'Previous experience with React / ReactNative',
             'In-depth understanding of Javascript programming and familiar with ES6',
-            'Familiarity with RESTful APIs or similar technologies to interface iOS/Android applications with back-end services',
+            'Familiarity with RESTful APIs or similar technologies to interface iOS/Android applications with back-end services',
             'Proficient understanding of code versioning tools such as Git and the associated best practices',
             'Good verbal & written communications skills'
           ],
-          apply: 'Please send your resume to contact@kroonstudio.com with subject line ReactNative. Would be nice that your CV contains links to project you’ve worked on, with descriptions of your responsibilities.'
+          apply: 'Please send your resume to contact@kroonstudio.com with subject line ReactNative. Would be nice that your CV contains links to project you\'ve worked on, with descriptions of your responsibilities.'
         },
         // {
         //   title: 'Senior PHP Developer',
