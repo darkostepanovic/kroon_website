@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="67px" height="42px" viewBox="0 0 67 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M21,42 C9.40202025,42 -7.46069873e-14,32.5979797 -7.46069873e-14,21 C-7.46069873e-14,9.40202025 9.40202025,1.42108547e-14 21,1.42108547e-14 C32.5979797,1.42108547e-14 42,9.40202025 42,21 C42,32.5979797 32.5979797,42 21,42 Z M21,31.9941176 C26.9665907,31.9941176 31.8034682,27.1271895 31.8034682,21.1235294 C31.8034682,15.1198693 26.9665907,10.2529412 21,10.2529412 C15.0334093,10.2529412 10.1965318,15.1198693 10.1965318,21.1235294 C10.1965318,27.1271895 15.0334093,31.9941176 21,31.9941176 Z M56,31 C50.4771525,31 46,26.5228475 46,21 C46,15.4771525 50.4771525,11 56,11 C61.5228475,11 66,15.4771525 66,21 C66,26.5228475 61.5228475,31 56,31 Z" id="path-1"></path>
+    </defs>
+    <g id="Logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(-1.000000, 0.000000)">
+            <g id="Oval-+-Color/Green-Mask" transform="translate(1.000000, 0.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Combined-Shape" fill="#000000" xlink:href="#path-1"></use>
+                <g id="Color/White" mask="url(#mask-2)" fill="#FFFFFF">
+                    <g transform="translate(-9.000000, -116.000000)" id="Rectangle">
+                        <rect x="0" y="0" width="272" height="272"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

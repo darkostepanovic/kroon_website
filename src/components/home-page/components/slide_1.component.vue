@@ -1,8 +1,9 @@
 <template>
   <div class="home-slide" id="home-slide-1">
-    <h2 class="animated" :class="{'fadeInDown': allowFadeIn}">Building digital products for people and businesses</h2>
-    <h1 class="animated animation-delay-1" :class="{'fadeInDown': allowFadeIn}">We are Kroon</h1>
-    <div class="scroll-for-more">scroll down</div>
+    <img src="../../../assets/images/title-kroon.svg" alt="title-kroon">
+    <h1 class="animated animation-delay-1" :class="{'fadeInDown': allowFadeIn}">Value-centric software development</h1>
+    <p>Our work is carefully crafted combinnation of value centric thinking, stratigic planning and top quality execution.</p>
+    <a href="#">Contact us</a>
   </div>
 </template>
 

@@ -8,16 +8,34 @@
   justify-content: center;
   overflow: hidden;
   &#home-slide-1 {
+    align-items: flex-start;
+    margin: 0 auto;
+    text-align: left;
+    color: #fff;
     h1 {
-      font-size: 90px;
-      font-weight: 700;
+      margin-top: 12px;
+      margin-bottom: 20px;
+      font-size: 68px;
+      font-weight: bold;
       color: #ffffff;
-      text-transform: uppercase;
+      line-height: 60px;
+      text-align: left;
+      max-width: 490px;
     }
     h2 {
       font-size: 26px;
       font-weight: 400;
       color: #ffffff;
+    }
+    p {
+      color: #fff;
+      margin-bottom: 55px;
+      font-size: 16px;
+      line-height: 22px;
+      max-width: 490px;
+    }
+    a {
+      color: #fff;
     }
     .scroll-for-more {
       position: absolute;
@@ -26,6 +44,9 @@
       font-size: 14px;
       font-weight: 700;
       text-transform: uppercase;
+    }
+    @media all and (min-width: 1919px) {
+      width: 1200px;
     }
   }
   &#home-slide-2,
@@ -37,17 +58,22 @@
       text-align: left;
       flex-shrink: 0;
       h2 {
-        font-size: 70px;
-        line-height: 81px;
+        font-size: 50px;
+        line-height: 60px;
         font-weight: 300;
         color: #000000;
+        margin-top: 13px;
+        margin-bottom: 0;
       }
       p {
-        font-size: 18px;
-        line-height: 34px;
-        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 300;
         color: #000000;
-        margin-top: 20px;
+        margin-top: 13px;
+      }
+      a {
+
       }
       button {
         width: 182px;
@@ -101,7 +127,54 @@
     }
   }
   &#home-slide-5 {
-    flex-direction: column;
+    flex-direction: row;
+    padding: 0;
+    .button-wrapper {
+      flex: 0 0 20%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      height: 100vh;
+      background: #785CFF;
+      button {
+        margin-bottom: 25px;
+      }
+    }
+    .content-wrapper {
+      position: relative;
+      flex: 0 0 80%;
+      height: 100vh;
+      background: #000;
+      right: -80%;
+      transition: all 1s ease;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 130px;
+      text-align: left;
+      h3 {
+        font-weight: bold;
+        margin-top: 0;
+        margin-bottom: 50px;
+      }
+      a {
+        color: #fff;
+        animation-delay: 1s;
+      }
+      &.show {
+        right: 0;
+        transition: all 1s ease;
+      }
+      &__image-wrapper {
+        animation-delay: 1s;
+        width: 800px;
+        height: 657px;
+        background-image: url("./assets/images/kroon-office.png");
+        background-position: left;
+      }
+    }
     h3 {
       font-size: 40px;
       font-weight: 400;
@@ -118,17 +191,16 @@
       }
     }
     button {
-      width: 283px;
-      height: 59px;
-      border: 2px solid #fff;
-      border-radius: 5px;
-      color: #fff;
+      width: 110px;
+      height: 55px;
+      border: none;
+      border-radius: 37px;
+      color: #000;
       line-height: 59px;
-      font-size: 18px;
-      font-weight: 700;
-      background-color: transparent;
+      font-size: 52px;
+      font-weight: 300;
+      background-color: #fff;
       text-transform: uppercase;
-      margin-top: 23px;
       cursor: pointer;
       transition: transform 0.5s ease;
       flex-shrink: 0;

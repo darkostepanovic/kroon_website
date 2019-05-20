@@ -5,6 +5,7 @@
     <div class="slide-nav-btn" :class="{ 'current': slide === 3 }" @click="goToSlide(3)"></div>
     <div class="slide-nav-btn" :class="{ 'current': slide === 4 }" @click="goToSlide(4)"></div>
     <div class="slide-nav-btn" :class="{ 'current': slide === 5 }" @click="goToSlide(5)"></div>
+    <div class="slide-nav-btn" :class="{ 'current': slide === 6 }" @click="goToSlide(6)"></div>
   </div>
 </template>
 

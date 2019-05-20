@@ -6,7 +6,12 @@
           <!-- <div class="logo-part left"></div>
           <div class="logo-part middle"></div>
           <div class="logo-part right"></div> -->
-          <img src="../../assets/top-navigation/top-nav-logo.svg" alt="">
+          <img
+            v-if="!whiteLogo"
+            src="../../assets/images/LogoBlack.svg"
+            alt="logo"
+          />
+          <img v-else src="../../assets/images/logoWhite.svg" alt="logo" />
         </div>
       </router-link>
       <!-- <svg @click="toggleMenu" width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -17,16 +22,23 @@
               </g>
           </g>
       </svg> -->
-      <div @click="toggleMenu" class="toggle-menu-btn" :class="{'menu-opened': menuOpened}">
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
+      <div
+        @click="toggleMenu"
+        class="toggle-menu-btn"
+        :class="{ 'menu-opened': menuOpened, white: whiteLogo }"
+      >
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <!--<div class="dot"></div>-->
+        <!--<div class="dot"></div>-->
+        <!--<div class="dot"></div>-->
+        <!--<div class="dot"></div>-->
+        <!--<div class="dot"></div>-->
+        <!--<div class="dot"></div>-->
+        <!--<div class="dot"></div>-->
+        <!--<div class="dot"></div>-->
+        <!--<div class="dot"></div>-->
       </div>
     </div>
     <transition name="fade">
@@ -37,31 +49,48 @@
 
 <script>
 // import Snap from 'snapsvg'
-import MainMenu from './components/main-menu.component'
-import { EventBus } from '../../event-bus'
+import MainMenu from "./components/main-menu.component";
+import { EventBus } from "../../event-bus";
 export default {
-  name: 'top-navigation',
+  name: "top-navigation",
   components: {
-    'main-menu': MainMenu
+    "main-menu": MainMenu
   },
-  data () {
+  data() {
     return {
-      menuOpened: false
-      //menuBtn: null
-    }
+      menuOpened: false,
+      whiteLogo: false
+    };
   },
-  // mounted () {
-  //   this.menuBtn = Snap.select('#menu-btn-path')
-  // },
+  mounted() {
+    EventBus.$on("slideChanged", data => {
+      this.whiteLogo =
+        data.currentSlide === 5 &&
+        document.querySelector("#app").offsetTop < window.innerHeight &&
+        !this.menuOpened;
+    });
+    document
+      .querySelector("#app")
+      .addEventListener("scroll", this.handlePageScroll);
+  },
   methods: {
     toggleMenu() {
-      this.menuOpened = !this.menuOpened
-      EventBus.$emit('menuOpened', this.menuOpened)
+      this.menuOpened = !this.menuOpened;
+      this.whiteLogo = !this.menuOpened;
+      EventBus.$emit("menuOpened", this.menuOpened);
     },
-    closeMenu () {
-      this.menuOpened = false
-      EventBus.$emit('menuOpened', this.menuOpened)
+    closeMenu() {
+      this.menuOpened = false;
+      EventBus.$emit("menuOpened", this.menuOpened);
+    },
+    handlePageScroll() {
+      if (!document.querySelector("#app")) {
+        return;
+      }
+      this.whiteLogo =
+        document.querySelector("#app").scrollTop < window.innerHeight - 100 &&
+        !this.menuOpened;
     }
   }
-}
+};
 </script>

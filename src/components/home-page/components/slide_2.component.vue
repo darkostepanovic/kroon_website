@@ -1,10 +1,11 @@
 <template>
   <div class="home-slide" id="home-slide-2">
     <div class="left-cont">
-      <h2 class="animated" :class="{'fadeInDown': allowFadeIn}">Get in shape with Trainerize</h2>
-      <p class="animated animation-delay-1 d-none d-sm-block" :class="{'fadeInDown': allowFadeIn}">All-in-one fitness solution for personal training.</p>
+      <img src="../../../assets/images/title-ourwork.svg" alt="our-work">
+      <h2 class="animated" :class="{'fadeInDown': allowFadeIn}">Making fittness accesisble with Trainerize</h2>
+      <p class="animated animation-delay-1 d-none d-sm-block" :class="{'fadeInDown': allowFadeIn}">Mobile, Web, UX, UI, Marketing</p>
       <button @click="goToTrainerize" class="animated animation-delay-2" :class="{'fadeInDown': allowFadeIn}" type="button">
-        Explore project
+        View casestudy
         <img src="./../../../assets/home-page/button-arrow.svg" width="14" height="16" alt="">
       </button>
     </div>
