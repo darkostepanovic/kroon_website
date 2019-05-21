@@ -1,18 +1,15 @@
 <template>
-
   <div v-touch:swipe="swipeCallback">
     <transition name="fadeOut" mode="out-in">
       <component :is="currentslide" :images="homePageImages"></component>
     </transition>
-    <soc-nav v-if="slide !== 5" class="d-none d-sm-block" v-show="showSocialAndPagination" />
+    <!--<soc-nav v-if="slide !== 5" class="d-none d-sm-block" v-show="showSocialAndPagination" />-->
     <!-- <slide-nav class="d-none d-sm-flex" v-show="showSocialAndPagination" :slide="slide" @changeSlide="changeSlide"></slide-nav> -->
     <div id="pagination" v-show="showSocialAndPagination">{{ slide }} / 5</div>
-    <div>
-      <section>
-      </section>
-    </div>
+    <partners />
+    <discovery />
+    <shareOnKroon />
   </div>
-
 </template>
 
 <script type="text/babel">
@@ -27,6 +24,9 @@ import { EventBus } from "../../event-bus";
 import Slide2Img from "./../../assets/home-page/slide-2-img.png";
 import Slide3Img from "./../../assets/home-page/slide-3-img.png";
 import Slide4Img from "./../../assets/home-page/slide-4-img.png";
+import Partners from "./components/partners.component";
+import Discovery from "./components/discovery.component";
+import ShareOnKroon from "./components/share-on-kroon.component";
 export default {
   components: {
     slide_1: Slide_1,
@@ -34,6 +34,9 @@ export default {
     slide_3: Slide_3,
     slide_4: Slide_4,
     slide_5: Slide_6,
+    partners: Partners,
+    discovery: Discovery,
+    shareOnKroon: ShareOnKroon,
     "soc-nav": SocialNav,
     "slide-nav": SlideNav
   },
@@ -55,7 +58,10 @@ export default {
       if (this.allowSlideChange && this.$route.name === "home") {
         if (event.wheelDelta > 0 || event.detail < 0 || event.keyCode === 38) {
           // scroll up
-          if (this.slide > 1 && document.querySelector('#app').scrollTop === 0) {
+          if (
+            this.slide > 1 &&
+            document.querySelector("#app").scrollTop === 0
+          ) {
             this.allowSlideChange = false;
             this.slide--;
             EventBus.$emit("slideChanged", {
@@ -71,7 +77,10 @@ export default {
           event.keyCode === 40
         ) {
           // scroll down
-          if (this.slide < 5 && document.querySelector('#app').scrollTop === 0) {
+          if (
+            this.slide < 5 &&
+            document.querySelector("#app").scrollTop === 0
+          ) {
             this.allowSlideChange = false;
             this.slide++;
             EventBus.$emit("slideChanged", {
@@ -96,18 +105,18 @@ export default {
     },
     swipeCallback(swipeDirection) {
       if (swipeDirection === "swipeup") {
-        if (this.slide < 5 && document.querySelector('#app').scrollTop === 0) {
+        if (this.slide < 5 && document.querySelector("#app").scrollTop === 0) {
           this.allowSlideChange = false;
           this.slide++;
           EventBus.$emit("slideChanged", {
-            currentSlide: this.slide < 5 ? this.slide : 'full'
+            currentSlide: this.slide < 5 ? this.slide : "full"
           });
           setTimeout(() => {
             this.allowSlideChange = true;
           }, 500);
         }
       } else if (swipeDirection === "swipedown") {
-        if (this.slide > 1 && document.querySelector('#app').scrollTop === 0) {
+        if (this.slide > 1 && document.querySelector("#app").scrollTop === 0) {
           this.allowSlideChange = false;
           this.slide--;
           EventBus.$emit("slideChanged", {

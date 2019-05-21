@@ -9,6 +9,9 @@
   height: 80px;
   padding: 0 35px;
   z-index: 3;
+  img {
+    max-width: 100%;
+  }
   #top-nav-home-btn {
     .logo-wrapper {
       position: relative;

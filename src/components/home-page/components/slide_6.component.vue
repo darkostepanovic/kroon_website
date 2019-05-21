@@ -5,11 +5,11 @@
       <p>See More Work</p>
     </div>
     <div :class="show ? 'show' : ''" class="content-wrapper">
-      <div>
+      <div class="content-wrapper-text">
         <h3 class="animated animation-delay-3 fadeInDown">Or you’re ready to get started?</h3>
         <a style="display: block" class="animated animation-delay-3 fadeInDown" href="#">Contact us</a>
       </div>
-      <div>
+      <div class="content-wrapper-image">
         <div class="animated fadeInDown content-wrapper__image-wrapper"></div>
       </div>
     </div>
