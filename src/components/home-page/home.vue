@@ -118,8 +118,18 @@ export default {
       }, 500);
     },
     swipeCallback(swipeDirection, e) {
-      console.log("event: ", e);
       if (swipeDirection === "swipeup") {
+        if(this.slide === 5) {
+          const el = document.querySelector("#app");
+          const scroll = setInterval(scrollElement, 10);
+          function scrollElement() {
+            if(el.scrollTop > window.innerHeight) {
+              clearInterval(scroll)
+            } else {
+              el.scrollTop += 10;
+            }
+          }
+        }
         if (this.slide < 5 && document.querySelector("#app").scrollTop === 0) {
           this.allowSlideChange = false;
           this.slide++;
