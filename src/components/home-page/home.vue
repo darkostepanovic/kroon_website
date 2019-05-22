@@ -123,7 +123,7 @@ export default {
           const el = document.querySelector("#app");
           const scroll = setInterval(scrollElement, 10);
           function scrollElement() {
-            if(el.scrollTop > window.innerHeight) {
+            if(el.scrollTop > window.innerHeight + 70) {
               clearInterval(scroll)
             } else {
               el.scrollTop += 10;
