@@ -8,7 +8,8 @@
     <div id="pagination" v-show="showSocialAndPagination">{{ slide }} / 5</div>
     <partners />
     <discovery />
-    <shareOnKroon />
+    <share-on-kroon />
+    <contact-us />
   </div>
 </template>
 
@@ -27,6 +28,7 @@ import Slide4Img from "./../../assets/home-page/slide-4-img.png";
 import Partners from "./components/partners.component";
 import Discovery from "./components/discovery.component";
 import ShareOnKroon from "./components/share-on-kroon.component";
+import ContactUs from "./components/contact-us.component";
 export default {
   components: {
     slide_1: Slide_1,
@@ -37,6 +39,7 @@ export default {
     partners: Partners,
     discovery: Discovery,
     shareOnKroon: ShareOnKroon,
+    contactUs: ContactUs,
     "soc-nav": SocialNav,
     "slide-nav": SlideNav
   },

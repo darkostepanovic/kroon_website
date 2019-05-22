@@ -74,7 +74,8 @@ export default {
   },
   methods: {
     checkScroll() {
-      this.itemsVisible = document.querySelector("#app").scrollTop > (window.innerHeight / 2);
+      const item = document.querySelector("#partners").offsetTop;
+      this.itemsVisible = document.querySelector("#app").scrollTop > item - (window.innerHeight / 2);
     }
   },
   beforeDestroy() {
