@@ -84,7 +84,7 @@ export default {
   },
   computed: {
     windowScroll() {
-      return this.homeSlide === 5 || this.$router.currentRoute.fullPath !== "/";
+      return this.homeSlide === 5 || this.homeSlide === "full" || this.$router.currentRoute.fullPath !== "/";
     }
   },
   created() {

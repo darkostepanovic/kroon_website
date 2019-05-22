@@ -1,8 +1,16 @@
 <template>
-  <div v-touch:swipe="swipeCallback">
-    <transition name="fadeOut" mode="out-in">
-      <component :is="currentslide" :images="homePageImages"></component>
-    </transition>
+  <div>
+    <div v-touch:swipe="swipeCallback" v-touch:swipeup="'enableNav'">
+      <transition name="fadeOut" mode="out-in">
+        <component :is="currentslide" :images="homePageImages"></component>
+      </transition>
+    </div>
+    <!--<div v-else>-->
+    <!--<transition name="fadeOut" mode="out-in">-->
+    <!--<component :is="currentslide" :images="homePageImages"></component>-->
+    <!--</transition>-->
+    <!--</div>-->
+
     <!--<soc-nav v-if="slide !== 5" class="d-none d-sm-block" v-show="showSocialAndPagination" />-->
     <!-- <slide-nav class="d-none d-sm-flex" v-show="showSocialAndPagination" :slide="slide" @changeSlide="changeSlide"></slide-nav> -->
     <div id="pagination" v-show="showSocialAndPagination">{{ slide }} / 5</div>
@@ -30,7 +38,7 @@ import Partners from "./components/partners.component";
 import Discovery from "./components/discovery.component";
 import ShareOnKroon from "./components/share-on-kroon.component";
 import ContactUs from "./components/contact-us.component";
-import Footer from '../footer/footer.component'
+import Footer from "../footer/footer.component";
 export default {
   components: {
     slide_1: Slide_1,
@@ -109,8 +117,20 @@ export default {
         this.allowSlideChange = true;
       }, 500);
     },
-    swipeCallback(swipeDirection) {
+    swipeCallback(swipeDirection, e) {
+      console.log("event: ", e);
       if (swipeDirection === "swipeup") {
+        if (this.slide === 5) {
+          const el = document.querySelector("#app");
+          let scrollStep = -e.deltaY / (100 / 15),
+            scrollInterval = setInterval(function() {
+              console.log("el: ", el.scrollTop );
+              console.log("delta: ", e.deltaY );
+              if (el.scrollTop < -e.deltaY) {
+                el.scrollBy(0, scrollStep);
+              } else clearInterval(scrollInterval);
+            }, 15);
+        }
         if (this.slide < 5 && document.querySelector("#app").scrollTop === 0) {
           this.allowSlideChange = false;
           this.slide++;
