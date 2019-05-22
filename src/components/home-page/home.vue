@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-touch:swipe="swipeCallback" v-touch:swipeup="'enableNav'">
+    <div v-touch:swipe="swipeCallback">
       <transition name="fadeOut" mode="out-in">
         <component :is="currentslide" :images="homePageImages"></component>
       </transition>
@@ -120,17 +120,6 @@ export default {
     swipeCallback(swipeDirection, e) {
       console.log("event: ", e);
       if (swipeDirection === "swipeup") {
-        if (this.slide === 5) {
-          const el = document.querySelector("#app");
-          let scrollStep = -e.deltaY / (100 / 15),
-            scrollInterval = setInterval(function() {
-              console.log("el: ", el.scrollTop );
-              console.log("delta: ", e.deltaY );
-              if (el.scrollTop < -e.deltaY) {
-                el.scrollBy(0, scrollStep);
-              } else clearInterval(scrollInterval);
-            }, 15);
-        }
         if (this.slide < 5 && document.querySelector("#app").scrollTop === 0) {
           this.allowSlideChange = false;
           this.slide++;
