@@ -10,6 +10,7 @@
     <discovery />
     <share-on-kroon />
     <contact-us />
+    <custom-footer />
   </div>
 </template>
 
@@ -29,6 +30,7 @@ import Partners from "./components/partners.component";
 import Discovery from "./components/discovery.component";
 import ShareOnKroon from "./components/share-on-kroon.component";
 import ContactUs from "./components/contact-us.component";
+import Footer from '../footer/footer.component'
 export default {
   components: {
     slide_1: Slide_1,
@@ -40,6 +42,7 @@ export default {
     discovery: Discovery,
     shareOnKroon: ShareOnKroon,
     contactUs: ContactUs,
+    customFooter: Footer,
     "soc-nav": SocialNav,
     "slide-nav": SlideNav
   },
