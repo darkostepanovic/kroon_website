@@ -83,7 +83,7 @@ export default {
             });
             setTimeout(() => {
               this.allowSlideChange = true;
-            }, 500);
+            }, 700);
           }
         } else if (
           event.wheelDelta < 0 ||
@@ -102,7 +102,7 @@ export default {
             });
             setTimeout(() => {
               this.allowSlideChange = true;
-            }, 500);
+            }, 700);
           }
         }
       }
@@ -115,7 +115,7 @@ export default {
       });
       setTimeout(() => {
         this.allowSlideChange = true;
-      }, 500);
+      }, 700);
     },
     swipeCallback(swipeDirection, e) {
       if (swipeDirection === "swipeup") {
@@ -141,7 +141,19 @@ export default {
           }, 500);
         }
       } else if (swipeDirection === "swipedown") {
-        if (this.slide > 1 && document.querySelector("#app").scrollTop === 0) {
+        if(document.querySelector("#app").scrollTop !== 0) {
+          const el = document.querySelector("#app");
+          const scroll = setInterval(scrollToTop, 10);
+          function scrollToTop() {
+            if(el.scrollTop === 0) {
+              clearInterval(scroll)
+            } else {
+              el.scrollTop -= 10;
+            }
+          }
+          return;
+        }
+        if (this.slide > 1) {
           this.allowSlideChange = false;
           this.slide--;
           EventBus.$emit("slideChanged", {

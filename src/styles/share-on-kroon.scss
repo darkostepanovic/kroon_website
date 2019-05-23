@@ -107,6 +107,12 @@
       grid-template-rows: repeat(auto-fill, 1fr);
       grid-column-gap: 22px;
     }
+    @media all and (min-width: 1600px) {
+      grid-column-gap: 27px;
+    }
+    @media all and (min-width: 1920px) {
+      grid-column-gap: 41px;
+    }
     &--single {
       margin-bottom: 40px;
 
